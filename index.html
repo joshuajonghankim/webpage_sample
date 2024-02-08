@@ -1,24 +1,74 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>John and Jane's Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<body>
+    <header class="header bg-gray-800 text-white p-4">
+        <h1 class="heading text-3xl">
+            John & Jane
+            <span class="heading-subtext"> are getting married!</span>
+        </h1>
+    </header>
+    <a data-scroll class="fixed-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#rsvp" id="rsvpButton">RSVP</a> 
+    <section class="section mt-8">
+        <h2 class="sub-heading text-2xl">Overview</h2>
+        <p class="mt-4">Church wedding debt celebrate macarena embarrassing glitter  Will. Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib, guitar acoustic bass photobooth photographer limousine sparkles beautiful sparkles guitar acoustic bass beautiful. Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
+    </section>
+    <section class="section mt-8">
+        <h2 class="sub-heading text-2xl">The Details</h2>
+        <div class="details mt-4">
+            <i class="fas fa-calendar-check"></i>
+            <h3 class="details-heading text-xl">When</h3>
+            <p>January 1, 2020</p>
+            <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+        </div>
+        <div class="details mt-4">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3 class="details-heading text-xl">Location</h3>
+            <p><a rel="noopener" href="#">Grand Venue Place</a>, City, State</p>
+            <img class="resort-image mt-2" src="./img/resort.jpeg" alt="Resort" />
+        </div>
+        <div class="details mt-4">
+            <i class="fas fa-suitcase"></i>
+            <h3 class="details-heading text-xl">Lodging</h3>
+            <p>DJ Jazzy Nupitals guitar acoustic bass embarrassing first aisle guitar acoustic bass cheers glitter . Macarena fish aisle aisle wedding, forever happy salad  drunk groomsman overpriced florist embarrassing coworkers tuxedo aisle guitar acoustic bass champagne bouquet. Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena. DJ Jazzy Nupitals prime rib centerpieces centerpieces cake dessert, cake dessert tuxedo aisle seat covers aisle.</p>
+            <p>Church Will chicken unity sparkles Bryna cake dessert, centerpieces aisle Will debt guitar acoustic bass glitter . Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
+        </div>
+        <div class="details mt-4">
+            <i class="fas fa-plane-departure"></i>
+            <h3 class="details-heading text-xl">Flights</h3>
+            <p>Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena.</p>
+            <p>Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
+        </div>
+        <div class="details mt-4">
+            <i class="fas fa-asterisk"></i>
+            <h3 class="details-heading text-xl">Other Notes</h3>
+            <p>Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
+            <p>Also, your presence is the only present we desire. No gift required.</p>
+        </div>
+        <div class="details mt-4">
+            <i class="fas fa-reply"></i>
+            <h3 class="details-heading text-xl" id="rsvp">RSVP</h3>
+            <p>[Embed your RSVP form here]</p>
+            <!-- Include Embedded link of Google Form here in place of # -->
+            <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        </div>
+    </section>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        var rsvpButton = document.getElementById('rsvpButton')
+        rsvpButton.addEventListener('click', hideButton, false);
 
-<main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-  <div class="text-center">
-    <p class="text-base font-semibold text-indigo-600">404</p>
-    <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
-    <p class="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="#"
-        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go
-        back home</a>
-      <a href="#" class="text-sm font-semibold text-gray-900">Contact support <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </div>
-</main>
-
+        function hideButton() {
+            rsvpButton.style.display = 'none';
+        }
+    </script>
+</body>
 </html>
