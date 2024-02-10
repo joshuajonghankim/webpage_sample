@@ -1,72 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>한은성연's Wedding</title>
+    <title>청첩장 prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <header class="header bg-gray-800 text-white p-4">
-        <h1 class="heading text-3xl">
-            John & Jane
-            <span class="heading-subtext"> are getting married!</span>
-        </h1>
-    </header>
-    <a data-scroll class="fixed-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#rsvp" id="rsvpButton">RSVP</a> 
-    <section class="section mt-8">
-        <h2 class="sub-heading text-2xl">Overview</h2>
-        <p class="mt-4">Church wedding debt celebrate macarena embarrassing glitter  Will. Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib, guitar acoustic bass photobooth photographer limousine sparkles beautiful sparkles guitar acoustic bass beautiful. Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
-    </section>
-    <section class="section mt-8">
-        <h2 class="sub-heading text-2xl">The Details</h2>
-        <div class="details mt-4">
-            <i class="fas fa-calendar-check"></i>
-            <h3 class="details-heading text-xl">When</h3>
-            <p>January 1, 2020</p>
-            <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
-        </div>
-        <div class="details mt-4">
-            <i class="fas fa-map-marked-alt"></i>
-            <h3 class="details-heading text-xl">Location</h3>
-            <p><a rel="noopener" href="#">Grand Venue Place</a>, City, State</p>
-            <img class="resort-image mt-2" src="./img/resort.jpeg" alt="Resort" />
-        </div>
-        <div class="details mt-4">
-            <i class="fas fa-suitcase"></i>
-            <h3 class="details-heading text-xl">Lodging</h3>
-            <p>DJ Jazzy Nupitals guitar acoustic bass embarrassing first aisle guitar acoustic bass cheers glitter . Macarena fish aisle aisle wedding, forever happy salad  drunk groomsman overpriced florist embarrassing coworkers tuxedo aisle guitar acoustic bass champagne bouquet. Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena. DJ Jazzy Nupitals prime rib centerpieces centerpieces cake dessert, cake dessert tuxedo aisle seat covers aisle.</p>
-            <p>Church Will chicken unity sparkles Bryna cake dessert, centerpieces aisle Will debt guitar acoustic bass glitter . Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
-        </div>
-        <div class="details mt-4">
-            <i class="fas fa-plane-departure"></i>
-            <h3 class="details-heading text-xl">Flights</h3>
-            <p>Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena.</p>
-            <p>Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
-        </div>
-        <div class="details mt-4">
-            <i class="fas fa-asterisk"></i>
-            <h3 class="details-heading text-xl">Other Notes</h3>
-            <p>Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
-            <p>Also, your presence is the only present we desire. No gift required.</p>
-        </div>
-        <div class="details mt-4">
-            <i class="fas fa-reply"></i>
-            <h3 class="details-heading text-xl" id="rsvp">RSVP</h3>
-            <p>[Embed your RSVP form here]</p>
-            <!-- Include Embedded link of Google Form here in place of # -->
-            <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-        </div>
-    </section>
-    <script src="./js/smooth-scroll.polyfills.min.js"></script>
-    <script defer>
-        var scroll = new SmoothScroll('a[href*="#"]');
-        var rsvpButton = document.getElementById('rsvpButton')
-        rsvpButton.addEventListener('click', hideButton, false);
-
-        function hideButton() {
-            rsvpButton.style.display = 'none';
+    <style>
+        .hero {
+            background-image: url('image/main.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* 화면의 높이를 100%로 설정 */
+            display: flex; /* 내부 요소를 가로로 배열하기 위해 flex 사용 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */
         }
-    </script>
+    </style>
+</head>
+
+<body>
+    <section class="hero flex-grow">
+        <!-- Hero content goes here -->
+        <div class="h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+                <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <!-- Footer content goes here -->
+        <p>Copyright © 2024</p>
+    </footer>
 </body>
+
 </html>
