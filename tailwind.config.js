@@ -3,8 +3,11 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-      main: "url('./image/main.jpg')"
-    },
+      main: "url('./image/main.jpg')",
+      fontFamily: {
+        'sans': ['Dongle', 'sans-serif'],
+      }      
+    },    
   },
   plugins: [],
 }
