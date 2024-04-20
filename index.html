@@ -49,9 +49,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
-
-
-<div class="snap-y">
+<body class="snap-y max-sm:overflow-hidden sm:overflow-scroll">
     <!--Cover-->
     <!--
     <div class="h-screen bg-cover bg-center flex items-center justify-center"
@@ -62,7 +60,7 @@
         </div>
     </div>
     -->
-    <div class="snap-center overflow-visible h-screen bg-cover bg-center bg-fixed flex items-end justify-center bg-red-200">
+    <div class="snap-center h-screen bg-cover bg-center bg-fixed flex items-end justify-center bg-red-200">
         <div class="text-center font-nanum">
             <h1 class="max-sm:text-4xl sm:text-5xl decoration-8 mb-4">이성연  |  김한은</h1>
             <p class="max-sm:text-2xl sm:text-3xl">2024년 7월 20일 토요일 12시</p>
@@ -108,9 +106,9 @@
 
 
     <!--Timer-->
-    <div class="mt-12 flex flex-col items-center mt-8 ml-2 bg-gray-300">
+    <div class="flex flex-col items-center bg-gray-300">
         <p class="text-gray-300 uppercase text-sm">날짜: 7월 1일</p>
-        <div class="flex items-center justify-center space-x-4 mt-4"
+        <div class="flex items-center justify-center space-x-4 "
             x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
             <div class="flex flex-col items-center px-4">
                 <span x-text="time().days" class="text-4xl lg:text-5xl text-gray-200">00</span>
@@ -138,6 +136,6 @@
         <p>Copyright © 2024</p>
     </footer>
 
-</div>
+</body>
 
 </html>
