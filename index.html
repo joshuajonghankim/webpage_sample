@@ -16,7 +16,6 @@
     전체적인 구도에서 원하는 것 있으면 요구바람.
 -->
 
-
 <!doctype html>
 <html>
 
@@ -36,6 +35,7 @@
                 extend: {
                     fontFamily: {
                         'dongle': ['Dongle', 'sans-serif'],
+                        'nanum': ['Nanum Gothic', 'sans-serif'],
                     }
                 }
             }
@@ -46,11 +46,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 
 
-<body>
+<body class="snap-y">
     <!--Cover-->
     <!--
     <div class="h-screen bg-cover bg-center flex items-center justify-center"
@@ -61,23 +62,21 @@
         </div>
     </div>
     -->
-    <div class="h-screen bg-cover bg-center flex items-center justify-center bg-white">
-        <div class="text-center">
-            <h1 class="md:text-9xl font-dongle mb-4">이성연♡김한은</h1>
-            <p class="md:text-5xl font-dongle">2024.07.20 토요일</p>
+    <div class="snap-center h-screen bg-cover bg-center bg-fixed flex items-end justify-center bg-red-200">
+        <div class="text-center font-nanum">
+            <h1 class="max-sm:text-4xl sm:text-5xl decoration-8 mb-4">이성연  |  김한은</h1>
+            <p class="max-sm:text-2xl sm:text-3xl">2024년 7월 20일 토요일 12시</p>
+            <p class="max-sm:text-2xl sm:text-3xl mb-40">광명역사컨벤션웨딩홀</p>
         </div>
-    </div>
-    
-
-    
+    </div>    
 
     <!-- Menu -->
-    <button id="menuButton" class="fixed right-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
+    <button id="menuButton" class="fixed left-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
         Menu
     </button>
 
     <!-- Music -->
-    <button id="musicButton" class="fixed left-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
+    <button id="musicButton" class="fixed right-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
@@ -101,9 +100,15 @@
             menu.style.width = isOpen ? '0' : '250px';
         });
     </script>
+    
+    <!--Introduction-->
+    <div class="snap-center h-screen bg-zinc-900 text-white">
+        초댓말
+    </div>
+
 
     <!--Timer-->
-    <div class="mt-12 flex flex-col items-center mt-8 ml-2">
+    <div class="mt-12 flex flex-col items-center mt-8 ml-2 bg-gray-300">
         <p class="text-gray-300 uppercase text-sm">날짜: 7월 1일</p>
         <div class="flex items-center justify-center space-x-4 mt-4"
             x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
