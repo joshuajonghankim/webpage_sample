@@ -1,4 +1,3 @@
-<!-- 설치, 검증, install principles -->
 <!doctype html>
 <html>
 
@@ -30,8 +29,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
 
+
+
 <body>
     <!--Cover-->
+    <!--
     <div class="h-screen bg-cover bg-center flex items-center justify-center"
         style="background-image: url('image/main.jpg')">
         <div class="text-center">
@@ -39,10 +41,27 @@
             <p class="md:text-5xl font-dongle">2024.07.20 토요일</p>
         </div>
     </div>
+    -->
+    <div class="h-screen bg-cover bg-center flex items-center justify-center bg-white">
+        <div class="text-center">
+            <h1 class="md:text-9xl font-dongle mb-4">이성연♡김한은</h1>
+            <p class="md:text-5xl font-dongle">2024.07.20 토요일</p>
+        </div>
+    </div>
+    
 
-    <!-- Floating button -->
-    <button id="menuButton" class="fixed right-4 top-4 bg-blue-500 text-white px-4 py-2 rounded-full cursor-pointer">
+    
+
+    <!-- Menu -->
+    <button id="menuButton" class="fixed right-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
         Menu
+    </button>
+
+    <!-- Music -->
+    <button id="musicButton" class="fixed left-4 top-4 bg-gray-400 text-white px-4 py-2 rounded-full cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
     </button>
 
     <!-- Right side menu -->
@@ -56,7 +75,7 @@
 
     <script>
         // JavaScript to handle button click and show/hide menu
-        document.getElementById('menuButton').addEventListener('click', function() {
+        document.getElementById('menuButton').addEventListener('click', function () {
             const menu = document.getElementById('rightMenu');
             const isOpen = menu.style.width === '250px';
 
