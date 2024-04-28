@@ -53,7 +53,7 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">방명록</h1>
             <script src="https://utteranc.es/client.js"
-              repo="wedding_invitation"
+              repo="joshuajonghankim/wedding_invitation"
               issue-term="pathname"
               theme="github-light"
               crossorigin="anonymous"
