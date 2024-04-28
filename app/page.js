@@ -63,8 +63,9 @@ export default function Home() {
         </div>
 
         <footer>
-          Hello World
-
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-black">Hello World</h1>
+          </div>
         </footer>
 
       </div>
