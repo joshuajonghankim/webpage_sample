@@ -3,9 +3,6 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <main className="">
-      <Head>
-        <title>내가 원하는 탭 이름</title>
-      </Head>
 
       <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
 
