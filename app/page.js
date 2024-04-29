@@ -14,7 +14,7 @@ export default function Home() {
             height={1500}
             alt="MainImage"
           />
-          <div className="text-center absolute bottom-24 font-Hahmlet">
+          <div className="text-center absolute bottom-20 font-Hahmlet">
             <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
             <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
             <h1 className="text-2xl text-black">광명역사컨벤션웨딩홀</h1>
