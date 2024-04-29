@@ -1,4 +1,4 @@
-const { Hahmlet } = require('next/font/google');
+const { Hahmlet, Hi_Melody } = require('next/font/google');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,6 +20,7 @@ module.exports = {
 
       fontFamily: {
         Hahmlet: ["Hahmlet", "sans-serif"],
+        Hi_Melody: ["Hi Melody", "sans-serif"]
       },
     },
   },
