@@ -1,3 +1,5 @@
+const { Hahmlet } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +14,10 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "background-pattern": "url('/images/pattern.jpg')"
+      },
+
+      fontFamily: {
+        Hahmlet: ["Hahmlet", "sans-serif"],
       },
     },
   },
