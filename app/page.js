@@ -9,15 +9,15 @@ export default function Home() {
 
         {/* Main page */}
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
-          <Image className='w-full h-2/3 object-cover sm:object-scale-down absolute top-0' src="/images/main.jpg"
-            width={1500}
-            height={1500}
-            alt="MainImage"
-          />
-          <div className="text-center absolute bottom-20 font-Hahmlet">
-            <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
-            <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
-            <h1 className="text-2xl text-black">광명역사컨벤션웨딩홀</h1>
+          
+          <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2'>
+
+          </div>
+
+          <div className="text-center absolute bottom-20 font-Hahmlet text-gray-700">
+            <h1 className="text-5xl mb-8">이성연 | 김한은</h1>
+            <h1 className="text-2xl mb-4">2024.7.20 SAT 12:00</h1>
+            <h1 className="text-2xl">광명역사컨벤션웨딩홀</h1>
           </div>
         </div>
 
