@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -8,8 +9,12 @@ export default function Home() {
 
         {/* Main page */}
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-gray-300">
-          <img className='' src="/images/main.jpg" alt="Wedding"/>
-          <div className="text-center absolute bottom-20">
+          <Image className='w-full h-2/3 object-cover sm:object-scale-down absolute top-0' src="/images/main.jpg"
+            width={1500}
+            height={1500}
+            alt="MainImage"
+          />
+          <div className="text-center absolute bottom-16">
             <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
             <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
             <h1 className="text-2xl text-black">광명역사컨벤션웨딩홀</h1>
