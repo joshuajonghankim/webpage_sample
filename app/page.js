@@ -23,7 +23,26 @@ export default function Home() {
 
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">결혼합니다 페이지</h1>
+            <h1 className="text-3xl font-bold text-black">
+            결혼합니다
+            
+            하나님의 사랑으로 만난 두 사람이
+            이제 새로운 가정을 이루는 아름다운 약속을 하려 합니다.
+            언제나 아름답고 주위에 사랑을 나누는
+            행복한 가정을 이루도록
+            오셔서 축복해 주시고 지켜봐 주십시오.
+
+            이영우
+            신신숙
+            의 장남 이성연
+
+            김규백
+            김영정
+            의 차녀 김한은
+
+          
+            
+            </h1>
           </div>
         </div>
 
