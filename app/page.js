@@ -5,8 +5,10 @@ export default function Home() {
     <main className="">
 
       <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
-  
+
+        {/* Main page */}
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-gray-300">
+          <img className='' src="/images/main.jpg" alt="Wedding"/>
           <div className="text-center absolute bottom-20">
             <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
             <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
