@@ -21,37 +21,37 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">결혼합니다 페이지</h1>
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-red-300">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">날짜 달력 남은시간 카운팅</h1>
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-yellow-400">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-green-300">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">오시는 길, 지도</h1>
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-blue-300">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">계좌번호</h1>
           </div>
         </div>
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-purple-300">
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">방명록</h1>
             <script src="https://utteranc.es/client.js"
