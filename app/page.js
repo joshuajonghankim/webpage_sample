@@ -8,11 +8,15 @@ export default function Home() {
       <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
 
         {/* Main page */}
+
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
 
           <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
+            <div className='w-auto h-screen border rounded-md border-gray-500 m-5'>
 
+            </div>
           </div>
+
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
