@@ -1,25 +1,23 @@
 import Head from 'next/head';
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="">
-      <Head>
-        <title>내가 원하는 탭 이름</title>
-      </Head>
 
       <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
 
-        <button className="rounded-full w-7 h-7 flex items-center justify-center pl-0.5 ring-1 ring-black focus:outline-none">
-          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        </button>
-
-        <button className="rounded-full w-7 h-7 flex items-center justify-center pl-0.5 ring-1 ring-black focus:outline-none">
-          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="3" width="4" height="18"></rect><rect x="15" y="3" width="4" height="18"></rect></svg>
-        </button>
-
+        {/* Main page */}
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-gray-300">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">메인화면</h1>
+          <Image className='w-full h-2/3 object-cover sm:object-scale-down absolute top-0' src="/images/main.jpg"
+            width={1500}
+            height={1500}
+            alt="MainImage"
+          />
+          <div className="text-center absolute bottom-16">
+            <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
+            <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
+            <h1 className="text-2xl text-black">광명역사컨벤션웨딩홀</h1>
           </div>
         </div>
 
@@ -69,6 +67,14 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-3xl font-bold text-black">Hello World</h1>
         </div>
+
+        <button className="rounded-full w-7 h-7 flex items-center justify-center pl-0.5 ring-1 ring-black focus:outline-none">
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </button>
+
+        <button className="rounded-full w-7 h-7 flex items-center justify-center pl-0.5 ring-1 ring-black focus:outline-none">
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="3" width="4" height="18"></rect><rect x="15" y="3" width="4" height="18"></rect></svg>
+        </button>
 
       </div>
     </main >
