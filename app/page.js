@@ -7,8 +7,10 @@ export default function Home() {
       <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
   
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-gray-300">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">메인화면</h1>
+          <div className="text-center absolute bottom-20">
+            <h1 className="text-5xl mb-8 text-black">이성연 | 김한은</h1>
+            <h1 className="text-2xl mb-4 text-black">2024.7.20 SAT 12:00</h1>
+            <h1 className="text-2xl text-black">광명역사컨벤션웨딩홀</h1>
           </div>
         </div>
 
