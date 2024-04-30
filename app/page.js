@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import React from 'react';
+import React, { useState } from 'react';
 
 
 function copyText(entryText) {
@@ -16,11 +16,9 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
-
           </div>
 
           <div className='absolute w-full h-dvh border rounded-md border-gray-500'>
-
           </div>
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
@@ -233,18 +231,20 @@ export default function Home() {
 
 
 
-        </div>
-        {/* Speaker Image */}
-        <button className="absolute right-3 top-3 border-2 border-black rounded-md">
-          <Image
-            src="/images/speaker-on.png"
-            alt="Speaker"
-            width={30}
-            height={30}
-          />
-        </button>
 
+
+        </div>
       </div>
+      {/* Speaker Image */}
+      <button className="absolute left-3 top-3 ">
+        <Image
+          src="/images/speaker-on.png"
+          alt="Speaker"
+          width={30}
+          height={30}
+        />
+        
+      </button>
     </main>
 
 
@@ -252,4 +252,28 @@ export default function Home() {
 
   );
 }
+const PlayButton = ({ }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [play, { stop }] = useSound(galaxySfx);
 
+  function playSong() {
+    setIsPlaying(true);
+    play();
+  }
+
+  function stopSong() {
+    setIsPlaying(false);
+    stop();
+  }
+  return (
+    <div className={styles.playButton}>
+      <button
+        data-aos="zoom-in"
+        data-aos-offset="100"
+        onClick={isPlaying ? stopSong : playSong}
+      >
+        🎺
+      </button>
+    </div>
+  );
+}
