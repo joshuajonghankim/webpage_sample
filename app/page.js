@@ -63,6 +63,14 @@ export default function Home() {
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
             <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row fle">
               <Image
+                src="/images/g0.jpg"
+                alt="g0"
+                className="snap-center snap-always mx-10"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
                 src="/images/g1.jpg"
                 alt="g1"
                 className="snap-center snap-always mx-10"
@@ -72,39 +80,31 @@ export default function Home() {
               />
               <Image
                 src="/images/g2.jpg"
-                alt="g1"
+                alt="g2"
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
               />
               <Image
-                src="/images/g2.jpg"
-                alt="g1"
+                src="/images/g3.jpg"
+                alt="g3"
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
               />
               <Image
-                src="/images/g2.jpg"
-                alt="g1"
+                src="/images/g4.jpg"
+                alt="g4"
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
               />
               <Image
-                src="/images/g2.jpg"
-                alt="g1"
-                className="snap-center snap-always mx-10"
-                width={300}
-                height={600}
-                priority
-              />
-              <Image
-                src="/images/g2.jpg"
-                alt="g1"
+                src="/images/g5.jpg"
+                alt="g5"
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
