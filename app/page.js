@@ -100,7 +100,7 @@ export default function Home() {
             <Image
               src="/images/g5.jpg"
               alt="g5"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always ml-10 w-2/3 h-1/2"
               width={600}
               height={1200}
             />
