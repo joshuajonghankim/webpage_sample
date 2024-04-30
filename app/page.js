@@ -2,6 +2,12 @@
 import Image from "next/image";
 import React from 'react';
 
+
+function copyText(entryText){
+  navigator.clipboard.writeText(entryText);
+  alert("복사되었습니다.");
+}
+
 export default function Home() {
   return (
     <main className="w-dvw">
@@ -112,28 +118,28 @@ export default function Home() {
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table class="table-auto border-separate border-gray-500 text-sm text-black rounded-xl border w-10/12 m-10">
+            <table className="table-auto border-separate border-gray-400 text-sm rounded text-black border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신랑</td>
                   <td>이성연</td>
                   <td>카카오뱅크</td>
                   <td>3333-10-5382056</td>
-                  <td>복사</td>
+                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("3333105382056")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
                   <td>이영우</td>
                   <td>SC제일은행</td>
                   <td>600-20-373733</td>
-                  <td>복사</td>
+                  <td><button onClick={() => copyText("60020373733")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>모</td>
                   <td>신신숙</td>
                   <td>국민은행</td>
                   <td>879802-93-115438</td>
-                  <td>복사</td>
+                  <td><button onClick={() => copyText("87980293115438")}>복사</button></td>
                 </tr>
               </tbody>
             </table>
@@ -145,21 +151,21 @@ export default function Home() {
                   <td>김한은</td>
                   <td>카카오뱅크</td>
                   <td>3333-28-6191015</td>
-                  <td><button onClick={() => navigator.clipboard.writeText("3333286191015")}>복사</button></td>
+                  <td><button onClick={() => copyText("3333286191015")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
                   <td>김규백</td>
                   <td>농협</td>
                   <td>702076-52-131271</td>
-                  <td><button onClick={() => navigator.clipboard.writeText("70207652131271")}>복사</button></td>
+                  <td><button onClick={() => copyText("70207652131271")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>모</td>
                   <td>김영정</td>
                   <td>대구은행</td>
                   <td>009-08-312442</td>
-                  <td><button onClick={() => navigator.clipboard.writeText("00908312442")}>복사</button></td>
+                  <td><button onClick={() => copyText("00908312442")}>복사</button></td>
                 </tr>
               </tbody>
             </table>
