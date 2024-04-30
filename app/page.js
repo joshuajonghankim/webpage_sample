@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from 'react';
 
+function copyText(entryText){
+  navigator.clipboard.writeText(entryText);
+}
+
 export default function Home() {
   return (
     <main className="w-dvw">
