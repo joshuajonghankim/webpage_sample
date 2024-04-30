@@ -82,7 +82,7 @@ export default function Home() {
             <h1 className="text-3xl font-Hahmlet font-bold text-black">방명록</h1>
 
           </div>
-          <div className='absolute top-20 text-black'>
+          <div className='absolute top-20 h-auto text-black'>
             <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
             <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
           </div>
