@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -9,17 +9,17 @@ export default function Home() {
 
 
         {/* Main page */}
-        <div className="snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
-          
+          <div className='w-full h-dvh border rounded-md border-gray-500 m-5 inline-block'>
+
+          </div>
 
           <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
 
           </div>
 
-          <div className='w-full h-dvh border rounded-md border-gray-500 m-5 fixed'>
 
-          </div>
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
