@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
+          <div className="absolute top-20 text-center">
             <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
           </div>
         </div>
