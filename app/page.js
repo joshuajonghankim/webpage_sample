@@ -53,15 +53,6 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
-            <h1 className="text-1xl text-black">
-              2024.7.20<br></br>
-              토요일 12시
-            </h1>
-          </div>
-        </div>
-
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
             <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
           </div>
         </div>
@@ -89,13 +80,8 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">방명록</h1>
-            <script src="https://utteranc.es/client.js"
-              repo="joshuajonghankim/wedding_invitation"
-              issue-term="pathname"
-              theme="github-light"
-              crossorigin="anonymous"
-              async>
-            </script>
+            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+            <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
           </div>
 
           <footer className='absolute bottom-0 text-sm text-black'>
