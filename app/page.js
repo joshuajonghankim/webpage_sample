@@ -171,7 +171,7 @@ export default function Home() {
             <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
-                  <td>신랑</td>
+                  <td className="text-center">신랑</td>
                   <td>이성연</td>
                   <td>카카오뱅크</td>
                   <td>3333-10-5382056</td>
@@ -179,7 +179,7 @@ export default function Home() {
                     <button className="px-1" onClick={() => copyText("3333105382056")}>복사</button></td>
                 </tr>
                 <tr>
-                  <td>부</td>
+                  <td className="text-center">부</td>
                   <td>이영우</td>
                   <td>SC제일은행</td>
                   <td>600-20-373733</td>
@@ -187,7 +187,7 @@ export default function Home() {
                     <button className="px-1" onClick={() => copyText("60020373733")}>복사</button></td>
                 </tr>
                 <tr>
-                  <td>모</td>
+                  <td className="text-center">모</td>
                   <td>신신숙</td>
                   <td>국민은행</td>
                   <td>879802-93-115438</td>
@@ -200,7 +200,7 @@ export default function Home() {
             <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
-                  <td>신부</td>
+                  <td className="text-center">신부</td>
                   <td>김한은</td>
                   <td>카카오뱅크</td>
                   <td>3333-28-6191015</td>
@@ -208,7 +208,7 @@ export default function Home() {
                     <button className="px-1" onClick={() => copyText("3333286191015")}>복사</button></td>
                 </tr>
                 <tr>
-                  <td>부</td>
+                  <td className="text-center">부</td>
                   <td>김규백</td>
                   <td>농협</td>
                   <td>702076-52-131271</td>
@@ -216,7 +216,7 @@ export default function Home() {
                     <button className="px-1" onClick={() => copyText("70207652131271")}>복사</button></td>
                 </tr>
                 <tr>
-                  <td>모</td>
+                  <td className="text-center">모</td>
                   <td>김영정</td>
                   <td>대구은행</td>
                   <td>009-08-312442</td>
