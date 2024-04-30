@@ -69,10 +69,13 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
-            <button className="top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border-2 border-gray-400"
-              href="https://forms.gle/S2SnGE7jT2SuxhF68">
+            <a className="top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border-2 border-gray-400"
+              href="https://forms.gle/S2SnGE7jT2SuxhF68"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               참석여부 알리기
-            </button>
+            </a>
 
             <h1 className="top-1/2 text-2xl font-Hahmlet text-gray-500">
               <br></br><br></br>마음 전하실 곳<br></br><br></br>
