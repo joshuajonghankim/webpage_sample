@@ -11,22 +11,17 @@ function copyText(entryText) {
 export default function Home() {
   return (
     <main className="w-dvw">
-      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
-
-
+      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
-
-
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
 
-
           </div>
+
           <div className='absolute w-full h-dvh border rounded-md border-gray-500'>
 
           </div>
-
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
@@ -212,15 +207,24 @@ export default function Home() {
           </div>
 
 
-          {/*
-    <footer className='relative mt-auto bottom-0 text-sm text-black'>
-      <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
-    </footer>
-    */}
+          {/*    <footer className='relative mt-auto bottom-0 text-sm text-black'>
+                <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+                    </footer>
+                        */}
+
 
 
 
         </div>
+        {/* Speaker Image */}
+        <button className="absolute right-3 top-3 border-2 border-black rounded-md">
+          <Image
+            src="/images/speaker-on.png"
+            alt="Speaker"
+            width={30}
+            height={30}
+          />
+        </button>
 
       </div>
     </main>
