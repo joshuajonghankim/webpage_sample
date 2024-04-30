@@ -12,18 +12,18 @@ export default function Home() {
 
 
 
-          <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
+          <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
 
 
           </div>
-          <div className='absolute w-full h-dvh border rounded-md border-gray-500 m-5 size-auto'>
+          <div className='absolute w-full h-dvh border rounded-md border-gray-500 m-5'>
 
           </div>
 
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
-            <h1 className="text-1xl mb-4">2024.7.20 SAT 12:00</h1>
+            <h1 className="text-1xl mb-2">2024.7.20 토요일 낮 12시</h1>
             <h1 className="text-1xl">광명역사컨벤션웨딩홀</h1>
           </div>
         </div>
