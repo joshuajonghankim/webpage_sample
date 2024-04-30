@@ -1,5 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import React from 'react';
+
+function handleClick() {
+  window.open('https://forms.gle/LZrpxc5Uy8uBA9nJ7');
+}
 
 export default function Home() {
   return (
@@ -11,14 +14,15 @@ export default function Home() {
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
-          <div className='w-full h-dvh border rounded-md border-gray-500 m-5 inline-block'>
 
-          </div>
 
           <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
 
-          </div>
 
+          </div>
+          <div className='w-auto h-dvh border rounded-md border-gray-500 m-5 inline-block'>
+
+          </div>
 
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
@@ -51,21 +55,34 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+          <div className="absolute top-20 size-auto text-center">
+            <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
           </div>
         </div>
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">오시는 길, 지도</h1>
+            <h1 className="text-3xl font-bold text-gray-500">오시는 길, 지도</h1>
           </div>
         </div>
 
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
+            <button className="top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border-2 border-gray-400"
+              href="https://forms.gle/S2SnGE7jT2SuxhF68">
+              참석여부 알리기
+            </button>
+
+            <h1 className="top-1/2 text-2xl font-Hahmlet text-gray-500">
+              <br></br><br></br>마음 전하실 곳<br></br><br></br>
+            </h1>
+            <h1 className="text-1xl font-Hahmlet  text-black">
+              참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
+              너그러운 마음으로 양해 부탁드립니다.
+            </h1>
             <h1 className="text-1xl font-Hahmlet text-black">
+              <br></br>
               신랑 이성연 카카오뱅크 3333-10-5382056<br></br>
               부 이영우 SC제일은행 600-20-373733<br></br>
               모 신신숙 국민은행 879802-93-115438<br></br><br></br>
@@ -103,3 +120,4 @@ export default function Home() {
     </main >
   );
 }
+
