@@ -134,14 +134,14 @@ export default function Home() {
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate border-gray-400 text-sm rounded text-black border w-10/12 m-10">
+            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신랑</td>
                   <td>이성연</td>
                   <td>카카오뱅크</td>
                   <td>3333-10-5382056</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("3333105382056")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg "><button className="px-1" onClick={() => copyText("3333105382056")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
@@ -167,7 +167,7 @@ export default function Home() {
                   <td>김한은</td>
                   <td>카카오뱅크</td>
                   <td>3333-28-6191015</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("3333286191015")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg"><button className="px-1" onClick={() => copyText("3333286191015")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
