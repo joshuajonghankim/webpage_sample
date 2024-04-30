@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -54,6 +54,34 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 size-auto text-center">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
+            <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row">
+              <Image
+                src="/vercel.svg"
+                alt="Vercel Logo"
+                className="snap-center snap-always"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g1.jpg"
+                alt="g1"
+                className="snap-center snap-always"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g1.jpg"
+                alt="g1"
+                className="snap-center snap-always"
+                width={300}
+                height={600}
+                priority
+              />
+
+            </div>
+
           </div>
         </div>
 
