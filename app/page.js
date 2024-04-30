@@ -3,10 +3,8 @@ import React from 'react';
 
 export default function Home() {
   return (
-
-
-
-    <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+    <main>
+      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
         {/* Main page */}
@@ -186,16 +184,21 @@ export default function Home() {
 
 
           {/*
-          <footer className='relative mt-auto bottom-0 text-sm text-black'>
-            <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
-          </footer>
-          */}
+    <footer className='relative mt-auto bottom-0 text-sm text-black'>
+      <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+    </footer>
+    */}
 
 
 
         </div>
 
       </div>
+    </main>
+
+
+
+
   );
 }
 
