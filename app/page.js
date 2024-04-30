@@ -82,11 +82,14 @@ export default function Home() {
             <h1 className="text-3xl font-Hahmlet font-bold text-black">방명록</h1>
 
           </div>
+          <div className='absolute top-20 text-black'>
+            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+            <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
+          </div>
 
-          <script className='text-black' async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-          <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
 
-          <footer className='absolute bottom-0 text-sm text-black'>
+
+          <footer className='relative bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
 
