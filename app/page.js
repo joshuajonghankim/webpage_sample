@@ -80,9 +80,11 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-10 text-center text-black">
             <h1 className="text-3xl font-Hahmlet font-bold text-black">방명록</h1>
-            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-            <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
+            
           </div>
+
+          <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+            <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
 
           <footer className='absolute bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
