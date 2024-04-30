@@ -4,7 +4,7 @@ import React from 'react';
 export default function Home() {
   return (
     <main className="w-dvw">
-      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+      <div className="relative overflow-y-auto overscroll-x-none snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
         {/* Main page */}
@@ -16,7 +16,7 @@ export default function Home() {
 
 
           </div>
-          <div className='absolute w-full h-dvh border rounded-md border-gray-500 m-5'>
+          <div className='absolute w-full h-dvh border rounded-md border-gray-500'>
 
           </div>
 
