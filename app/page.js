@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 size-auto text-center">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
             <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row fle">
