@@ -83,8 +83,9 @@ export default function Home() {
 
           </div>
           <div className='absolute top-30 text-black'>
-            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-            <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
+            <div class="commentbox"></div>
+            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+            <script>commentBox(5685847600922624-proj)</script>
           </div>
 
 
@@ -92,8 +93,6 @@ export default function Home() {
           <footer className='relative mt-auto bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
-
-
           */}
 
 
