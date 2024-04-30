@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import React, { useEffect, useRef } from "react";
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -82,42 +81,22 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">방명록</h1>
-            <Comments />
+            <script src="https://utteranc.es/client.js"
+              repo="joshuajonghankim/wedding_invitation"
+              issue-term="pathname"
+              theme="github-light"
+              crossorigin="anonymous"
+              async>
+            </script>
           </div>
 
           <footer className='absolute bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
+          
         </div>
-
-
 
       </div>
     </main >
   );
-}
-
-function Comments() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const scriptElement = document.createElement('script');
-    scriptElement.async = true;
-    scriptElement.crossOrigin = 'anonymous';
-    scriptElement.src = 'https://utteranc.es/client.js';
-
-    scriptElement.setAttribute('issue-term', 'pathname');
-    scriptElement.setAttribute('label', 'comment');
-    scriptElement.setAttribute(
-      'repo',
-      'joshuajonghankim/wedding_invitation',
-    );
-    scriptElement.setAttribute(
-      'theme',
-      'github-light',
-    );
-
-    ref.current?.appendChild(scriptElement);
-  }, []);
-
-  return <div ref={ref} />;
 }
