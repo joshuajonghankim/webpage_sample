@@ -112,6 +112,22 @@ export default function Home() {
           <div className="absolute top-20 text-center">
             <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
           </div>
+          <div className="absolute top-1/4 font-Hahmlet text-gray-500">
+            <p className="text-center text-lg font-bold">주소</p>
+            <p className="mx-10 text-wrap">경기도 광명시 광명역로 21 KTX광명역 동편 B1<br></br>
+              광명역사컨벤션웨딩홀<br></br><br></br></p>
+            <p className="text-center text-lg font-bold">주차장</p>
+            <p className="mx-10 text-wrap">
+              제1주차장) 센트럴자이 상가 주차장 B3층 (2시간 무료)
+              경기도 광명시 광명역로 28
+              (광명센트럴자이 오피스텔) 입력<br></br><br></br>
+              제2주차장) 파크자이 오피스텔 주차장 B2층 (2시간 무료)
+              경기도 광명시 광명역로 26
+              (광명 파크자이 오피스텔) 입력</p>
+          </div>
+          <div className="absolute top-2/3">
+            지도{/* Map */}
+          </div>
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
@@ -160,7 +176,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate border-gray-400 text-sm rounded text-black border w-10/12 m-10">
+            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신부</td>
