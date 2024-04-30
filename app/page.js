@@ -95,7 +95,7 @@ export default function Home() {
           <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-500">
             참석여부 알리기
           </h1>
-          <a className="absolute top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border border-gray-400"
+          <a className="relative mt-10 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border border-gray-400"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -103,7 +103,7 @@ export default function Home() {
             알리기
           </a>
 
-          <div className="absolute top-1/2 font-Hahmlet text-center">
+          <div className="absolute top-1/3 font-Hahmlet text-center">
             <h1 className="text-2xl font-Hahmlet text-gray-500">
               마음 전하실 곳
             </h1>
