@@ -1,8 +1,4 @@
-import React from 'react';
 
-function handleClick() {
-  window.open('https://forms.gle/LZrpxc5Uy8uBA9nJ7');
-}
 
 export default function Home() {
   return (
@@ -20,7 +16,7 @@ export default function Home() {
 
 
           </div>
-          <div className='w-auto h-dvh border rounded-md border-gray-500 m-5 inline-block'>
+          <div className='absolute w-full h-dvh border rounded-md border-gray-500 m-5 size-auto'>
 
           </div>
 
@@ -61,9 +57,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-500">오시는 길, 지도</h1>
+            <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
           </div>
         </div>
 
@@ -84,15 +80,61 @@ export default function Home() {
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <h1 className="text-1xl font-Hahmlet text-black">
+            <h1 className="text-1xl font-Hahmlet text-black ">
               <br></br>
-              신랑 이성연 카카오뱅크 3333-10-5382056<br></br>
-              부 이영우 SC제일은행 600-20-373733<br></br>
-              모 신신숙 국민은행 879802-93-115438<br></br><br></br>
+              <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border-2 w-full">
+                <tbody>
+                  <tr>
+                    <td>신랑</td>
+                    <td>이성연</td>
+                    <td>카카오뱅크</td>
+                    <td>3333-10-5382056</td>
+                    <td>복사</td>
+                  </tr>
+                  <tr>
+                    <td>부</td>
+                    <td>이영우</td>
+                    <td>SC제일은행</td>
+                    <td>600-20-373733</td>
+                    <td>복사</td>
+                  </tr>
+                  <tr>
+                    <td>모</td>
+                    <td>신신숙</td>
+                    <td>국민은행</td>
+                    <td>879802-93-115438</td>
+                    <td>복사</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br></br>
 
-              신부 김한은 카카오뱅크 3333-28-6191015<br></br>
-              부 김규백 농협 702076-52-131271<br></br>
-              모 김영정 대구은행 009-08-312442
+              <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border-2 w-full">
+                <tbody>
+                  <tr>
+                    <td>신부</td>
+                    <td>김한은</td>
+                    <td>카카오뱅크</td>
+                    <td>3333-28-6191015</td>
+                    <td>복사</td>
+                  </tr>
+                  <tr>
+                    <td>부</td>
+                    <td>김규백</td>
+                    <td>농협</td>
+                    <td>702076-52-131271</td>
+                    <td>복사</td>
+                  </tr>
+                  <tr>
+                    <td>모</td>
+                    <td>김영정</td>
+                    <td>대구은행</td>
+                    <td>009-08-312442</td>
+                    <td>복사</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </h1>
           </div>
         </div>
