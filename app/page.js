@@ -142,62 +142,68 @@ export default function Home() {
             알리기
           </a>
 
-          <div className="absolute top-1/3 font-Hahmlet text-center">
+          <div className="absolute top-1/3 font-Hahmlet flex flex-col items-center">
             <h1 className="text-2xl font-Hahmlet text-gray-500">
               마음 전하실 곳
             </h1>
-            <h1 className="text-1xl font-Hahmlet m-5 text-black">
+            <h1 className="text-1xl font-Hahmlet m-5 text-black text-center">
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-10/12 m-10">
+            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td>신랑</td>
                   <td>이성연</td>
                   <td>카카오뱅크</td>
                   <td>3333-10-5382056</td>
-                  <td className="border border-gray-400 rounded-lg "><button className="px-1" onClick={() => copyText("3333105382056")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("3333105382056")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
                   <td>이영우</td>
                   <td>SC제일은행</td>
                   <td>600-20-373733</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("60020373733")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("60020373733")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>모</td>
                   <td>신신숙</td>
                   <td>국민은행</td>
                   <td>879802-93-115438</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("87980293115438")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("87980293115438")}>복사</button></td>
                 </tr>
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-10/12 m-10">
+            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td>신부</td>
                   <td>김한은</td>
                   <td>카카오뱅크</td>
                   <td>3333-28-6191015</td>
-                  <td className="border border-gray-400 rounded-lg"><button className="px-1" onClick={() => copyText("3333286191015")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("3333286191015")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
                   <td>김규백</td>
                   <td>농협</td>
                   <td>702076-52-131271</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("70207652131271")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("70207652131271")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>모</td>
                   <td>김영정</td>
                   <td>대구은행</td>
                   <td>009-08-312442</td>
-                  <td className="border border-gray-400 rounded-lg"><button onClick={() => copyText("00908312442")}>복사</button></td>
+                  <td className="border border-gray-400 rounded-lg text-center">
+                    <button className="px-1" onClick={() => copyText("00908312442")}>복사</button></td>
                 </tr>
               </tbody>
             </table>
