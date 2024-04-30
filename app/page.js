@@ -104,14 +104,14 @@ export default function Home() {
           </a>
 
           <div className="absolute top-1/2 font-Hahmlet text-center">
-            <h1 className=" text-2xl font-Hahmlet  text-gray-500">
+            <h1 className="text-2xl font-Hahmlet text-gray-500">
               마음 전하실 곳
             </h1>
             <h1 className="text-1xl font-Hahmlet m-5 text-black">
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border w-full mt-10">
+            <table class="table-auto border-separate border-gray-500 text-black rounded-xl border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신랑</td>
@@ -137,7 +137,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto mt-5 border-separate border-gray-500 rounded-xl border-spacing-1 border w-full">
+            <table class="table-auto border-separate border-gray-500 text-black rounded-xl border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신부</td>
