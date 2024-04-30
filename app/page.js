@@ -30,8 +30,11 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-1xl font-Hi_Melody text-gray-500">
+            <h1 className="text-3xl font-Hi_Melody text-gray-500 font-bold">
               결혼합니다<br></br><br></br>
+            </h1>
+            <h1 className="text-2xl font-Hi_Melody text-gray-500">
+
               하나님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는 아름다운 약속을 하려 합니다.<br></br>
               언제나 아름답고 주위에 사랑을 나누는<br></br>
