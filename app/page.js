@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function copyText(entryText) {
@@ -10,6 +10,10 @@ function copyText(entryText) {
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    playMusic();
+  }, []);
 
   const playMusic = () => {
     setIsPlaying(true);
@@ -26,7 +30,7 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
-          </div>         
+          </div>
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
@@ -134,7 +138,7 @@ export default function Home() {
               (광명 파크자이 오피스텔) 입력</p>
           </div>
           <div className="absolute top-2/3">
-            지도{/* Map */}
+            {/* Map */}
           </div>
         </div>
 
@@ -243,10 +247,6 @@ export default function Home() {
                         */}
 
 
-
-
-
-
         </div>
       </div>
       {/* Speaker Image */}
@@ -274,10 +274,7 @@ export default function Home() {
 
       {isPlaying && (
         <audio autoPlay>
-          {/* 음악 파일의 경로를 설정합니다. */}
           <source src="/music/ahpoo.mp3" type="audio/mpeg" />
-          {/* HTML5의 오디오 요소를 지원하지 않을 때 대체 내용을 제공합니다. */}
-          Your browser does not support the audio element.
         </audio>
       )}
 
