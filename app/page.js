@@ -89,7 +89,7 @@ export default function Home() {
 
 
 
-          <footer className='relative bottom-0 text-sm text-black'>
+          <footer className='relative mt-auto bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
 
