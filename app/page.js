@@ -9,6 +9,16 @@ function copyText(entryText) {
 }
 
 export default function Home() {
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const playMusic = () => {
+    setIsPlaying(true);
+  };
+
+  const pauseMusic = () => {
+    setIsPlaying(false);
+  };
+
   return (
     <main className="w-dvw">
       <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
@@ -240,44 +250,37 @@ export default function Home() {
         </div>
       </div>
       {/* Speaker Image */}
-      <button className="absolute left-3 top-3 ">
-        <Image
-          src="/images/speaker-on.png"
-          alt="Speaker"
-          width={30}
-          height={30}
-        />
-        
-      </button>
+      <div className="absolute left-3 top-3">
+        {isPlaying ? (
+          <button onClick={pauseMusic}>
+            <Image
+              src="/images/speaker-pause.png"
+              alt="Speaker"
+              width={30}
+              height={30}
+            />
+          </button>
+        ) : (
+          <button onClick={playMusic}>
+            <Image
+              src="/images/speaker-on.png"
+              alt="Speaker"
+              width={30}
+              height={30}
+            />
+          </button>
+        )}
+      </div>
+
+      {isPlaying && (
+        <audio controls autoPlay>
+          {/* 음악 파일의 경로를 설정합니다. */}
+          <source src="/music/ahpoo.mp3" type="audio/mpeg" />
+          {/* HTML5의 오디오 요소를 지원하지 않을 때 대체 내용을 제공합니다. */}
+          Your browser does not support the audio element.
+        </audio>
+      )}
+
     </main>
-
-
-
-
-  );
-}
-const PlayButton = ({ }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [play, { stop }] = useSound(galaxySfx);
-
-  function playSong() {
-    setIsPlaying(true);
-    play();
-  }
-
-  function stopSong() {
-    setIsPlaying(false);
-    stop();
-  }
-  return (
-    <div className={styles.playButton}>
-      <button
-        data-aos="zoom-in"
-        data-aos-offset="100"
-        onClick={isPlaying ? stopSong : playSong}
-      >
-        🎺
-      </button>
-    </div>
   );
 }
