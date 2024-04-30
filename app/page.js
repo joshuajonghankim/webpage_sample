@@ -111,7 +111,7 @@ export default function Home() {
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table class="table-auto border-separate border-gray-500 text-black rounded-xl border w-10/12 m-10">
+            <table class="table-auto border-separate border-gray-500 text-sm text-black rounded-xl border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신랑</td>
@@ -137,7 +137,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto border-separate border-gray-500 text-black rounded-xl border w-10/12 m-10">
+            <table class="table-auto border-separate border-gray-500 text-sm text-black rounded-xl border w-10/12 m-10">
               <tbody>
                 <tr>
                   <td>신부</td>
