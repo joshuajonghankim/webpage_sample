@@ -11,7 +11,7 @@ function copyText(entryText){
 export default function Home() {
   return (
     <main className="w-dvw">
-      <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
         {/* Main page */}
@@ -63,14 +63,6 @@ export default function Home() {
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
             <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row fle">
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="snap-center snap-always mx-10"
-                width={300}
-                height={600}
-                priority
-              />
-              <Image
                 src="/images/g1.jpg"
                 alt="g1"
                 className="snap-center snap-always mx-10"
@@ -79,7 +71,39 @@ export default function Home() {
                 priority
               />
               <Image
-                src="/images/g1.jpg"
+                src="/images/g2.jpg"
+                alt="g1"
+                className="snap-center snap-always mx-10"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g2.jpg"
+                alt="g1"
+                className="snap-center snap-always mx-10"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g2.jpg"
+                alt="g1"
+                className="snap-center snap-always mx-10"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g2.jpg"
+                alt="g1"
+                className="snap-center snap-always mx-10"
+                width={300}
+                height={600}
+                priority
+              />
+              <Image
+                src="/images/g2.jpg"
                 alt="g1"
                 className="snap-center snap-always mx-10"
                 width={300}
