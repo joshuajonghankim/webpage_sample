@@ -60,7 +60,7 @@ export default function Home() {
             <Image
               src="/images/g0.jpg"
               alt="g0"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always ml-10 mr-5 w-2/3 h-1/2"
               width={600}
               height={1200}
               priority
@@ -68,7 +68,7 @@ export default function Home() {
             <Image
               src="/images/g1.jpg"
               alt="g1"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2"
               width={600}
               height={1200}
               p
@@ -76,7 +76,7 @@ export default function Home() {
             <Image
               src="/images/g2.jpg"
               alt="g2"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -84,7 +84,7 @@ export default function Home() {
             <Image
               src="/images/g3.jpg"
               alt="g3"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -92,7 +92,7 @@ export default function Home() {
             <Image
               src="/images/g4.jpg"
               alt="g4"
-              className="snap-center snap-always mx-10 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -100,7 +100,7 @@ export default function Home() {
             <Image
               src="/images/g5.jpg"
               alt="g5"
-              className="snap-center snap-always ml-10 w-2/3 h-1/2"
+              className="snap-center snap-always ml-5 w-2/3 h-1/2"
               width={600}
               height={1200}
             />
