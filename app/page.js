@@ -1,9 +1,6 @@
+'use client';
 import Image from "next/image";
 import React from 'react';
-
-function copyText(entryText){
-  navigator.clipboard.writeText(entryText);
-}
 
 export default function Home() {
   return (
@@ -148,24 +145,25 @@ export default function Home() {
                   <td>김한은</td>
                   <td>카카오뱅크</td>
                   <td>3333-28-6191015</td>
-                  <td>복사</td>
+                  <td><button onClick={() => navigator.clipboard.writeText("3333286191015")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>부</td>
                   <td>김규백</td>
                   <td>농협</td>
                   <td>702076-52-131271</td>
-                  <td>복사</td>
+                  <td><button onClick={() => navigator.clipboard.writeText("70207652131271")}>복사</button></td>
                 </tr>
                 <tr>
                   <td>모</td>
                   <td>김영정</td>
                   <td>대구은행</td>
                   <td>009-08-312442</td>
-                  <td>복사</td>
+                  <td><button onClick={() => navigator.clipboard.writeText("00908312442")}>복사</button></td>
                 </tr>
               </tbody>
             </table>
+            
           </div>
         </div>
 
