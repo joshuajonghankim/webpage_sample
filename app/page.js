@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image'
+import Image from 'next/image';
+import React, { useEffect, useRef } from "react";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
 
             </div>
           </div>
-
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
             <h1 className="text-4xl mb-8">이성연 | 김한은</h1>
@@ -46,7 +46,22 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">날짜 달력 남은시간 카운팅</h1>
+            <h1 className="text-1xl text-black">
+              2024.7.20<br></br>
+              토요일 12시
+              </h1>
+          </div>
+        </div>        
+
+        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
+          </div>
+        </div>
+
+        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-black">오시는 길, 지도</h1>
           </div>
         </div>
 
@@ -64,31 +79,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
-          </div>
-        </div>
-
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">오시는 길, 지도</h1>
-          </div>
-        </div>
-
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">방명록</h1>
-            <script src="https://utteranc.es/client.js"
-              repo="joshuajonghankim/wedding_invitation"
-              issue-term="pathname"
-              theme="github-light"
-              crossorigin="anonymous"
-              async>
-            </script>
+            <Comments />
           </div>
 
-          <footer className='absolute bottom-0'>
+          <footer className='absolute bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
         </div>
@@ -98,4 +95,29 @@ export default function Home() {
       </div>
     </main >
   );
+}
+
+function Comments() {
+  const ref = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const scriptElement = document.createElement('script');
+    scriptElement.async = true;
+    scriptElement.crossOrigin = 'anonymous';
+    scriptElement.src = 'https://utteranc.es/client.js';
+
+    scriptElement.setAttribute('issue-term', 'pathname');
+    scriptElement.setAttribute('label', 'comment');
+    scriptElement.setAttribute(
+      'repo',
+      'joshuajonghankim/wedding_invitation',
+    );
+    scriptElement.setAttribute(
+      'theme',
+      'github-light',
+    );
+
+    ref.current?.appendChild(scriptElement);
+  }, []);
+
+  return <div ref={ref} />;
 }
