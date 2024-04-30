@@ -273,7 +273,7 @@ export default function Home() {
       </div>
 
       {isPlaying && (
-        <audio controls autoPlay>
+        <audio autoPlay>
           {/* 음악 파일의 경로를 설정합니다. */}
           <source src="/music/ahpoo.mp3" type="audio/mpeg" />
           {/* HTML5의 오디오 요소를 지원하지 않을 때 대체 내용을 제공합니다. */}
