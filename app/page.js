@@ -76,7 +76,7 @@ export default function Home() {
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
-                priority
+                p
               />
               <Image
                 src="/images/g2.jpg"
@@ -84,7 +84,7 @@ export default function Home() {
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
-                priority
+                
               />
               <Image
                 src="/images/g3.jpg"
@@ -92,7 +92,7 @@ export default function Home() {
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
-                priority
+                
               />
               <Image
                 src="/images/g4.jpg"
@@ -100,7 +100,7 @@ export default function Home() {
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
-                priority
+                
               />
               <Image
                 src="/images/g5.jpg"
@@ -108,7 +108,7 @@ export default function Home() {
                 className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
-                priority
+                
               />
 
             </div>
