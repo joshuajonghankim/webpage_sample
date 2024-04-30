@@ -61,11 +61,11 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
 
-          <div dir="ltr" className="absolute top-1/4 snap-x snap-mandatory overflow-x-auto flex flex-row scroll-m-10">
+          <div dir="ltr" className="absolute top-1/4 snap-x snap-mandatory overflow-x-auto flex flex-row scroll-ms-10">
             <Image
               src="/images/g0.jpg"
               alt="g0"
-              className="snap-center snap-always w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
               priority
@@ -73,7 +73,7 @@ export default function Home() {
             <Image
               src="/images/g1.jpg"
               alt="g1"
-              className="snap-center snap-always w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
               p
@@ -81,7 +81,7 @@ export default function Home() {
             <Image
               src="/images/g2.jpg"
               alt="g2"
-              className="snap-center snap-always w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -89,7 +89,7 @@ export default function Home() {
             <Image
               src="/images/g3.jpg"
               alt="g3"
-              className="snap-center snap-always w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -97,7 +97,7 @@ export default function Home() {
             <Image
               src="/images/g4.jpg"
               alt="g4"
-              className="snap-center snap-always w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
 
@@ -105,7 +105,7 @@ export default function Home() {
             <Image
               src="/images/g5.jpg"
               alt="g5"
-              className="snap-center snap-always scroll-me-10 w-2/3 h-1/2"
+              className="snap-center snap-always mx-10 w-2/3 h-1/2"
               width={600}
               height={1200}
             />
