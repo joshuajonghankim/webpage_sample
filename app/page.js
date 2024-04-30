@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-dvw">
       <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
