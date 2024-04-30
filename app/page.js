@@ -78,8 +78,8 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">방명록</h1>
+          <div className="absolute top-0 text-center">
+            <h1 className="text-3xl font-Hahmlet font-bold text-black">방명록</h1>
             <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
             <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
           </div>
