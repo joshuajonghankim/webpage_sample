@@ -8,7 +8,7 @@ function copyText(entryText){
 export default function Home() {
   return (
     <main className="w-dvw">
-      <div className="relative overflow-y-auto overscroll-x-none snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+      <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
         {/* Main page */}
@@ -62,7 +62,7 @@ export default function Home() {
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className="snap-center snap-always mx-20"
+                className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
@@ -70,7 +70,7 @@ export default function Home() {
               <Image
                 src="/images/g1.jpg"
                 alt="g1"
-                className="snap-center snap-always mx-20"
+                className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
@@ -78,7 +78,7 @@ export default function Home() {
               <Image
                 src="/images/g1.jpg"
                 alt="g1"
-                className="snap-center snap-always mx-20"
+                className="snap-center snap-always mx-10"
                 width={300}
                 height={600}
                 priority
