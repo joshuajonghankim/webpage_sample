@@ -5,15 +5,20 @@ export default function Home() {
   return (
     <main className="">
 
-      <div className="relative overflow-y-auto scroll-smooth snap-mandatory h-screen w-screen snap-y flex min-h-screen flex-col items-center justify-between">
+      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+
 
         {/* Main page */}
         <div className="snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
-          <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
-            <div className='w-auto h-dvh border rounded-md border-gray-500 m-5'>
+          
 
-            </div>
+          <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
+
+          </div>
+
+          <div className='w-full h-dvh border rounded-md border-gray-500 m-5 fixed'>
+
           </div>
 
           <div className="text-center absolute bottom-20 font-Hahmlet text-gray-500">
@@ -48,9 +53,9 @@ export default function Home() {
             <h1 className="text-1xl text-black">
               2024.7.20<br></br>
               토요일 12시
-              </h1>
+            </h1>
           </div>
-        </div>        
+        </div>
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center">
@@ -93,7 +98,7 @@ export default function Home() {
           <footer className='absolute bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
-          
+
         </div>
 
       </div>
