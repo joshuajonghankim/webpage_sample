@@ -1,10 +1,12 @@
 import Image from "next/image";
+import React from 'react';
 
 export default function Home() {
   return (
-    <main className="">
 
-      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
+
+
+    <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between">
 
 
         {/* Main page */}
@@ -103,7 +105,7 @@ export default function Home() {
             알리기
           </a>
 
-          <h1 className="absolute top-1/2 font-Hahmlet text-center">
+          <div className="absolute top-1/2 font-Hahmlet text-center">
             <h1 className=" text-2xl font-Hahmlet  text-gray-500">
               마음 전하실 곳
             </h1>
@@ -162,18 +164,24 @@ export default function Home() {
                 </tr>
               </tbody>
             </table>
-          </h1>
+          </div>
         </div>
 
         <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="absolute top-20 text-center text-black">
-            <h1 className="text-3xl font-Hahmlet font-bold text-black">방명록</h1>
+          <div className="absolute top-20 text-center ">
+            <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
 
           </div>
           <div className='absolute top-30 text-black'>
-            <div class="commentbox"></div>
-            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-            <script>commentBox(5685847600922624-proj)</script>
+            <div id="cusdis_thread"
+              data-host="https://cusdis.com"
+              data-app-id="9ced41cd-cd74-4956-8d5c-ba890376f822"
+              data-page-id="{{ PAGE_ID }}"
+              data-page-url="{{ PAGE_URL }}"
+              data-page-title="{{ PAGE_TITLE }}"
+            ></div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
           </div>
 
 
@@ -188,7 +196,6 @@ export default function Home() {
         </div>
 
       </div>
-    </main >
   );
 }
 
