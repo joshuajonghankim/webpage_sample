@@ -54,11 +54,11 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 size-auto text-center">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
-            <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row">
+            <div className="mt-20 snap-x snap-mandatory overflow-x-auto flex flex-row fle">
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className="snap-center snap-always"
+                className="snap-center snap-always mx-20"
                 width={300}
                 height={600}
                 priority
@@ -66,7 +66,7 @@ export default function Home() {
               <Image
                 src="/images/g1.jpg"
                 alt="g1"
-                className="snap-center snap-always"
+                className="snap-center snap-always mx-20"
                 width={300}
                 height={600}
                 priority
@@ -74,7 +74,7 @@ export default function Home() {
               <Image
                 src="/images/g1.jpg"
                 alt="g1"
-                className="snap-center snap-always"
+                className="snap-center snap-always mx-20"
                 width={300}
                 height={600}
                 priority
@@ -92,79 +92,77 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="text-center">
-            <a className="top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border-2 border-gray-400"
-              href="https://forms.gle/S2SnGE7jT2SuxhF68"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              참석여부 알리기
-            </a>
+          <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-500">
+            참석여부 알리기
+          </h1>
+          <a className="absolute top-1/4 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border border-gray-400"
+            href="https://forms.gle/S2SnGE7jT2SuxhF68"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            알리기
+          </a>
 
-            <h1 className="top-1/2 text-2xl font-Hahmlet text-gray-500">
-              <br></br><br></br>마음 전하실 곳<br></br><br></br>
+          <h1 className="absolute top-1/2 font-Hahmlet text-center">
+            <h1 className=" text-2xl font-Hahmlet  text-gray-500">
+              마음 전하실 곳
             </h1>
-            <h1 className="text-1xl font-Hahmlet  text-black">
+            <h1 className="text-1xl font-Hahmlet m-5 text-black">
               참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <h1 className="text-1xl font-Hahmlet text-black ">
-              <br></br>
-              <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border-2 w-full">
-                <tbody>
-                  <tr>
-                    <td>신랑</td>
-                    <td>이성연</td>
-                    <td>카카오뱅크</td>
-                    <td>3333-10-5382056</td>
-                    <td>복사</td>
-                  </tr>
-                  <tr>
-                    <td>부</td>
-                    <td>이영우</td>
-                    <td>SC제일은행</td>
-                    <td>600-20-373733</td>
-                    <td>복사</td>
-                  </tr>
-                  <tr>
-                    <td>모</td>
-                    <td>신신숙</td>
-                    <td>국민은행</td>
-                    <td>879802-93-115438</td>
-                    <td>복사</td>
-                  </tr>
-                </tbody>
-              </table>
-              <br></br>
+            <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border w-full mt-10">
+              <tbody>
+                <tr>
+                  <td>신랑</td>
+                  <td>이성연</td>
+                  <td>카카오뱅크</td>
+                  <td>3333-10-5382056</td>
+                  <td>복사</td>
+                </tr>
+                <tr>
+                  <td>부</td>
+                  <td>이영우</td>
+                  <td>SC제일은행</td>
+                  <td>600-20-373733</td>
+                  <td>복사</td>
+                </tr>
+                <tr>
+                  <td>모</td>
+                  <td>신신숙</td>
+                  <td>국민은행</td>
+                  <td>879802-93-115438</td>
+                  <td>복사</td>
+                </tr>
+              </tbody>
+            </table>
 
-              <table class="table-auto border-separate border-gray-500 rounded-xl border-spacing-1 border-2 w-full">
-                <tbody>
-                  <tr>
-                    <td>신부</td>
-                    <td>김한은</td>
-                    <td>카카오뱅크</td>
-                    <td>3333-28-6191015</td>
-                    <td>복사</td>
-                  </tr>
-                  <tr>
-                    <td>부</td>
-                    <td>김규백</td>
-                    <td>농협</td>
-                    <td>702076-52-131271</td>
-                    <td>복사</td>
-                  </tr>
-                  <tr>
-                    <td>모</td>
-                    <td>김영정</td>
-                    <td>대구은행</td>
-                    <td>009-08-312442</td>
-                    <td>복사</td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </h1>
-          </div>
+            <table class="table-auto mt-5 border-separate border-gray-500 rounded-xl border-spacing-1 border w-full">
+              <tbody>
+                <tr>
+                  <td>신부</td>
+                  <td>김한은</td>
+                  <td>카카오뱅크</td>
+                  <td>3333-28-6191015</td>
+                  <td>복사</td>
+                </tr>
+                <tr>
+                  <td>부</td>
+                  <td>김규백</td>
+                  <td>농협</td>
+                  <td>702076-52-131271</td>
+                  <td>복사</td>
+                </tr>
+                <tr>
+                  <td>모</td>
+                  <td>김영정</td>
+                  <td>대구은행</td>
+                  <td>009-08-312442</td>
+                  <td>복사</td>
+                </tr>
+              </tbody>
+            </table>
+          </h1>
         </div>
 
         <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
