@@ -84,7 +84,7 @@ export default function Home() {
             <hyvor-talk-comments website-id="11017" page-id=""></hyvor-talk-comments>
           </div>
 
-          <footer className='absolute text-sm text-black'>
+          <footer className='absolute bottom-0 text-sm text-black'>
             <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
           </footer>
 
