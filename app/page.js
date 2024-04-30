@@ -9,10 +9,10 @@ export default function Home() {
 
         {/* Main page */}
 
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
+        <div className="sticky top-0 snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover">
 
           <div className='w-full h-2/3 bg-main-1 bg-cover absolute top-0 sm:bg-main-2 bg-center'>
-            <div className='w-auto h-screen border rounded-md border-gray-500 m-5'>
+            <div className='w-auto h-dvh border rounded-md border-gray-500 m-5'>
 
             </div>
           </div>
@@ -53,6 +53,20 @@ export default function Home() {
 
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
+            <h1 className="text-1xl font-Hahmlet text-black">
+              신랑 이성연 카카오뱅크 3333-10-5382056<br></br>
+              부 이영우 SC제일은행 600-20-373733<br></br>
+              모 신신숙 국민은행 879802-93-115438<br></br><br></br>
+
+              신부 김한은 카카오뱅크 3333-28-6191015<br></br>
+              부 김규백 농협 702076-52-131271<br></br>
+              모 김영정 대구은행 009-08-312442
+              </h1>
+          </div>
+        </div>
+
+        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
+          <div className="text-center">
             <h1 className="text-3xl font-bold text-black">갤러리, 사진 더보기</h1>
           </div>
         </div>
@@ -60,12 +74,6 @@ export default function Home() {
         <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-black">오시는 길, 지도</h1>
-          </div>
-        </div>
-
-        <div className="sticky top-0 snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-black">계좌번호</h1>
           </div>
         </div>
 
@@ -86,7 +94,7 @@ export default function Home() {
         </div>
 
         <footer className='sticky top-0 snap-end'>
-          Designed by joshuajonghankim
+          <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
         </footer>
 
       </div>
