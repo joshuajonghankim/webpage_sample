@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 
 function copyText(entryText) {
@@ -9,18 +9,24 @@ function copyText(entryText) {
 }
 
 export default function Home() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null); // useRef로 audio 요소 참조
 
   useEffect(() => {
-    playMusic();
+    if (isPlaying) {
+      audioRef.current.play(); // 재생 상태일 때만 자동 재생
+    } else {
+      audioRef.current.pause(); // 일시정지 상태일 때는 일시정지
+    }
+  }, [isPlaying]); // isPlaying 값 변경 시에만 실행
+
+  useEffect(() => {
+    // 컴포넌트가 마운트되었을 때 자동으로 음악을 재생
+    setIsPlaying(true);
   }, []);
 
-  const playMusic = () => {
-    setIsPlaying(true);
-  };
-
-  const pauseMusic = () => {
-    setIsPlaying(false);
+  const toggleMusic = () => {
+    setIsPlaying(prevState => !prevState); // 상태를 반전시켜 일시정지/재생 전환
   };
 
   return (
@@ -245,38 +251,33 @@ export default function Home() {
                 <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
                     </footer>
                         */}
-
-
         </div>
       </div>
+
       {/* Speaker Image */}
       <div className="absolute left-3 top-3">
-        {isPlaying ? (
-          <button onClick={pauseMusic}>
+        {/* isPlaying 상태에 따라 이미지 변경 */}
+        <button onClick={toggleMusic}>
+          {isPlaying ? (
             <Image
               src="/images/speaker-pause.png"
-              alt="Speaker"
+              alt="Pause"
               width={30}
               height={30}
             />
-          </button>
-        ) : (
-          <button onClick={playMusic}>
+          ) : (
             <Image
               src="/images/speaker-on.png"
-              alt="Speaker"
+              alt="Play"
               width={30}
               height={30}
             />
-          </button>
-        )}
+          )}
+        </button>
       </div>
 
-      {isPlaying && (
-        <audio autoPlay>
-          <source src="/music/ahpoo.mp3" type="audio/mpeg" />
-        </audio>
-      )}
+      {/* audio 요소 추가 */}
+      <audio ref={audioRef} src="/music/ahpoo.mp3" type="audio/mpeg" />
 
     </main>
   );
