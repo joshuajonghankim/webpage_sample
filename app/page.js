@@ -29,6 +29,30 @@ export default function Home() {
     setIsPlaying(prevState => !prevState); // 상태를 반전시켜 일시정지/재생 전환
   };
 
+  useEffect(() => {
+    // 네이버 지도 API 스크립트 호출
+    const script = document.createElement("script");
+    script.src = "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tbpkc88r6x";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // 컴포넌트가 언마운트될 때 스크립트 제거
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
+    // 네이버 지도 생성
+    if (window.naver && window.naver.maps) {
+      const mapOptions = {
+        center: new window.naver.maps.LatLng(37.5665, 126.978),
+        zoom: 10
+      };
+      const map = new window.naver.maps.Map('map', mapOptions);
+    }
+  }, []);
+
   return (
     <main className="w-dvw">
       <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
@@ -148,6 +172,8 @@ export default function Home() {
           </div>
           <div className="absolute top-2/3">
             {/* Map */}
+            <div className="items-center max-h-48"
+              id="map" style={{ width: 400, height: 400 }}></div>
           </div>
         </div>
 
@@ -239,14 +265,7 @@ export default function Home() {
 
           </div>
           <div className='absolute top-30 text-black'>
-            <div id="cusdis_thread"
-              data-host="https://cusdis.com"
-              data-app-id="9ced41cd-cd74-4956-8d5c-ba890376f822"
-              data-page-id="{{ PAGE_ID }}"
-              data-page-url="{{ PAGE_URL }}"
-              data-page-title="{{ PAGE_TITLE }}"
-            ></div>
-            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
 
           </div>
 
