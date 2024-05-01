@@ -59,7 +59,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-dvw">
+    <main className="w-dvw overflow-x-hidden">
       <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
