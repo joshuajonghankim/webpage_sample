@@ -172,7 +172,7 @@ export default function Home() {
           </div>
           <div className="absolute top-2/3 w-auto">
             {/* Map */}
-            <div className="items-center max-h-48"
+            <div className="items-center max-h-48 overscroll-none"
               id="map" style={{ width: 400, height: 400 }}></div>
           </div>
         </div>
