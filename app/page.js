@@ -280,7 +280,7 @@ export default function Home() {
       </div>
 
       {/* audio 요소 추가 */}
-      <audio ref={audioRef} src="/music/ahpoo.mp3" type="audio/mpeg" />
+      <audio ref={audioRef} src="/music/In-your-heart.mp3" type="audio/mpeg" />
 
     </main>
   );
