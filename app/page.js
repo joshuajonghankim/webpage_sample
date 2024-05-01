@@ -102,11 +102,11 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
 
-          <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row scroll-ms-10">
+          <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
               src="/images/g0.jpg"
               alt="g0"
-              className="snap-center snap-always ml-10 mr-5 w-2/3 h-1/2"
+              className="snap-center snap-always ml-10 mr-5 w-2/3 md:h-96"
               width={600}
               height={1200}
               priority
@@ -114,7 +114,7 @@ export default function Home() {
             <Image
               src="/images/g1.jpg"
               alt="g1"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
               p
@@ -122,7 +122,7 @@ export default function Home() {
             <Image
               src="/images/g2.jpg"
               alt="g2"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
 
@@ -130,7 +130,7 @@ export default function Home() {
             <Image
               src="/images/g3.jpg"
               alt="g3"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
 
@@ -138,7 +138,7 @@ export default function Home() {
             <Image
               src="/images/g4.jpg"
               alt="g4"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2"
+              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
 
@@ -146,7 +146,7 @@ export default function Home() {
             <Image
               src="/images/g5.jpg"
               alt="g5"
-              className="snap-center snap-always ml-5 mr-10 w-2/3 h-1/2"
+              className="snap-center snap-always ml-5 mr-10 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
             />
@@ -268,7 +268,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="sticky overflow-y-auto snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 text-center ">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
 
@@ -279,10 +279,16 @@ export default function Home() {
           </div>
 
 
-          <footer className='relative mt-auto bottom-0 text-sm text-black'>
-            <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
-          </footer>
+
         </div>
+        
+        {/* 
+        <footer className='relative snap-center snap-always mt-auto bottom-0 text-sm text-black'>
+          <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+        </footer>
+        */}
+
+
       </div>
 
       {/* Speaker Image */}
