@@ -281,7 +281,7 @@ export default function Home() {
       </div>
 
       {/* audio 요소 추가 */}
-      <audio ref={audioRef} src="/music/In-your-heart[1.4].m4a" type="audio/mpeg" />
+      <audio ref={audioRef} src="/music/In-your-heart[1.2].m4a" type="audio/mpeg" />
 
     </main>
   );
