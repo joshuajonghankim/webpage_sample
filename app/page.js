@@ -34,6 +34,7 @@ export default function Home() {
     const script = document.createElement("script");
     script.src = "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tbpkc88r6x";
     script.async = true;
+    script.onload = () => createMap();
     document.body.appendChild(script);
 
     return () => {
@@ -42,16 +43,15 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    // 네이버 지도 생성
+  const createMap = () => {
     if (window.naver && window.naver.maps) {
       const mapOptions = {
-        center: new window.naver.maps.LatLng(37.5665, 126.978),
-        zoom: 10
+        center: new window.naver.maps.LatLng(37.4163636, 126.8848772),
+        zoom: 14
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
-  }, []);
+  };
 
   return (
     <main className="w-dvw">
