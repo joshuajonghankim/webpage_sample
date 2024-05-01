@@ -170,7 +170,7 @@ export default function Home() {
               경기도 광명시 광명역로 26<br></br>
               (광명 파크자이 오피스텔) 입력</p>
           </div>
-          <div className="absolute top-2/3">
+          <div className="absolute top-2/3 w-auto">
             {/* Map */}
             <div className="items-center max-h-48"
               id="map" style={{ width: 400, height: 400 }}></div>
