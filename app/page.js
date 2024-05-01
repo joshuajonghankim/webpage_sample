@@ -281,9 +281,9 @@ export default function Home() {
 
 
         </div>
-        
+
         {/* 
-        <footer className='relative snap-center snap-always mt-auto bottom-0 text-sm text-black'>
+        <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
           <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
         </footer>
         */}
