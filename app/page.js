@@ -51,10 +51,11 @@ export default function Home() {
             <h1 className="text-3xl font-Hi_Melody text-gray-500 font-bold">
               결혼합니다<br></br><br></br>
             </h1>
-            <h1 className="text-2xl font-Hi_Melody text-gray-500">
+            <h1 className="text-xl font-Hi_Melody text-gray-500 text-wrap">
 
               하나님의 사랑으로 만난 두 사람이<br></br>
-              이제 새로운 가정을 이루는 아름다운 약속을 하려 합니다.<br></br>
+              이제 새로운 가정을 이루는<br></br>
+              아름다운 약속을 하려 합니다.<br></br>
               언제나 아름답고 주위에 사랑을 나누는<br></br>
               행복한 가정을 이루도록<br></br>
               오셔서 축복해 주시고 지켜봐 주십시오.<br></br>
@@ -130,7 +131,9 @@ export default function Home() {
           </div>
           <div className="absolute top-36 font-Hahmlet text-gray-500">
             <p className="text-center text-lg font-bold">주소</p>
-            <p className="mx-10 text-wrap">경기도 광명시 광명역로 21 KTX광명역 동편 B1<br></br>
+            <p className="mx-10 text-wrap">
+              경기도 광명시 광명역로 21<br></br>
+              KTX광명역 동편 B1<br></br>
               광명역사컨벤션웨딩홀<br></br><br></br></p>
             <p className="text-center text-lg font-bold">주차장</p>
             <p className="mx-10 text-wrap">
