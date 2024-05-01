@@ -52,7 +52,6 @@ export default function Home() {
               결혼합니다<br></br><br></br>
             </h1>
             <h1 className="text-xl font-Hi_Melody text-gray-500 text-wrap">
-
               하나님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
