@@ -275,7 +275,7 @@ export default function Home() {
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
 
           </div>
-          <div className='absolute top-30 max-h-96 w-full overflow-y-auto  text-black'>
+          <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div>
               <CommentBox />
             </div>

@@ -22,6 +22,11 @@ module.exports = {
         Hahmlet: ["Hahmlet", "sans-serif"],
         Hi_Melody: ["Hi Melody", "sans-serif"]
       },
+
+      maxHeight: {
+        '1/2': '50%', // max-h-1/2
+        '6/10': '60%', // max-h-6/10
+      }
     },
   },
   plugins: [],
