@@ -168,10 +168,11 @@ export default function Home() {
               마음 전하실 곳
             </h1>
             <h1 className="text-1xl font-Hahmlet m-5 text-black text-center">
-              참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.<br></br>
+              참석이 어려우신 분들을 위해<br></br>
+              계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
+            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-xs rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신랑</td>
@@ -200,7 +201,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-sm rounded text-black border w-11/12 m-5">
+            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-xs rounded text-black border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신부</td>
@@ -280,7 +281,7 @@ export default function Home() {
       </div>
 
       {/* audio 요소 추가 */}
-      <audio ref={audioRef} src="/music/In-your-heart.mp3" type="audio/mpeg" />
+      <audio ref={audioRef} src="/music/In-your-heart[1.4].m4a" type="audio/mpeg" />
 
     </main>
   );
