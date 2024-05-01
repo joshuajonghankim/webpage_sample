@@ -161,6 +161,7 @@ export default function Home() {
           <div className="absolute top-32 font-Hahmlet text-gray-500">
             <p className="text-center text-lg font-bold">주소</p>
             <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
+              <br></br>
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
               광명역사컨벤션웨딩홀<br></br><br></br></p>
