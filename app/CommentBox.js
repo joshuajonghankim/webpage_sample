@@ -8,7 +8,9 @@ function CommentBox() {
     document.body.appendChild(script);
 
     script.onload = () => {
-      window.commentBox('5685847600922624-proj');
+      window.commentBox('5685847600922624-proj', {
+        sortOrder: 'new', // specify the default comment sort order ("best", "newest", "oldest")
+      });
     };
 
     return () => {
