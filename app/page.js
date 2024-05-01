@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <main className="w-dvw overflow-x-hidden">
-      <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
+      <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
@@ -176,7 +176,7 @@ export default function Home() {
               경기도 광명시 광명역로 26<br></br>
               (광명 파크자이 오피스텔) 입력<br></br><br></br>
               {/* Map */}
-              <div className="border max-h-48 overscroll-none"
+              <div className="border max-h-48 overscroll-none "
                 id="map" style={{ width: 350, height: 200 }}>
               </div>
             </div>
