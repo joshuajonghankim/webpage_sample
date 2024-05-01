@@ -1,3 +1,8 @@
+{/* 
+Azure Database for PostgreSQL
+
+joshua
+mylife4jesus! */}
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
