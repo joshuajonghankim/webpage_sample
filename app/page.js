@@ -155,10 +155,10 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="absolute top-20 text-center">
+          <div className="absolute top-14 text-center">
             <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
           </div>
-          <div className="absolute top-36 font-Hahmlet text-gray-500">
+          <div className="absolute top-32 font-Hahmlet text-gray-500">
             <p className="text-center text-lg font-bold">주소</p>
             <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
@@ -279,10 +279,9 @@ export default function Home() {
           </div>
 
 
-          {/*    <footer className='relative mt-auto bottom-0 text-sm text-black'>
-                <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
-                    </footer>
-                        */}
+          <footer className='relative mt-auto bottom-0 text-sm text-black'>
+            <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+          </footer>
         </div>
       </div>
 
