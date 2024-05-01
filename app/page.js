@@ -62,7 +62,7 @@ export default function Home() {
     <main className="w-dvw overflow-x-hidden">
       <div className="relative overflow-y-auto snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
-        <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
 
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
         </div>
 
-        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center text-wrap m-10">
             <h1 className="text-3xl font-Hi_Melody text-gray-500 font-bold">
               결혼합니다<br></br><br></br>
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row scroll-ms-10">
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 text-center">
             <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
           </div>
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-500">
             참석여부 알리기
           </h1>
@@ -268,7 +268,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="absolute top-20 text-center ">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
 
