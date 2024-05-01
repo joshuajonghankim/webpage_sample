@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
+import CommentBox from "./CommentBox";
 {/* 
 Azure Database for PostgreSQL
 
@@ -269,14 +270,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sticky overflow-y-auto snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <div className="absolute top-20 text-center ">
+        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-background-pattern bg-cover bg-center">
+          <div className="absolute top-20 text-center">
             <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
 
           </div>
-          <div className='absolute top-30 text-black'>
-
-
+          <div className='absolute top-30 max-h-96 w-full overflow-y-auto  text-black'>
+            <div>
+              <CommentBox />
+            </div>
           </div>
 
 
