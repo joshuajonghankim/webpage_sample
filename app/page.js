@@ -160,24 +160,24 @@ export default function Home() {
           </div>
           <div className="absolute top-36 font-Hahmlet text-gray-500">
             <p className="text-center text-lg font-bold">주소</p>
-            <p className="mx-10 text-wrap">
+            <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
               광명역사컨벤션웨딩홀<br></br><br></br></p>
             <p className="text-center text-lg font-bold">주차장<br></br></p>
-            <div className="mx-10 text-wrap items-center flex flex-col">
+            <div className="text-sm mx-10 text-wrap items-center flex flex-col ">
               <br></br>
               제1주차장)<br></br>
-              센트럴자이 상가 주차장 B3층 (2시간 무료)
+              센트럴자이 상가 주차장 B3층 (2시간 무료)<br></br>
               경기도 광명시 광명역로 28<br></br>
               (광명센트럴자이 오피스텔) 입력<br></br><br></br>
               제2주차장)<br></br>
-              파크자이 오피스텔 주차장 B2층 (2시간 무료)
+              파크자이 오피스텔 주차장 B2층 (2시간 무료)<br></br>
               경기도 광명시 광명역로 26<br></br>
               (광명 파크자이 오피스텔) 입력<br></br><br></br>
               {/* Map */}
               <div className="border max-h-48 overscroll-none"
-                id="map" style={{ width: 400, height: 400 }}>
+                id="map" style={{ width: 350, height: 200 }}>
               </div>
             </div>
           </div>
