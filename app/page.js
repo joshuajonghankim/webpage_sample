@@ -278,7 +278,7 @@ export default function Home() {
                   {
                     url: 'https://lsy-khe.vercel.app/',
                     identifier: 'wedding-invitation-g9nran4rdt',
-                    title: 'wedding-invitation',
+                    //title: 'wedding-invitation',
                   }
                 }
               />
