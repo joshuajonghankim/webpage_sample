@@ -1,13 +1,7 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-import CommentBox from "./CommentBox";
-{/* 
-Azure Database for PostgreSQL
-
-joshua
-mylife4jesus! */}
-
+import { DiscussionEmbed } from 'disqus-react';
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -277,11 +271,19 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div>
-              <CommentBox />
+
+              <DiscussionEmbed
+                shortname='your-disqus-shortname'
+                config={
+                  {
+                    url: 'https://lsy-khe.vercel.app/',
+                    identifier: 'wedding-invitation-g9nran4rdt',
+                    title: 'wedding-invitation',
+                  }
+                }
+              />
             </div>
           </div>
-
-
 
         </div>
 
