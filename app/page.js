@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 
-import CommentsFunction from "./commentsj";
+//import CommentsFunction from "./commentsj";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -53,6 +53,27 @@ export default function Home() {
       const map = new window.naver.maps.Map('map', mapOptions);
     }
   };
+
+  useEffect(() => {
+    // commento 스크립트를 로드하는 함수
+    const loadCommentoScript = () => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.commento.io/js/commento.js';
+      script.async = true;
+      document.getElementById('commento').appendChild(script);
+    };
+
+    // 컴포넌트가 마운트될 때 commento 스크립트 로드
+    loadCommentoScript();
+
+    // 컴포넌트가 언마운트될 때 스크립트 제거
+    return () => {
+      const scriptElement = document.querySelector('script[src="https://cdn.commento.io/js/commento.js"]');
+      if (scriptElement) {
+        scriptElement.remove();
+      }
+    };
+  }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때만 실행
 
   return (
     <main className="w-dvw overflow-x-hidden">
@@ -272,7 +293,7 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <CommentsFunction />
+              <div id="commento"></div>
             </div>
           </div>
 
