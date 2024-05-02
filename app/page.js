@@ -94,10 +94,10 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-3xl font-Hi_Melody text-gray-500 font-bold">
+            <h1 className="text-3xl font-Hahmlet text-gray-500 font-bold">
               결혼합니다<br></br><br></br>
             </h1>
-            <h1 className="text-xl font-Hi_Melody text-gray-500 text-wrap">
+            <h1 className="text-xl font-Hahmlet text-gray-500 text-wrap">
               하나님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -220,12 +220,12 @@ export default function Home() {
             <h1 className="text-2xl font-Hahmlet text-gray-500">
               마음 전하실 곳
             </h1>
-            <h1 className="text-1xl font-Hahmlet m-5 text-black text-center">
+            <h1 className="text-1xl font-Hahmlet m-5 text-gray-500 text-center">
               참석이 어려우신 분들을 위해<br></br>
               계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-xs rounded text-black border w-11/12 m-5">
+            <table className="table-auto bg-gray-200 border-separate text-gray-500 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신랑</td>
@@ -254,7 +254,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate border-gray-400 border-spacing-1 text-xs rounded text-black border w-11/12 m-5">
+            <table class="table-auto bg-gray-200 border-separate text-gray-500 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신부</td>
