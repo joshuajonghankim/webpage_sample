@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import { DiscussionEmbed } from 'disqus-react';
+import DisqusComments from "./DisqusComments";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -271,6 +272,7 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div>
+              <DisqusComments />
 
               <DiscussionEmbed
                 shortname='your-disqus-shortname'
