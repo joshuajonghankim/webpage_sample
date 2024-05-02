@@ -1,7 +1,22 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-import { DiscussionEmbed } from 'disqus-react';
+import dynamic from 'next/dynamic';
+
+const Commento = dynamic(
+  () => {
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.commento.io/js/commento.js';
+      script.defer = true;
+      script.onload = () => {
+        resolve(() => <div id="commento" />);
+      };
+      document.body.appendChild(script);
+    });
+  },
+  { ssr: false } // This will only load the component on client side
+);
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -271,8 +286,7 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <script defer src="https://cdn.commento.io/js/commento.js"></script>
-              <div id="commento"></div>
+              <Commento />
             </div>
           </div>
 
