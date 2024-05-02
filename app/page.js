@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 
 import CommentsFunction from "./comments";
 
+
 const Commento = dynamic(
   () => {
     return new Promise((resolve) => {
