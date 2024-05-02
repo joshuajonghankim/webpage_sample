@@ -1,8 +1,9 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-import Comments from "./comments";
 import dynamic from 'next/dynamic';
+
+import CommentsFunction from "./comments";
 
 const Commento = dynamic(
   () => {
@@ -287,7 +288,7 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <Comments />
+              <CommentsFunction />
             </div>
           </div>
 

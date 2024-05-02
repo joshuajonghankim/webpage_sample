@@ -15,6 +15,6 @@ const Commento = dynamic(
   { ssr: false } // This will only load the component on client side
 );
 
-export default function Comments() {
+export default function CommentsFunction() {
   return <Commento />;
 }
