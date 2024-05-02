@@ -1,25 +1,8 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-import dynamic from 'next/dynamic';
 
-import CommentsFunction from "./comments";
-
-
-const Commento = dynamic(
-  () => {
-    return new Promise((resolve) => {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.commento.io/js/commento.js';
-      script.defer = true;
-      script.onload = () => {
-        resolve(() => <div id="commento" />);
-      };
-      document.body.appendChild(script);
-    });
-  },
-  { ssr: false } // This will only load the component on client side
-);
+import CommentsFunction from "./commentsj";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
