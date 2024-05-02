@@ -271,16 +271,8 @@ export default function Home() {
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <DiscussionEmbed
-                shortname='wedding-invitation-g9nran4rdt'
-                config={
-                  {
-                    url: 'https://lsy-khe.vercel.app/',
-                    identifier: 'wedding-invitation-g9nran4rdt',
-                    //title: 'wedding-invitation',
-                  }
-                }
-              />
+              <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
             </div>
           </div>
 
