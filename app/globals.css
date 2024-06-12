@@ -34,3 +34,10 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'MapoGoldenPier';
+  src: url('/fonts/MapoGoldenPier.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

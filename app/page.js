@@ -52,39 +52,18 @@ export default function Home() {
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
-  };
-
-  useEffect(() => {
-    // commento 스크립트를 로드하는 함수
-    const loadCommentoScript = () => {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.commento.io/js/commento.js';
-      script.async = true;
-      document.getElementById('commento').appendChild(script);
-    };
-
-    // 컴포넌트가 마운트될 때 commento 스크립트 로드
-    loadCommentoScript();
-
-    // 컴포넌트가 언마운트될 때 스크립트 제거
-    return () => {
-      const scriptElement = document.querySelector('script[src="https://cdn.commento.io/js/commento.js"]');
-      if (scriptElement) {
-        scriptElement.remove();
-      }
-    };
-  }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때만 실행
+  }; 
 
   return (
     <main className="w-dvw overflow-x-hidden">
       <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
 
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
           </div>
 
-          <div className="text-center absolute top-2/3 font-Hahmlet text-gray-500">
+          <div className="text-center absolute top-2/3 font-MapoGoldenPier text-gray-700">
             <h1 className="text-4xl mb-8 mt-10">이성연 | 김한은</h1>
             <h1 className="text-1xl mb-2">2024.7.20 토요일 낮 12시</h1>
             <h1 className="text-1xl">광명역사컨벤션웨딩홀</h1>
@@ -92,12 +71,12 @@ export default function Home() {
 
         </div>
 
-        <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-3xl font-Hahmlet text-gray-500 font-bold">
-              결혼합니다<br></br><br></br>
+            <h1 className="text-3xl font-MapoGoldenPier text-sky-500">
+              초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-xl font-Hahmlet text-gray-500 text-wrap">
+            <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
               하나님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -116,8 +95,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-500">갤러리</h1>
+        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-white bg-cover bg-center">
+          <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-700">갤러리</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
@@ -171,11 +150,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
-            <h1 className="text-3xl font-bold font-Hahmlet text-gray-500">오시는 길</h1>
+            <h1 className="text-3xl font-bold font-Hahmlet text-gray-700">오시는 길</h1>
           </div>
-          <div className="absolute top-32 font-Hahmlet text-gray-500">
+          <div className="absolute top-32 font-Hahmlet text-gray-700">
             <p className="text-center text-lg font-bold">주소</p>
             <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               <br></br>
@@ -204,11 +183,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-background-pattern bg-cover bg-center">
-          <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-500">
+        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+          <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-700">
             참석여부 알리기
           </h1>
-          <a className="absolute top-32 text-1xl font-Hahmlet rounded-xl p-2 text-gray-500 border border-gray-400"
+          <a className="absolute top-32 text-1xl font-Hahmlet rounded-xl p-2 text-gray-700 border border-gray-400"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -217,15 +196,15 @@ export default function Home() {
           </a>
 
           <div className="absolute top-1/3 font-Hahmlet flex flex-col items-center">
-            <h1 className="text-2xl font-Hahmlet text-gray-500">
+            <h1 className="text-2xl font-Hahmlet text-gray-700">
               마음 전하실 곳
             </h1>
-            <h1 className="text-1xl font-Hahmlet m-5 text-gray-500 text-center">
+            <h1 className="text-1xl font-Hahmlet m-5 text-gray-700 text-center">
               참석이 어려우신 분들을 위해<br></br>
               계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate text-gray-500 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
+            <table className="table-auto bg-gray-200 border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신랑</td>
@@ -254,7 +233,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate text-gray-500 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
+            <table class="table-auto bg-gray-200 border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신부</td>
@@ -286,14 +265,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-background-pattern bg-cover bg-center">
+        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-20 text-center">
-            <h1 className="text-3xl font-Hahmlet font-bold text-gray-500">방명록</h1>
+            <h1 className="text-3xl font-Hahmlet font-bold text-gray-700">방명록</h1>
 
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="commento"></div>
+              {/* 이름과 내용을 입력하는 댓글창 */}
             </div>
           </div>
 

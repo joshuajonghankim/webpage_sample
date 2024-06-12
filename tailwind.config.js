@@ -20,7 +20,8 @@ module.exports = {
 
       fontFamily: {
         Hahmlet: ["Hahmlet", "sans-serif"],
-        Hi_Melody: ["Hi Melody", "sans-serif"]
+        Hi_Melody: ["Hi Melody", "sans-serif"],
+        MapoGoldenPier: ['MapoGoldenPier', 'sans-serif'],
       },
 
       maxHeight: {
