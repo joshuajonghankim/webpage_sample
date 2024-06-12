@@ -11,23 +11,37 @@ function copyText(entryText) {
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null); // useRef로 audio 요소 참조
+  const audioRef = useRef(null);
 
   useEffect(() => {
     if (isPlaying) {
-      audioRef.current.play(); // 재생 상태일 때만 자동 재생
+      audioRef.current.play().catch((error) => {
+        console.log("자동 재생이 차단되었습니다.", error);
+      });
     } else {
-      audioRef.current.pause(); // 일시정지 상태일 때는 일시정지
+      audioRef.current.pause();
     }
-  }, [isPlaying]); // isPlaying 값 변경 시에만 실행
+  }, [isPlaying]);
 
   useEffect(() => {
-    // 컴포넌트가 마운트되었을 때 자동으로 음악을 재생
+    // 페이지가 로드될 때 자동 재생 시도
     setIsPlaying(true);
+
+    // 오디오를 수동으로 재생 시도 (자동 재생이 브라우저에서 차단될 경우 대응)
+    const audioPlayPromise = audioRef.current.play();
+    if (audioPlayPromise !== undefined) {
+      audioPlayPromise
+        .then(() => {
+          console.log("오디오 자동 재생 성공");
+        })
+        .catch((error) => {
+          console.log("오디오 자동 재생 실패", error);
+        });
+    }
   }, []);
 
   const toggleMusic = () => {
-    setIsPlaying(prevState => !prevState); // 상태를 반전시켜 일시정지/재생 전환
+    setIsPlaying(prevState => !prevState);
   };
 
   useEffect(() => {
@@ -55,7 +69,7 @@ export default function Home() {
   }; 
 
   return (
-    <main className="w-dvw overflow-x-hidden">
+    <main className="w-dvw scrollbar-hide overflow-x-hidden">
       <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
