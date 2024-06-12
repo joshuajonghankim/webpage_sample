@@ -27,7 +27,12 @@ module.exports = {
       maxHeight: {
         '1/2': '50%', // max-h-1/2
         '6/10': '60%', // max-h-6/10
-      }
+      },
+
+      colors: {
+        'bgcolor-sky': '#f2f7fb',
+        'fontcolor-blue': '#81addc',
+      },
     },
   },
   plugins: [],

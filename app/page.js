@@ -48,7 +48,7 @@ export default function Home() {
     if (window.naver && window.naver.maps) {
       const mapOptions = {
         center: new window.naver.maps.LatLng(37.4163636, 126.8848772),
-        zoom: 15
+        zoom: 14
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
@@ -73,7 +73,7 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-3xl font-MapoGoldenPier text-sky-500">
+            <h1 className="text-3xl font-MapoGoldenPier text-fontcolor-blue">
               초대합니다<br></br><br></br>
             </h1>
             <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
@@ -95,8 +95,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet font-bold text-gray-700">갤러리</h1>
+        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
+          <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet text-fontcolor-blue font-extralight">G A L L E R Y</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
@@ -152,9 +152,9 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
-            <h1 className="text-3xl font-bold font-Hahmlet text-gray-700">오시는 길</h1>
+            <h1 className="text-3xl font-bold font-MapoGoldenPier text-gray-700">오시는 길</h1>
           </div>
-          <div className="absolute top-32 font-Hahmlet text-gray-700">
+          <div className="absolute top-32 font-MapoGoldenPier text-gray-700">
             <p className="text-center text-lg font-bold">주소</p>
             <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               <br></br>
@@ -288,7 +288,7 @@ export default function Home() {
       </div>
 
       {/* Speaker Image */}
-      <div className="absolute left-3 top-3">
+      <div className="absolute right-3 top-3">
         {/* isPlaying 상태에 따라 이미지 변경 */}
         <button onClick={toggleMusic}>
           {isPlaying ? (
