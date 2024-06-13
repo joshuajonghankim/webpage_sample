@@ -198,7 +198,7 @@ export default function Home() {
                   width={40}
                   height={40}
                   className="rounded-lg"
-                />                
+                />
               </a>
               <a
                 href="https://map.kakao.com/?q=광명역사컨벤션웨딩홀&placeId=20619072"
@@ -323,9 +323,12 @@ export default function Home() {
           </div>
 
           {/* comment */}
-          <div class="commentbox"></div>
-          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-          <script>commentBox('5685847600922624-proj')</script>
+          <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
+            <div className="mx-10">
+              <div id="commento"></div>
+              {/* 이름과 내용을 입력하는 댓글창 */}
+            </div>
+          </div>
         </div>
 
         {/* 
