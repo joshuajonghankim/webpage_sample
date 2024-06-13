@@ -66,11 +66,12 @@ export default function Home() {
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
-  }; 
+  };
 
   return (
     <main className="w-dvw scrollbar-hide overflow-x-hidden">
       <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
+
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
 
@@ -78,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className="text-center absolute top-2/3 font-MapoGoldenPier text-gray-700">
-            <h1 className="text-4xl mb-8 mt-10">이성연 | 김한은</h1>
+            <h1 className="text-4xl mb-8 mt-10">이성연 & 김한은</h1>
             <h1 className="text-1xl mb-2">2024.7.20 토요일 낮 12시</h1>
             <h1 className="text-1xl">광명역사컨벤션웨딩홀</h1>
           </div>
@@ -166,17 +167,33 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
-            <h1 className="text-3xl font-bold font-MapoGoldenPier text-gray-700">오시는 길</h1>
+            <h1 className="text-1xl font-MapoGoldenPier text-fontcolor-blue">L O C A T I O N</h1>
+            <h1 className="text-2xl font-MapoGoldenPier text-fontcolor-blue">오시는 길</h1>
           </div>
-          <div className="absolute top-32 font-MapoGoldenPier text-gray-700">
-            <p className="text-center text-lg font-bold">주소</p>
-            <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
-              <br></br>
+          <div className="absolute top-32 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
+            <p className="text-center text-lg font-bold">광명역사컨벤션웨딩홀</p>
+            <p className="text-lg mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
-              광명역사컨벤션웨딩홀<br></br><br></br></p>
+              <br></br><br></br></p>
+
+            {/* Map */}
+            <div className="border max-h-48 overscroll-none"
+              id="map" style={{ width: '100%', maxWidth: 350, height: 200 }}>
+            </div>
+
+            {/* Naver Map Button */}
+            <a
+              href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80/place/36841824?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg"
+            >
+              네이버 지도에서 보기
+            </a>
+
             <p className="text-center text-lg font-bold">주차장<br></br></p>
-            <div className="text-sm mx-10 text-wrap items-center flex flex-col ">
+            <div className="text-sm mx-10 text-wrap items-center flex flex-col">
               <br></br>
               제1주차장)<br></br>
               센트럴자이 상가 주차장 B3층 (2시간 무료)<br></br>
@@ -186,10 +203,7 @@ export default function Home() {
               파크자이 오피스텔 주차장 B2층 (2시간 무료)<br></br>
               경기도 광명시 광명역로 26<br></br>
               (광명 파크자이 오피스텔) 입력<br></br><br></br>
-              {/* Map */}
-              <div className="border max-h-48 overscroll-none "
-                id="map" style={{ width: 350, height: 200 }}>
-              </div>
+
             </div>
           </div>
           <div className="absolute top-2/3 w-auto">
