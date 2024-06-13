@@ -354,12 +354,9 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ=="
-                >
+              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ==">
               </div>
               <Script src="https://cdn-city.livere.com/js/embed.dist.js" strategy="afterInteractive" />
-
-
             </div>
           </div>
         </div>
