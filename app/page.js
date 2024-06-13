@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
+import Script from 'next/script';
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -67,23 +68,6 @@ export default function Home() {
       const map = new window.naver.maps.Map('map', mapOptions);
     }
   };
-
-  useEffect(() => {
-    // Livere Tower 스크립트를 동적으로 로드하기 위한 함수
-    const loadLivereScript = () => {
-      if (typeof LivereCity === 'function') {
-        return; // 이미 로드되어 있으면 중복 로드 방지
-      }
-
-      const script = document.createElement('script');
-      script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      script.async = true;
-      document.getElementById('lv-container').appendChild(script);
-    };
-
-    // 페이지 컴포넌트가 마운트될 때 Livere 스크립트 로드
-    loadLivereScript();
-  }, []);
 
   return (
     <main className="w-full h-full overflow-x-hidden">
@@ -344,8 +328,27 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-              </div>
+              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA=="></div>
+              <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+
+              <Script
+                strategy="afterInteractive" // Ensures the script is loaded after the page is interactive
+                src="https://cdn-city.livere.com/js/embed.dist.js"
+              />
+
+              <Script id="livere-tower">
+                {`(function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+          })(document, 'script');`}
+              </Script>
             </div>
           </div>
         </div>
