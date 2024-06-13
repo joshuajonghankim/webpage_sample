@@ -10,6 +10,8 @@ function copyText(entryText) {
 }
 
 export default function Home() {
+  const [showGroomAccounts, setShowGroomAccounts] = useState(false);  // 신랑측 계좌 상태
+  const [showBrideAccounts, setShowBrideAccounts] = useState(false);  // 신부측 계좌 상태
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
@@ -231,7 +233,7 @@ export default function Home() {
           <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-gray-700">
             참석여부 알리기
           </h1>
-          <a className="absolute top-32 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400"
+          <a className="absolute top-36 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -239,72 +241,74 @@ export default function Home() {
             알리기
           </a>
 
-          <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
+          <div className="absolute top-1/2 font-MapoGoldenPier flex flex-col items-center">
             <h1 className="text-2xl text-gray-700">
               마음 전하실 곳
             </h1>
-            <h1 className="text-1xl m-5 text-gray-700 text-center">
-              참석이 어려우신 분들을 위해<br></br>
-              계좌번호를 기재하였습니다.<br></br>
-              너그러운 마음으로 양해 부탁드립니다.
-            </h1>
-            <table className="table-auto bg-bgcolor-sky border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
-              <tbody>
-                <tr>
-                  <td className="text-center">신랑</td>
-                  <td>이성연</td>
-                  <td>카카오뱅크</td>
-                  <td>3333-10-5382056</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("3333105382056")}>복사</button></td>
-                </tr>
-                <tr>
-                  <td className="text-center">부</td>
-                  <td>이영우</td>
-                  <td>SC제일은행</td>
-                  <td>600-20-373733</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("60020373733")}>복사</button></td>
-                </tr>
-                <tr>
-                  <td className="text-center">모</td>
-                  <td>신신숙</td>
-                  <td>국민은행</td>
-                  <td>879802-93-115438</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("87980293115438")}>복사</button></td>
-                </tr>
-              </tbody>
-            </table>
+           
+            <div className="w-screen mt-10 px-10 text-sm">
+              <div className="border p-3 rounded-lg shadow-lg mb-4">
+                <button
+                  onClick={() => setShowGroomAccounts(!showGroomAccounts)}
+                  className="w-full text-left"
+                >
+                  신랑측 계좌
+                </button>
+                {showGroomAccounts && (
+                  <div className="mt-4">
+                    <p className="text-md">
+                      이성연: 카카오뱅크 3333-10-5382056
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
+                        복사
+                      </button>
+                    </p>
+                    <p className="text-md mt-2">
+                      이영우: SC제일은행 600-20-373733
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
+                        복사
+                      </button>
+                    </p>
+                    <p className="text-md mt-2">
+                      신신숙: 국민은행 879802-93-115438
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("879802-93-115438")}>
+                        복사
+                      </button>
+                    </p>
+                  </div>
+                )}
+              </div>
 
-            <table class="table-auto bg-bgcolor-sky border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
-              <tbody>
-                <tr>
-                  <td className="text-center">신부</td>
-                  <td>김한은</td>
-                  <td>카카오뱅크</td>
-                  <td>3333-28-6191015</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("3333286191015")}>복사</button></td>
-                </tr>
-                <tr>
-                  <td className="text-center">부</td>
-                  <td>김규백</td>
-                  <td>농협</td>
-                  <td>702076-52-131271</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("70207652131271")}>복사</button></td>
-                </tr>
-                <tr>
-                  <td className="text-center">모</td>
-                  <td>김영정</td>
-                  <td>대구은행</td>
-                  <td>009-08-312442</td>
-                  <td className="border border-gray-400 rounded-lg text-center">
-                    <button className="px-1" onClick={() => copyText("00908312442")}>복사</button></td>
-                </tr>
-              </tbody>
-            </table>
+              <div className="border p-3 rounded-lg shadow-lg">
+                <button
+                  onClick={() => setShowBrideAccounts(!showBrideAccounts)}
+                  className="w-full text-left"
+                >
+                  신부측 계좌
+                </button>
+                {showBrideAccounts && (
+                  <div className="mt-4">
+                    <p className="text-md">
+                      김한은: 카카오뱅크 3333-28-6191015
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
+                        복사
+                      </button>
+                    </p>
+                    <p className="text-md mt-2">
+                      김규백: 농협 702076-52-131271
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
+                        복사
+                      </button>
+                    </p>
+                    <p className="text-md mt-2">
+                      김영정: 대구은행 009-08-312442
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
+                        복사
+                      </button>
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
 
           </div>
         </div>
