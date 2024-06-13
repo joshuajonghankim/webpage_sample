@@ -71,7 +71,7 @@ export default function Home() {
 
   useEffect(() => {
     const initializeLivere = () => {
-      (function(d, s) {
+      (function (d, s) {
         var j, e = d.getElementsByTagName(s)[0];
         if (typeof LivereTower === 'function') { return; }
         j = d.createElement(s);
@@ -343,9 +343,23 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA=="></div>
-              
-              
+              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
+
+              </div>
+              <Script id="livere-script" strategy="afterInteractive">
+                {`
+              (function(d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+                e.parentNode.insertBefore(j, e);
+              })(document, 'script');
+            `}
+              </Script>
+
+
             </div>
           </div>
         </div>
