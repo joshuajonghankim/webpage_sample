@@ -71,25 +71,31 @@ export default function Home() {
 
   useEffect(() => {
     const initializeLivere = () => {
-      if (typeof window.LivereTower === 'function') {
-        return; // 이미 로드된 경우 초기화 방지
+      if (window.LivereTower) {
+        window.LivereTower.reload();
+        return;
       }
 
       const script = document.createElement("script");
       script.src = "https://cdn-city.livere.com/js/embed.dist.js";
       script.async = true;
       script.onload = () => {
-        if (typeof window.LivereTower === 'function') {
+        if (window.LivereTower) {
           window.LivereTower.reload();
         }
       };
       document.body.appendChild(script);
     };
 
-    initializeLivere();
+    // DOM이 완전히 로드된 후에 Livere 초기화
+    if (document.readyState === 'complete') {
+      initializeLivere();
+    } else {
+      window.addEventListener('load', initializeLivere);
+    }
 
     return () => {
-      // Clean up if necessary
+      window.removeEventListener('load', initializeLivere);
       const script = document.querySelector('script[src="https://cdn-city.livere.com/js/embed.dist.js"]');
       if (script) document.body.removeChild(script);
     };
@@ -354,9 +360,16 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ==">
-              </div>
-              <Script src="https://cdn-city.livere.com/js/embed.dist.js" strategy="afterInteractive" />
+              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ=="></div>
+              <Script
+                src="https://cdn-city.livere.com/js/embed.dist.js"
+                strategy="afterInteractive"
+                onLoad={() => {
+                  if (window.LivereTower) {
+                    window.LivereTower.reload();
+                  }
+                }}
+              />
             </div>
           </div>
         </div>
