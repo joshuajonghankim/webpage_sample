@@ -88,7 +88,8 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-3xl font-MapoGoldenPier text-fontcolor-blue">
+            <h1 className="text-1xl font-MapoGoldenPier text-fontcolor-blue">I N V I T A T I O N</h1>
+            <h1 className="text-2xl font-MapoGoldenPier text-fontcolor-blue">
               초대합니다<br></br><br></br>
             </h1>
             <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
@@ -111,7 +112,7 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-3xl font-Hahmlet text-fontcolor-blue font-extralight">G A L L E R Y</h1>
+          <h1 className="absolute top-20 flex text-center text-2xl font-Hahmlet text-fontcolor-blue font-extralight">G A L L E R Y</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
@@ -212,12 +213,11 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="text-sm mx-10 text-wrap items-center flex flex-col">
-              <br></br>
-              지하철<br></br>
+            <div className="text-base mx-10 text-wrap my-16">
+              <h1 className="text-fontcolor-blue text-left">지하철</h1>
               1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
               1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
-              주차 (2시간 무료)<br></br>
+              <h1 className="text-fontcolor-blue text-left">주차 (2시간 무료)</h1>
               광명 센트럴자이 상가 주차장 B3층<br></br>
               광명 파크자이 오피스텔 주차장 B2층
             </div>
@@ -228,10 +228,10 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <h1 className="absolute top-20 text-2xl font-Hahmlet text-gray-700">
+          <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-gray-700">
             참석여부 알리기
           </h1>
-          <a className="absolute top-32 text-1xl font-Hahmlet rounded-xl p-2 text-gray-700 border border-gray-400"
+          <a className="absolute top-32 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -239,16 +239,16 @@ export default function Home() {
             알리기
           </a>
 
-          <div className="absolute top-1/3 font-Hahmlet flex flex-col items-center">
-            <h1 className="text-2xl font-Hahmlet text-gray-700">
+          <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
+            <h1 className="text-2xl text-gray-700">
               마음 전하실 곳
             </h1>
-            <h1 className="text-1xl font-Hahmlet m-5 text-gray-700 text-center">
+            <h1 className="text-1xl m-5 text-gray-700 text-center">
               참석이 어려우신 분들을 위해<br></br>
               계좌번호를 기재하였습니다.<br></br>
               너그러운 마음으로 양해 부탁드립니다.
             </h1>
-            <table className="table-auto bg-gray-200 border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
+            <table className="table-auto bg-bgcolor-sky border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신랑</td>
@@ -277,7 +277,7 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table class="table-auto bg-gray-200 border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
+            <table class="table-auto bg-bgcolor-sky border-separate text-gray-700 border-gray-400 border-spacing-1 text-xs rounded border w-11/12 m-5">
               <tbody>
                 <tr>
                   <td className="text-center">신부</td>
@@ -309,9 +309,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-white bg-cover bg-center">
+        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <div className="absolute top-20 text-center">
-            <h1 className="text-3xl font-Hahmlet font-bold text-gray-700">방명록</h1>
+            <h1 className="text-3xl font-MapoGoldenPier font-bold text-gray-700">방명록</h1>
 
           </div>
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
