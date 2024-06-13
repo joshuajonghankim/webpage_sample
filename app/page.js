@@ -182,15 +182,35 @@ export default function Home() {
               id="map" style={{ width: '100%', maxWidth: 350, height: 200 }}>
             </div>
 
-            {/* Naver Map Button */}
-            <a
-              href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80/place/36841824?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg"
-            >
-              네이버 지도
-            </a>
+            {/* Map Buttons */}
+            <div className="flex mt-4 space-x-4">
+              <a
+                href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/naver.webp"
+                  alt="네이버 지도"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
+              </a>
+              <a
+                href="https://map.kakao.com/?q=광명역사컨벤션웨딩홀&placeId=20619072"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/kakao.svg"
+                  alt="카카오맵"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
+              </a>
+            </div>
 
             <div className="text-sm mx-10 text-wrap items-center flex flex-col">
               <br></br>
