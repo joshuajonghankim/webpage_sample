@@ -71,17 +71,28 @@ export default function Home() {
 
   useEffect(() => {
     const initializeLivere = () => {
-      (function (d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
+      if (typeof window.LivereTower === 'function') {
+        return; // 이미 로드된 경우 초기화 방지
+      }
+
+      const script = document.createElement("script");
+      script.src = "https://cdn-city.livere.com/js/embed.dist.js";
+      script.async = true;
+      script.onload = () => {
+        if (typeof window.LivereTower === 'function') {
+          window.LivereTower.reload();
+        }
+      };
+      document.body.appendChild(script);
     };
 
     initializeLivere();
+
+    return () => {
+      // Clean up if necessary
+      const script = document.querySelector('script[src="https://cdn-city.livere.com/js/embed.dist.js"]');
+      if (script) document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -343,21 +354,10 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-
+              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ=="
+                >
               </div>
-              <Script id="livere-script" strategy="afterInteractive">
-                {`
-              (function(d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') { return; }
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-                e.parentNode.insertBefore(j, e);
-              })(document, 'script');
-            `}
-              </Script>
+              <Script src="https://cdn-city.livere.com/js/embed.dist.js" strategy="afterInteractive" />
 
 
             </div>
