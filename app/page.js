@@ -71,8 +71,8 @@ export default function Home() {
   };
 
   return (
-    <main className="w-dvw scrollbar-hide overflow-x-hidden">
-      <div className="relative overflow-y-auto overflow-x-hidden snap-mandatory h-screen w-screen snap-y flex flex-col items-center justify-between ">
+    <main className="w-full h-full overflow-x-hidden">
+      <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
 
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
