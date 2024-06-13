@@ -290,7 +290,7 @@ export default function Home() {
                     </p>
                     <p className="text-md mt-2 flex justify-between items-center">
                       <span>신신숙: 국민은행 679802-93-115438</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("879802-93-115438")}>
+                      <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
                         복사
                       </button>
                     </p>
@@ -342,7 +342,7 @@ export default function Home() {
           </div>
 
           {/* comment */}
-          <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
+          <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
               <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
               </div>
