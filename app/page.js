@@ -2,8 +2,6 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 
-//import CommentsFunction from "./commentsj";
-
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
   alert("복사되었습니다.");
@@ -329,7 +327,7 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              
+
             </div>
           </div>
         </div>
