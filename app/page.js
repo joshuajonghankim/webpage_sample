@@ -93,7 +93,7 @@ export default function Home() {
               초대합니다<br></br><br></br>
             </h1>
             <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
-              하나님의 사랑으로 만난 두 사람이<br></br>
+              주님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
               언제나 예수님 안에서 아름답고<br></br>
@@ -176,7 +176,7 @@ export default function Home() {
             <p className="text-lg mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
-              <br></br><br></br></p>
+              <br></br></p>
 
             {/* Map */}
             <div className="border max-h-48 overscroll-none"
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
 
             {/* Map Buttons */}
-            <div className="flex mt-4 space-x-4">
+            <div className="flex mt-2 space-x-4">
               <a
                 href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
                 target="_blank"
@@ -213,7 +213,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="text-base mx-10 text-wrap my-16">
+            <div className="text-sm mx-10 text-wrap">
               <h1 className="text-fontcolor-blue text-left">지하철</h1>
               1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
               1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
