@@ -247,16 +247,16 @@ export default function Home() {
             </h1>
 
             <div className="w-screen mt-10 px-10 text-sm">
-              <div className="border p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky text-gray-700">
+              <div className="border p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full text-center flex justify-between items-center"
                 >
-                  <span>신랑측 계좌</span>
+                  <span className="text-gray-700">신랑측 계좌</span>
                   <span className="text-right">▽</span>
                 </button>
                 {showGroomAccounts && (
-                  <div className="mt-4">
+                  <div className="mt-4 text-gray-700">
                     <p className="text-md flex justify-between items-center">
                       <span>이성연: 카카오뱅크 3333-10-5382056</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
@@ -284,11 +284,11 @@ export default function Home() {
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full text-center flex justify-between items-center"
                 >
-                  <span>신부측 계좌</span>
+                  <span className="text-gray-700">신부측 계좌</span>
                   <span className="text-right">▽</span>
                 </button>
                 {showBrideAccounts && (
-                  <div className="mt-4">
+                  <div className="mt-4 text-gray-700">
                     <p className="text-md flex justify-between items-center">
                       <span>김한은: 카카오뱅크 3333-28-6191015</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
