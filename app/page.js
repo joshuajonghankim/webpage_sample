@@ -329,8 +329,7 @@ export default function Home() {
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
               <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA=="></div>
-              <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-
+              
               <Script
                 strategy="afterInteractive" // Ensures the script is loaded after the page is interactive
                 src="https://cdn-city.livere.com/js/embed.dist.js"
