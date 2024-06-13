@@ -189,21 +189,17 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg"
             >
-              네이버 지도에서 보기
+              네이버 지도
             </a>
 
-            <p className="text-center text-lg font-bold">주차장<br></br></p>
             <div className="text-sm mx-10 text-wrap items-center flex flex-col">
               <br></br>
-              제1주차장)<br></br>
-              센트럴자이 상가 주차장 B3층 (2시간 무료)<br></br>
-              경기도 광명시 광명역로 28<br></br>
-              (광명센트럴자이 오피스텔) 입력<br></br><br></br>
-              제2주차장)<br></br>
-              파크자이 오피스텔 주차장 B2층 (2시간 무료)<br></br>
-              경기도 광명시 광명역로 26<br></br>
-              (광명 파크자이 오피스텔) 입력<br></br><br></br>
-
+              지하철<br></br>
+              1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
+              1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
+              주차 (2시간 무료)<br></br>
+              광명 센트럴자이 상가 주차장 B3층<br></br>
+              광명 파크자이 오피스텔 주차장 B2층
             </div>
           </div>
           <div className="absolute top-2/3 w-auto">
