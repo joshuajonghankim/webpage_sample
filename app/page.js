@@ -191,6 +191,7 @@ export default function Home() {
                 href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex-col flex items-center"
               >
                 <Image
                   src="/images/naver.webp"
@@ -199,11 +200,13 @@ export default function Home() {
                   height={40}
                   className="rounded-lg"
                 />
+                <h2 className="text-xs">네이버 지도</h2>
               </a>
               <a
                 href="https://map.kakao.com/?q=광명역사컨벤션웨딩홀&placeId=20619072"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex-col flex items-center"
               >
                 <Image
                   src="/images/kakao.svg"
@@ -212,6 +215,7 @@ export default function Home() {
                   height={40}
                   className="rounded-lg"
                 />
+                <h2 className="text-xs">카카오 지도</h2>
               </a>
             </div>
 
@@ -325,8 +329,7 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="commento"></div>
-              {/* 이름과 내용을 입력하는 댓글창 */}
+              
             </div>
           </div>
         </div>
