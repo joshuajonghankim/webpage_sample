@@ -323,8 +323,9 @@ export default function Home() {
           </div>
 
           {/* comment */}
-          <script id="superflowToolbarScript" data-sf-platform="manual" async src="https://cdn.velt.dev/lib/superflow.js?apiKey=Vdkd3sXvH5xpGrFjlXFr&projectId=8093120137537043"></script>
-
+          <div class="commentbox"></div>
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <script>commentBox('5685847600922624-proj')</script>
         </div>
 
         {/* 
