@@ -69,6 +69,21 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    const initializeLivere = () => {
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    };
+
+    initializeLivere();
+  }, []);
+
   return (
     <main className="w-full h-full overflow-x-hidden">
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
@@ -330,24 +345,7 @@ export default function Home() {
             <div className="mx-10">
               <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA=="></div>
               
-              <Script
-                strategy="afterInteractive" // Ensures the script is loaded after the page is interactive
-                src="https://cdn-city.livere.com/js/embed.dist.js"
-              />
-
-              <Script id="livere-tower">
-                {`(function(d, s) {
-            var j, e = d.getElementsByTagName(s)[0];
-
-            if (typeof LivereTower === 'function') { return; }
-
-            j = d.createElement(s);
-            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-            j.async = true;
-
-            e.parentNode.insertBefore(j, e);
-          })(document, 'script');`}
-              </Script>
+              
             </div>
           </div>
         </div>
