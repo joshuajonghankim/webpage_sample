@@ -75,7 +75,7 @@ export default function Home() {
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
 
         {/* Main page */}
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
 
           <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
 
         </div>
 
-        <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+        <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
             <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">I N V I T A T I O N</h1>
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <h1 className="absolute top-20 flex text-center text-2xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
             <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-custom-blue">
             참석여부 알리기
           </h1>
@@ -316,7 +316,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
+        <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <div className="absolute top-20 text-center">
             <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">방명록</h1>
