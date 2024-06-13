@@ -198,7 +198,7 @@ export default function Home() {
                   width={40}
                   height={40}
                   className="rounded-lg"
-                />
+                />                
               </a>
               <a
                 href="https://map.kakao.com/?q=광명역사컨벤션웨딩홀&placeId=20619072"
