@@ -68,6 +68,23 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    // Livere Tower 스크립트를 동적으로 로드하기 위한 함수
+    const loadLivereScript = () => {
+      if (typeof LivereCity === 'function') {
+        return; // 이미 로드되어 있으면 중복 로드 방지
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      script.async = true;
+      document.getElementById('lv-container').appendChild(script);
+    };
+
+    // 페이지 컴포넌트가 마운트될 때 Livere 스크립트 로드
+    loadLivereScript();
+  }, []);
+
   return (
     <main className="w-full h-full overflow-x-hidden">
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
@@ -327,7 +344,8 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-
+              <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
+              </div>
             </div>
           </div>
         </div>
