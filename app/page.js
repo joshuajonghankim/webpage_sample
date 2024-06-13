@@ -289,7 +289,7 @@ export default function Home() {
                       </button>
                     </p>
                     <p className="text-md mt-2 flex justify-between items-center">
-                      <span>신신숙: 국민은행 879802-93-115438</span>
+                      <span>신신숙: 국민은행 679802-93-115438</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("879802-93-115438")}>
                         복사
                       </button>
