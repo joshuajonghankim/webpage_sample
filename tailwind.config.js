@@ -31,7 +31,7 @@ module.exports = {
 
       colors: {
         'bgcolor-sky': '#f2f7fb',
-        'fontcolor-blue': '#81acdb',
+        'custom-blue': '#81acdb',
       },
     },
   },

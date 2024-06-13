@@ -90,8 +90,8 @@ export default function Home() {
 
         <div className="snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-1xl font-MapoGoldenPier text-fontcolor-blue">I N V I T A T I O N</h1>
-            <h1 className="text-2xl font-MapoGoldenPier text-fontcolor-blue">
+            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">I N V I T A T I O N</h1>
+            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
             <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
@@ -114,7 +114,7 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-svh w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-2xl font-Hahmlet text-fontcolor-blue font-extralight">G A L L E R Y</h1>
+          <h1 className="absolute top-20 flex text-center text-2xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
@@ -170,8 +170,8 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
-            <h1 className="text-1xl font-MapoGoldenPier text-fontcolor-blue">L O C A T I O N</h1>
-            <h1 className="text-2xl font-MapoGoldenPier text-fontcolor-blue">오시는 길</h1>
+            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
+            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
           <div className="absolute top-32 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
             <p className="text-center text-lg font-bold">광명역사컨벤션웨딩홀</p>
@@ -216,10 +216,10 @@ export default function Home() {
             </div>
 
             <div className="text-sm mx-10 text-wrap">
-              <h1 className="text-fontcolor-blue text-left">지하철</h1>
+              <h1 className="text-custom-blue text-left">지하철</h1>
               1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
               1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
-              <h1 className="text-fontcolor-blue text-left">주차 (2시간 무료)</h1>
+              <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
               광명 센트럴자이 상가 주차장 B3층<br></br>
               광명 파크자이 오피스텔 주차장 B2층
             </div>
@@ -230,10 +230,10 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-svh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-gray-700">
+          <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-custom-blue">
             참석여부 알리기
           </h1>
-          <a className="absolute top-36 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400"
+          <a className="absolute top-36 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -242,15 +242,15 @@ export default function Home() {
           </a>
 
           <div className="absolute top-1/2 font-MapoGoldenPier flex flex-col items-center">
-            <h1 className="text-2xl text-gray-700">
+            <h1 className="text-2xl text-custom-blue">
               마음 전하실 곳
             </h1>
            
             <div className="w-screen mt-10 px-10 text-sm">
-              <div className="border p-3 rounded-lg shadow-lg mb-4">
+              <div className="border p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full text-left"
+                  className="w-full text-left "
                 >
                   신랑측 계좌
                 </button>
@@ -278,7 +278,7 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="border p-3 rounded-lg shadow-lg">
+              <div className="border p-3 rounded-lg shadow-md bg-bgcolor-sky">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full text-left"
