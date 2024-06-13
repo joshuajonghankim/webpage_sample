@@ -260,7 +260,7 @@ export default function Home() {
             알리기
           </a>
 
-          <div className="absolute top-1/2 font-MapoGoldenPier flex flex-col items-center">
+          <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
             <h1 className="text-2xl text-custom-blue">
               마음 전하실 곳
             </h1>
