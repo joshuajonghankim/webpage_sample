@@ -178,10 +178,10 @@ export default function Home() {
             <p className="text-lg mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
-              <br></br></p>
+            </p>
 
             {/* Map */}
-            <div className="border max-h-48 overscroll-none"
+            <div className="border mt-4 max-h-48 overscroll-none"
               id="map" style={{ width: '100%', maxWidth: 350, height: 200 }}>
             </div>
 
@@ -245,31 +245,32 @@ export default function Home() {
             <h1 className="text-2xl text-custom-blue">
               마음 전하실 곳
             </h1>
-           
+
             <div className="w-screen mt-10 px-10 text-sm">
               <div className="border p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full text-left "
+                  className="w-full text-center flex justify-between items-center"
                 >
-                  신랑측 계좌
+                  <span>신랑측 계좌</span>
+                  <span className="text-right">▽</span>
                 </button>
                 {showGroomAccounts && (
                   <div className="mt-4">
-                    <p className="text-md">
-                      이성연: 카카오뱅크 3333-10-5382056
+                    <p className="text-md flex justify-between items-center">
+                      <span>이성연: 카카오뱅크 3333-10-5382056</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2">
-                      이영우: SC제일은행 600-20-373733
+                    <p className="text-md mt-2 flex justify-between items-center">
+                      <span>이영우: SC제일은행 600-20-373733</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2">
-                      신신숙: 국민은행 879802-93-115438
+                    <p className="text-md mt-2 flex justify-between items-center">
+                      <span>신신숙: 국민은행 879802-93-115438</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("879802-93-115438")}>
                         복사
                       </button>
@@ -281,26 +282,27 @@ export default function Home() {
               <div className="border p-3 rounded-lg shadow-md bg-bgcolor-sky">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
-                  className="w-full text-left"
+                  className="w-full text-center flex justify-between items-center"
                 >
-                  신부측 계좌
+                  <span>신부측 계좌</span>
+                  <span className="text-right">▽</span>
                 </button>
                 {showBrideAccounts && (
                   <div className="mt-4">
-                    <p className="text-md">
-                      김한은: 카카오뱅크 3333-28-6191015
+                    <p className="text-md flex justify-between items-center">
+                      <span>김한은: 카카오뱅크 3333-28-6191015</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2">
-                      김규백: 농협 702076-52-131271
+                    <p className="text-md mt-2 flex justify-between items-center">
+                      <span>김규백: 농협 702076-52-131271</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2">
-                      김영정: 대구은행 009-08-312442
+                    <p className="text-md mt-2 flex justify-between items-center">
+                      <span>김영정: 대구은행 009-08-312442</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
                         복사
                       </button>
@@ -310,19 +312,18 @@ export default function Home() {
               </div>
             </div>
 
+
           </div>
         </div>
 
         <div className="relative overflow-y-auto snap-center snap-always min-h-svh min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <div className="absolute top-20 text-center">
-            <h1 className="text-3xl font-MapoGoldenPier font-bold text-gray-700">방명록</h1>
+            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
+            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">방명록</h1>
+          </div>
 
-          </div>
-          <div className='absolute top-30 max-h-6/10 w-full overflow-y-auto text-black'>
-            <div className="mx-10">
-              {/* 이름과 내용을 입력하는 댓글창 */}
-            </div>
-          </div>
+          {/* comment */}
+          <script id="superflowToolbarScript" data-sf-platform="manual" async src="https://cdn.velt.dev/lib/superflow.js?apiKey=Vdkd3sXvH5xpGrFjlXFr&projectId=8093120137537043"></script>
 
         </div>
 
