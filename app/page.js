@@ -309,11 +309,8 @@ export default function Home() {
 
 
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
-
-            <div className="mx-10">
+            <div className="mx-5">
               <LivereComments />
-
-
             </div>
           </div>
         </div>

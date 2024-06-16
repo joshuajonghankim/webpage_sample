@@ -1,18 +1,26 @@
-// components/LivereComments.js
-
 import { useEffect } from 'react';
 
 const LivereComments = () => {
   useEffect(() => {
-    // Check if Livere script is already loaded
-    if (typeof LivereTower !== 'function') {
-      const script = document.createElement('script');
-      script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      script.async = true;
+    const loadLivereScript = () => {
+      // Check if the Livere script is already present
+      if (!document.querySelector('script[src="https://cdn-city.livere.com/js/embed.dist.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        script.async = true;
+        script.onload = () => {
+          // Initialize Livere after the script has loaded
+          window.LivereTower && window.LivereTower.reload();
+        };
+        document.body.appendChild(script);
+      } else {
+        // If script is already present, just initialize Livere
+        window.LivereTower && window.LivereTower.reload();
+      }
+    };
 
-      const parentNode = document.getElementsByTagName('script')[0];
-      parentNode.parentNode.insertBefore(script, parentNode);
-    }
+    // Call the function to load the script
+    loadLivereScript();
   }, []);
 
   return (
