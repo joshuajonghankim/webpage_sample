@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-import Script from 'next/script';
+import LivereComments from "./LivereComments";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -56,38 +56,6 @@ export default function Home() {
       const map = new window.naver.maps.Map('map', mapOptions);
     }
   };
-
-  useEffect(() => {
-    const initializeLivere = () => {
-      if (window.LivereTower) {
-        window.LivereTower.reload();
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = "https://cdn-city.livere.com/js/embed.dist.js";
-      script.async = true;
-      script.onload = () => {
-        if (window.LivereTower) {
-          window.LivereTower.reload();
-        }
-      };
-      document.body.appendChild(script);
-    };
-
-    // DOM이 완전히 로드된 후에 Livere 초기화
-    if (document.readyState === 'complete') {
-      initializeLivere();
-    } else {
-      window.addEventListener('load', initializeLivere);
-    }
-
-    return () => {
-      window.removeEventListener('load', initializeLivere);
-      const script = document.querySelector('script[src="https://cdn-city.livere.com/js/embed.dist.js"]');
-      if (script) document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <main className="w-full h-full overflow-x-hidden">
@@ -239,7 +207,7 @@ export default function Home() {
             <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
             광명 센트럴자이 상가 주차장 B3층<br></br>
             광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-            <h1 className="text-custom-blue text-left text-sm">※ 연회장 입구 직원분께 말씀해주시면<br/> 무료주차 2시간 입력해드립니다.
+            <h1 className="text-custom-blue text-left text-sm">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
             </h1>
           </div>
         </div>
@@ -340,16 +308,7 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-10">
-              <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4MC8zMDI1OQ=="></div>
-              <Script
-                src="https://cdn-city.livere.com/js/embed.dist.js"
-                strategy="afterInteractive"
-                onLoad={() => {
-                  if (window.LivereTower) {
-                    window.LivereTower.reload();
-                  }
-                }}
-              />
+              <LivereComments />
             </div>
           </div>
         </div>
