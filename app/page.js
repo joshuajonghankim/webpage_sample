@@ -306,9 +306,14 @@ export default function Home() {
           </div>
 
           {/* comment */}
+
+
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
+
             <div className="mx-10">
               <LivereComments />
+
+
             </div>
           </div>
         </div>
