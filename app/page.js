@@ -200,12 +200,12 @@ export default function Home() {
             </p>
 
             {/* Map */}
-            <div className="border mt-4 max-h-48 overscroll-none"
+            <div className="border mt-4 max-h-40 overscroll-none"
               id="map" style={{ width: '100%', maxWidth: 350, height: 200 }}>
             </div>
 
             {/* Map Buttons */}
-            <div className="flex mt-2 space-x-4">
+            <div className="flex mt-4 space-x-4">
               <a
                 href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
                 target="_blank"
