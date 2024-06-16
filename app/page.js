@@ -245,7 +245,7 @@ export default function Home() {
               <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
               광명 센트럴자이 상가 주차장 B3층<br></br>
               광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-              <h1 className="text-custom-blue text-left text-wrap">※ 연회장 입구 직원분께 말씀해주시면 무료주차 2시간 입력해드립니다.</h1>
+              <h1 className="text-custom-blue text-left text-wrap text-sm">※ 연회장 입구 직원분께 말씀해주시면 무료주차 2시간 입력해드립니다.</h1>
             </div>
           </div>
           <div className="absolute top-2/3 w-auto">
