@@ -238,7 +238,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="absolute top-2/3 font-MapoGoldenPier text-xs text-wrap text-gray-700">
+          <div className="absolute bottom-10 font-MapoGoldenPier text-xs text-wrap text-gray-700">
             <h1 className="text-custom-blue text-left"><br></br>지하철</h1>
             1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
             1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
