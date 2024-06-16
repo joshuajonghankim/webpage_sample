@@ -25,20 +25,8 @@ export default function Home() {
   }, [isPlaying]);
 
   useEffect(() => {
-    // 페이지가 로드될 때 자동 재생 시도
-    setIsPlaying(true);
-
-    // 오디오를 수동으로 재생 시도 (자동 재생이 브라우저에서 차단될 경우 대응)
-    const audioPlayPromise = audioRef.current.play();
-    if (audioPlayPromise !== undefined) {
-      audioPlayPromise
-        .then(() => {
-          console.log("오디오 자동 재생 성공");
-        })
-        .catch((error) => {
-          console.log("오디오 자동 재생 실패", error);
-        });
-    }
+    // 페이지가 로드될 때 자동 재생 시도    
+    setIsPlaying(true);    
   }, []);
 
   const toggleMusic = () => {
@@ -206,7 +194,7 @@ export default function Home() {
           </div>
           <div className="absolute top-32 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
             <p className="text-center text-lg font-bold">광명역사컨벤션웨딩홀</p>
-            <p className="text-lg mx-10 text-wrap items-center flex flex-col text-center">
+            <p className="text-base mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
             </p>
@@ -227,8 +215,8 @@ export default function Home() {
                 <Image
                   src="/images/naver.webp"
                   alt="네이버 지도"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   className="rounded-lg"
                 />
                 <h2 className="text-xs">네이버 지도</h2>
@@ -242,8 +230,8 @@ export default function Home() {
                 <Image
                   src="/images/kakao.svg"
                   alt="카카오맵"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   className="rounded-lg"
                 />
                 <h2 className="text-xs">카카오 지도</h2>
@@ -256,7 +244,8 @@ export default function Home() {
               1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
               <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
               광명 센트럴자이 상가 주차장 B3층<br></br>
-              광명 파크자이 오피스텔 주차장 B2층
+              광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
+              <h1 className="text-custom-blue text-left text-wrap">※ 연회장 입구 직원분께 말씀해주시면 무료주차 2시간 입력해드립니다.</h1>
             </div>
           </div>
           <div className="absolute top-2/3 w-auto">
