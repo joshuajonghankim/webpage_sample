@@ -271,7 +271,7 @@ export default function Home() {
             </h1>
 
             <div className="w-screen mt-10 px-10 text-sm">
-              <div className="border p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky text-gray-700">
+              <div className="p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky text-gray-700">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full text-center flex justify-between items-center"
@@ -303,7 +303,7 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="border p-3 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
+              <div className="p-3 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full text-center flex justify-between items-center"
