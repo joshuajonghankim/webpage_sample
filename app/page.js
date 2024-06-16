@@ -142,7 +142,6 @@ export default function Home() {
               className="snap-center snap-always ml-10 mr-5 w-2/3 md:h-96"
               width={600}
               height={1200}
-              priority
             />
             <Image
               src="/images/g1.jpg"
@@ -150,7 +149,6 @@ export default function Home() {
               className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
-              p
             />
             <Image
               src="/images/g2.jpg"
@@ -158,7 +156,6 @@ export default function Home() {
               className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
-
             />
             <Image
               src="/images/g3.jpg"
@@ -166,7 +163,6 @@ export default function Home() {
               className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
-
             />
             <Image
               src="/images/g4.jpg"
@@ -174,7 +170,6 @@ export default function Home() {
               className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
               width={600}
               height={1200}
-
             />
             <Image
               src="/images/g5.jpg"
@@ -183,7 +178,6 @@ export default function Home() {
               width={600}
               height={1200}
             />
-
           </div>
         </div>
 
