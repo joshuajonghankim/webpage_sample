@@ -83,7 +83,7 @@ export default function Home() {
 
           <div className="text-center absolute top-2/3 font-MapoGoldenPier text-gray-700">
             <h1 className="text-4xl mb-8 mt-10">이성연 & 김한은</h1>
-            <h1 className="text-1xl mb-2">2024.7.20 토요일 낮 12시</h1>
+            <h1 className="text-1xl mb-2">2024.7.20. 토요일 낮 12시</h1>
             <h1 className="text-1xl">광명역사컨벤션웨딩홀</h1>
           </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
+            <h1 className="text-lg font-MapoGoldenPier text-gray-700 text-wrap">
               주님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -104,13 +104,15 @@ export default function Home() {
               행복한 가정을 이루도록<br></br>
               오셔서 축복해주세요.<br></br>
               <br></br>
+            </h1>
+            <h2 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
               이영우
               신신숙
               의 장남 <strong>이성연</strong><br></br>
               김규백
               김영정
               의 차녀 <strong>김한은</strong>
-            </h1>
+            </h2>
           </div>
         </div>
 
