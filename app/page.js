@@ -170,7 +170,7 @@ export default function Home() {
             <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
-          <div className="absolute top-32 max-h-4/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
+          <div className="absolute top-32 max-h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
             <p className="text-center text-lg font-bold">광명역사컨벤션웨딩홀</p>
             <p className="text-base mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
