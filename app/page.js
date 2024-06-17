@@ -95,7 +95,7 @@ export default function Home() {
             <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-lg font-MapoGoldenPier text-gray-700 text-wrap">
+            <h1 className="text-base font-MapoGoldenPier text-gray-700 text-wrap">
               주님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -105,7 +105,7 @@ export default function Home() {
               오셔서 축복해주세요.<br></br>
               <br></br>
             </h1>
-            <h2 className="text-xl font-MapoGoldenPier text-gray-700 text-wrap">
+            <h2 className="text-base font-MapoGoldenPier text-gray-700 text-wrap">
               이영우
               신신숙
               의 장남 <strong>이성연</strong><br></br>
