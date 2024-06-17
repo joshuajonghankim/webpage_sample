@@ -188,7 +188,7 @@ export default function Home() {
                 href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-col flex items-center"
+                className="flex-row flex items-center"
               >
                 <Image
                   src="/images/naver.webp"
@@ -197,13 +197,13 @@ export default function Home() {
                   height={30}
                   className="rounded-lg"
                 />
-                <h2 className="text-xs">네이버 지도</h2>
+                <h2 className="text-xs ml-1">네이버 지도</h2>
               </a>
               <a
                 href="https://map.kakao.com/link/map/23753350"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-col flex items-center"
+                className="flex-row flex items-center"
               >
                 <Image
                   src="/images/kakao.svg"
@@ -212,7 +212,7 @@ export default function Home() {
                   height={30}
                   className="rounded-lg"
                 />
-                <h2 className="text-xs">카카오 지도</h2>
+                <h2 className="text-xs ml-1">카카오 지도</h2>
               </a>
             </div>
           </div>
