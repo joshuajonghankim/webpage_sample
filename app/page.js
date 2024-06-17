@@ -252,7 +252,11 @@ export default function Home() {
                   className="w-full text-center flex justify-between items-center"
                 >
                   <span className="text-gray-700">신랑측 계좌</span>
-                  <span className="text-right">⮟</span>
+                  <img
+                    src="/images/down.png"
+                    alt="Down arrow"
+                    className="w-4 h-4 ml-auto"
+                  />
                 </button>
                 {showGroomAccounts && (
                   <div className="mt-4 text-gray-700">
@@ -284,7 +288,11 @@ export default function Home() {
                   className="w-full text-center flex justify-between items-center"
                 >
                   <span className="text-gray-700">신부측 계좌</span>
-                  <span className="text-right">⮟</span>
+                  <img
+                    src="/images/down.png"
+                    alt="Down arrow"
+                    className="w-4 h-4 ml-auto"
+                  />
                 </button>
                 {showBrideAccounts && (
                   <div className="mt-4 text-gray-700">
