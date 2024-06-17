@@ -25,7 +25,6 @@ const LivereComments = () => {
 
   return (
     <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-      <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
     </div>
   );
 };
