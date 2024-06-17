@@ -52,7 +52,7 @@ export default function Home() {
     if (window.naver && window.naver.maps) {
       const mapOptions = {
         center: new window.naver.maps.LatLng(37.4163636, 126.8848772),
-        zoom: 14
+        zoom: 15
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
@@ -200,7 +200,7 @@ export default function Home() {
                 <h2 className="text-xs">네이버 지도</h2>
               </a>
               <a
-                href="https://map.kakao.com/?q=광명역사컨벤션웨딩홀&placeId=20619072"
+                href="https://map.kakao.com/link/map/23753350"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-col flex items-center"
