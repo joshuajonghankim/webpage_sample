@@ -37,7 +37,7 @@ export default function Home() {
 
   useEffect(() => {
     // 페이지가 로드될 때 자동 재생 시도    
-    setIsPlaying(true);
+    setIsPlaying(false);
   }, []);
 
   const toggleMusic = () => {
