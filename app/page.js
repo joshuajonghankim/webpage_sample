@@ -69,7 +69,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full h-full overflow-x-hidden">
+    <main className="w-full h-full overflow-x-hidden bg-bgcolor-sky">
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
 
         {/* Main page */}
@@ -351,26 +351,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <div className="absolute top-20 text-center">
-            <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
-            <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
-          </div>
-
-
-          {/* comment */}
-          <div className='absolute top-1/3 max-h-6/10 w-full mx-5 overflow-y-auto text-black'>
-
-          </div>
-        </div>
-        
         {/* 
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
           <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
         </footer>
-        */}
+        */}       
 
       </div>
+      
       <LivereComments />
 
       {/* Speaker Image */}

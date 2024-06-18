@@ -54,9 +54,16 @@ const LivereComments = () => {
   }, []);
 
   return (
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-      {/* Comments will be loaded here by Livere */}
+    <div>
+      <div className="relative snap-center snap-always mt-16 text-center">
+        <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
+        <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
+      </div>
+      <div className='mx-5 mt-5 bg-bgcolor-sky' id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
+        {/* Comments will be loaded here by Livere */}
+      </div>
     </div>
+
   );
 };
 
