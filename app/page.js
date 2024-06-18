@@ -106,9 +106,9 @@ export default function Home() {
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap leading-relaxed">
+            <h1 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap leading-loose">
               주님의 사랑으로 만난 두 사람이<br></br>
-              이제 새로운 가정을 이루는<br></br>
+              이제 새로운 가정을 이루는<br></br><br></br>
               아름다운 약속을 하려 합니다.<br></br>
               언제나 예수님 안에서 아름답고<br></br>
               주위에 사랑을 나누는<br></br>
