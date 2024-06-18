@@ -232,7 +232,7 @@ export default function Home() {
           <h1 className="absolute top-20 text-xl font-MapoGoldenPier text-custom-blue">
             참석여부 알리기
           </h1>
-          <a className="absolute top-36 text-sm font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
+          <a className="absolute top-32 text-sm font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
