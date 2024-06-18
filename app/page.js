@@ -355,13 +355,15 @@ export default function Home() {
           <div className="absolute top-20 text-center">
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
+
           </div>
 
+      
+
+
           {/* comment */}
-          <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
-            <div className="mx-5">
-            <LivereComments />
-            </div>
+          <div className='absolute top-1/3 max-h-6/10 w-full mx-5 overflow-y-auto text-black'>
+            
           </div>
         </div>
 
@@ -373,6 +375,8 @@ export default function Home() {
 
 
       </div>
+
+      <LivereComments />
 
       {/* Speaker Image */}
       <div className="absolute right-3 top-3">
@@ -398,6 +402,7 @@ export default function Home() {
 
       {/* audio 요소 추가 */}
       <audio ref={audioRef} src="/music/In-your-heart[1.2].m4a" type="audio/mpeg" />
+
 
     </main>
   );
