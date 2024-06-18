@@ -14,6 +14,16 @@ export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [livereReloadKey, setLivereReloadKey] = useState(0); // Livere 스크립트 리로드 트리거
   const audioRef = useRef(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: '/images/g0.jpg', alt: 'g0' },
+    { src: '/images/g1.jpg', alt: 'g1' },
+    { src: '/images/g2.jpg', alt: 'g2' },
+    { src: '/images/g3.jpg', alt: 'g3' },
+    { src: '/images/g4.jpg', alt: 'g4' },
+    { src: '/images/g5.jpg', alt: 'g5' }
+  ];
 
   useEffect(() => {
     if (isPlaying) {
@@ -95,7 +105,7 @@ export default function Home() {
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap">
+            <h1 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap leading-relaxed">
               주님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -104,22 +114,18 @@ export default function Home() {
               행복한 가정을 이루도록<br></br>
               오셔서 축복해주세요.<br></br>
               <br></br>
-            </h1>
-            <h2 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap">
               이영우
               신신숙
               의 장남 <strong>이성연</strong><br></br>
               김규백
               김영정
               의 차녀 <strong>김한은</strong>
-            </h2>
+            </h1>
           </div>
         </div>
 
-        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
-
-          <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
+        {/*
+        <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
               src="/images/g0.jpg"
               alt="g0"
@@ -162,7 +168,47 @@ export default function Home() {
               width={600}
               height={1200}
             />
+        */}
+
+        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
+          <h1 className="absolute top-20 flex text-center text-xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
+
+          <div className="absolute top-48 overflow-x-auto flex flex-wrap w-full justify-center">
+            {images.map((image, index) => (
+              <div key={index} className="p-2">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  className="cursor-pointer object-cover"
+                  width={100}
+                  height={100}
+                  onClick={() => setSelectedImage(image.src)}
+                />
+              </div>
+            ))}
           </div>
+
+          {/* Modal for displaying the selected image */}
+          {selectedImage && (
+            <div className="max-h-screen fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50">
+              <div className="relative">
+                <Image
+                  src={selectedImage}
+                  alt="Selected"
+                  className="object-contain"
+                  width={800}
+                  height={800}
+                  onClick={() => setSelectedImage(null)}
+                />
+                <button
+                  className="absolute top-2 right-2 text-white text-2xl"
+                  onClick={() => setSelectedImage(null)}
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
