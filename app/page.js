@@ -26,6 +26,26 @@ export default function Home() {
   ];
 
   useEffect(() => {
+    // 스크롤 이벤트 리스너 추가
+    const handleScroll = () => {
+      if (!isPlaying) {
+        setIsPlaying(true);
+      }
+      // 스크롤 이벤트 리스너는 한 번만 실행되면 됩니다.
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+    // 페이지가 로드될 때 스크롤 이벤트 리스너 추가
+    window.addEventListener('scroll', handleScroll);
+
+    // 컴포넌트가 unmount될 때 스크롤 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // 빈 배열을 넘겨 한 번만 실행되도록 설정
+
+  useEffect(() => {
+    // 음악 재생 상태에 따라 재생 및 정지
     if (isPlaying) {
       audioRef.current.play().catch((error) => {
         console.log("자동 재생이 차단되었습니다.", error);
@@ -34,11 +54,6 @@ export default function Home() {
       audioRef.current.pause();
     }
   }, [isPlaying]);
-
-  useEffect(() => {
-    // 페이지가 로드될 때 자동 재생 시도    
-    setIsPlaying(false);
-  }, []);
 
   const toggleMusic = () => {
     setIsPlaying(prevState => !prevState);
