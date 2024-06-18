@@ -22,7 +22,8 @@ export default function Home() {
     { src: '/images/g2.jpg', alt: 'g2' },
     { src: '/images/g3.jpg', alt: 'g3' },
     { src: '/images/g4.jpg', alt: 'g4' },
-    { src: '/images/g5.jpg', alt: 'g5' }
+    { src: '/images/g5.jpg', alt: 'g5' },
+    { src: '/images/g6.jpg', alt: 'g6' },
   ];
 
   useEffect(() => {
