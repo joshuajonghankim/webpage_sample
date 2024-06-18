@@ -356,14 +356,16 @@ export default function Home() {
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
           </div>
-          <LivereComments />
+
 
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full mx-5 overflow-y-auto text-black'>
-    
+
           </div>
         </div>
+
         
+
 
         {/* 
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
@@ -372,8 +374,7 @@ export default function Home() {
         */}
 
       </div>
-
-      
+      <LivereComments />
 
       {/* Speaker Image */}
       <div className="absolute right-3 top-3">
