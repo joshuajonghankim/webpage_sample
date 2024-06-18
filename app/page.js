@@ -362,7 +362,6 @@ export default function Home() {
             <div className="mx-5">
               <LivereComments />
             </div>
-
           </div>
         </div>
 
