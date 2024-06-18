@@ -1,38 +1,61 @@
-'use client';
+"use client"; // Ensure this is the first line
 
 import { useEffect } from 'react';
 
 const LivereComments = () => {
   useEffect(() => {
-    // LivereTower가 이미 로드된 경우, 다시 로드하지 않음
-    if (typeof window.LivereTower === 'function') return;
-
-    window.livereOptions = {
-      refer: 'lsy-khe.vercel.app/',
+    const checkLivereTowerInitialization = () => {
+      if (typeof window.LivereTower === 'function') {
+        console.log("LivereTower initialized successfully.");
+        // Additional logic to execute once LivereTower is initialized can go here.
+        return true;
+      }
+      return false;
     };
 
-    // 라이브리 스크립트를 동적으로 로드
-    const script = document.createElement('script');
-    script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    script.async = true;
-    script.onload = () => {
-      console.log('Livere script loaded successfully.');
-    };
-    script.onerror = () => {
-      console.error('Failed to load Livere script.');
+    const loadLivereScript = () => {
+      // Set Livere options before script loading
+      window.livereOptions = {
+        refer: 'lsy-khe.vercel.app/',
+      };
+
+      // Create and append the Livere script
+      const script = document.createElement('script');
+      script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      script.async = true;
+
+      script.onload = () => {
+        console.log('Livere script loaded successfully.');
+        // Start polling to check for LivereTower initialization
+        const interval = setInterval(() => {
+          if (checkLivereTowerInitialization()) {
+            clearInterval(interval);
+          }
+        }, 100); // Check every 100ms
+      };
+
+      script.onerror = () => {
+        console.error('Failed to load Livere script.');
+      };
+
+      document.body.appendChild(script);
+
+      // Clean up the script when the component is unmounted
+      return () => {
+        document.body.removeChild(script);
+        console.log('Livere script removed on cleanup.');
+      };
     };
 
-    document.body.appendChild(script);
-
-    // Clean up the script when the component is unmounted
-    return () => {
-      document.body.removeChild(script);
-    };
+    // Check if LivereTower is already loaded to avoid reloading
+    if (!checkLivereTowerInitialization()) {
+      loadLivereScript();
+    }
   }, []);
 
   return (
     <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-      
+      {/* Comments will be loaded here by Livere */}
     </div>
   );
 };
