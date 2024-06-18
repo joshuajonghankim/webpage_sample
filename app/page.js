@@ -112,14 +112,9 @@ export default function Home() {
               언제나 예수님 안에서 아름답고<br></br>
               주위에 사랑을 나누는<br></br>
               행복한 가정을 이루도록<br></br>
-              오셔서 축복해주세요.<br></br>
-              <br></br>
-              이영우
-              신신숙
-              의 장남 <strong>이성연</strong><br></br>
-              김규백
-              김영정
-              의 차녀 <strong>김한은</strong>
+              오셔서 축복해주세요.<br></br><br></br>
+              <span class="text-base">이영우</span>, <span class="text-base">신신숙</span>의 장남 <strong class="text-base">이성연</strong><br></br>
+              <span class="text-base">김규백</span>, <span class="text-base">김영정</span>의 차녀 <strong class="text-base">김한은</strong>
             </h1>
           </div>
         </div>
