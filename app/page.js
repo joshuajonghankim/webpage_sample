@@ -360,7 +360,7 @@ export default function Home() {
           {/* comment */}
           <div className='absolute top-1/3 max-h-6/10 w-full overflow-y-auto text-black'>
             <div className="mx-5">
-              <LivereComments />
+            <LivereComments />
             </div>
           </div>
         </div>

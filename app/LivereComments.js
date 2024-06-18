@@ -1,33 +1,38 @@
-// components/LivereComments.js
-'use client';  // Next.js 13 이상에서 클라이언트 전용 컴포넌트로 지정
+'use client';
 
 import { useEffect } from 'react';
 
 const LivereComments = () => {
   useEffect(() => {
+    // LivereTower가 이미 로드된 경우, 다시 로드하지 않음
+    if (typeof window.LivereTower === 'function') return;
+
     window.livereOptions = {
-      refer: 'lsy-khe.vercel.app/'
+      refer: 'lsy-khe.vercel.app/',
     };
-    // 라이브리 설치 코드
-    (function (d, s) {
-      var j, e = d.getElementsByTagName(s)[0];
-      /*
-      */
 
-      if (typeof LivereTower === 'function') { return; }
+    // 라이브리 스크립트를 동적으로 로드
+    const script = document.createElement('script');
+    script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    script.async = true;
+    script.onload = () => {
+      console.log('Livere script loaded successfully.');
+    };
+    script.onerror = () => {
+      console.error('Failed to load Livere script.');
+    };
 
-      j = d.createElement(s);
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
+    document.body.appendChild(script);
 
-      e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-
+    // Clean up the script when the component is unmounted
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
     <div id="lv-container" data-id="city" data-uid="MTAyMC81OTkxNy8zNjM4MA==">
-      <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+      
     </div>
   );
 };
