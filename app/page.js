@@ -363,10 +363,7 @@ export default function Home() {
 
           </div>
         </div>
-
         
-
-
         {/* 
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
           <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
