@@ -288,7 +288,7 @@ export default function Home() {
             </h1>
 
             <div className="w-screen mt-10 px-5 text-sm">
-              <div className="p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky text-gray-700">
+              <div className="p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full text-center flex justify-between items-center"
