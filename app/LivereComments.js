@@ -8,11 +8,12 @@ const LivereComments = () => {
     window.livereOptions = {
       refer: 'lsy-khe.vercel.app/'
     };
-    /*
     // 라이브리 설치 코드
     (function (d, s) {
       var j, e = d.getElementsByTagName(s)[0];
-      
+      /*
+      */
+
       if (typeof LivereTower === 'function') { return; }
 
       j = d.createElement(s);
@@ -21,29 +22,7 @@ const LivereComments = () => {
 
       e.parentNode.insertBefore(j, e);
     })(document, 'script');
-    */
 
-    if (!window.LivereTower) {
-      // 라이브리 스크립트 추가
-      const script = document.createElement('script');
-      script.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      script.async = true;
-      script.onload = () => {
-        // 스크립트가 로드되면 LivereTower를 초기화
-        if (window.LivereTower) {
-          window.LivereTower.reload();
-        }
-      };
-      document.body.appendChild(script);
-
-      // 컴포넌트 언마운트 시 스크립트 제거
-      return () => {
-        document.body.removeChild(script);
-      };
-    } else {
-      // 이미 스크립트가 로드된 경우, LivereTower를 초기화
-      window.LivereTower.reload();
-    }
   }, []);
 
   return (
