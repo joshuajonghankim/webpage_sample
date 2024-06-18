@@ -12,7 +12,6 @@ export default function Home() {
   const [showGroomAccounts, setShowGroomAccounts] = useState(false);  // 신랑측 계좌 상태
   const [showBrideAccounts, setShowBrideAccounts] = useState(false);  // 신부측 계좌 상태
   const [isPlaying, setIsPlaying] = useState(false);
-  const [livereReloadKey, setLivereReloadKey] = useState(0); // Livere 스크립트 리로드 트리거
   const audioRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -68,19 +67,6 @@ export default function Home() {
       const map = new window.naver.maps.Map('map', mapOptions);
     }
   };
-
-  // 페이지 새로고침 시 Livere 스크립트 리로드 트리거
-  useEffect(() => {
-    const handleReload = () => {
-      setLivereReloadKey(prevKey => prevKey + 1);
-    };
-
-    window.addEventListener('beforeunload', handleReload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleReload);
-    };
-  }, []);
 
   return (
     <main className="w-full h-full overflow-x-hidden">
