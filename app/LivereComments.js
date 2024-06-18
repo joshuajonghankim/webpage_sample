@@ -1,4 +1,4 @@
-"use client"; // Ensure this is the first line
+"use client";
 
 import { useEffect } from 'react';
 
