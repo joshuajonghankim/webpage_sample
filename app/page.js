@@ -169,7 +169,7 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <h1 className="absolute top-20 flex text-center text-xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
 
-          <div className="absolute top-48 overflow-x-auto flex flex-wrap w-full justify-center">
+          <div className="absolute top-48 max-h-6/10 overflow-x-auto flex flex-wrap w-full justify-center">
             {images.map((image, index) => (
               <div key={index} className="p-2">
                 <Image
