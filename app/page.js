@@ -82,20 +82,20 @@ export default function Home() {
           </div>
 
           <div className="text-center absolute top-2/3 font-MapoGoldenPier text-gray-700">
-            <h1 className="text-4xl mb-8 mt-10">이성연 & 김한은</h1>
-            <h1 className="text-1xl mb-2">2024.7.20. 토요일 낮 12시</h1>
-            <h1 className="text-1xl">광명역사컨벤션웨딩홀</h1>
+            <h1 className="text-3xl mb-8 mt-10">이성연 & 김한은</h1>
+            <h1 className="text-sm mb-2">2024.7.20. 토요일 낮 12시</h1>
+            <h1 className="text-sm">광명역사컨벤션웨딩홀</h1>
           </div>
 
         </div>
 
         <div className="snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="text-center text-wrap m-10">
-            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">I N V I T A T I O N</h1>
-            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">
+            <h1 className="text-sm font-MapoGoldenPier text-custom-blue">I N V I T A T I O N</h1>
+            <h1 className="text-xl font-MapoGoldenPier text-custom-blue">
               초대합니다<br></br><br></br>
             </h1>
-            <h1 className="text-base font-MapoGoldenPier text-gray-700 text-wrap">
+            <h1 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap">
               주님의 사랑으로 만난 두 사람이<br></br>
               이제 새로운 가정을 이루는<br></br>
               아름다운 약속을 하려 합니다.<br></br>
@@ -105,7 +105,7 @@ export default function Home() {
               오셔서 축복해주세요.<br></br>
               <br></br>
             </h1>
-            <h2 className="text-base font-MapoGoldenPier text-gray-700 text-wrap">
+            <h2 className="text-sm font-MapoGoldenPier text-gray-700 text-wrap">
               이영우
               신신숙
               의 장남 <strong>이성연</strong><br></br>
@@ -117,7 +117,7 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-2xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
+          <h1 className="absolute top-20 flex text-center text-xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
 
           <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
             <Image
@@ -167,12 +167,12 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-14 text-center">
-            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
-            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
+            <h1 className="text-sm font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
+            <h1 className="text-xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
           <div className="absolute top-32 max-h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
-            <p className="text-center text-lg font-bold">광명역사컨벤션웨딩홀</p>
-            <p className="text-base mx-10 text-wrap items-center flex flex-col text-center">
+            <p className="text-center text-base font-bold">광명역사컨벤션웨딩홀</p>
+            <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
             </p>
@@ -229,10 +229,10 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <h1 className="absolute top-20 text-2xl font-MapoGoldenPier text-custom-blue">
+          <h1 className="absolute top-20 text-xl font-MapoGoldenPier text-custom-blue">
             참석여부 알리기
           </h1>
-          <a className="absolute top-36 text-1xl font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
+          <a className="absolute top-36 text-sm font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
             href="https://forms.gle/S2SnGE7jT2SuxhF68"
             target="_blank"
             rel="noopener noreferrer"
@@ -241,7 +241,7 @@ export default function Home() {
           </a>
 
           <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
-            <h1 className="text-2xl text-custom-blue">
+            <h1 className="text-xl text-custom-blue">
               마음 전하실 곳
             </h1>
 
@@ -260,19 +260,19 @@ export default function Home() {
                 </button>
                 {showGroomAccounts && (
                   <div className="mt-4 text-gray-700">
-                    <p className="text-md flex justify-between items-center">
+                    <p className="text-sm flex justify-between items-center">
                       <span>이성연: 카카오뱅크 3333-10-5382056</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2 flex justify-between items-center">
+                    <p className="text-sm mt-2 flex justify-between items-center">
                       <span>이영우: SC제일은행 600-20-373733</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2 flex justify-between items-center">
+                    <p className="text-sm mt-2 flex justify-between items-center">
                       <span>신신숙: 국민은행 679802-93-115438</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
                         복사
@@ -296,19 +296,19 @@ export default function Home() {
                 </button>
                 {showBrideAccounts && (
                   <div className="mt-4 text-gray-700">
-                    <p className="text-md flex justify-between items-center">
+                    <p className="text-sm flex justify-between items-center">
                       <span>김한은: 카카오뱅크 3333-28-6191015</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2 flex justify-between items-center">
+                    <p className="text-sm mt-2 flex justify-between items-center">
                       <span>김규백: 농협 702076-52-131271</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
                         복사
                       </button>
                     </p>
-                    <p className="text-md mt-2 flex justify-between items-center">
+                    <p className="text-sm mt-2 flex justify-between items-center">
                       <span>김영정: 대구은행 009-08-312442</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
                         복사
@@ -325,8 +325,8 @@ export default function Home() {
 
         <div className="relative overflow-y-auto snap-center snap-always min-h-screen min-w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <div className="absolute top-20 text-center">
-            <h1 className="text-1xl font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
-            <h1 className="text-2xl font-MapoGoldenPier text-custom-blue">방명록</h1>
+            <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
+            <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
           </div>
 
           {/* comment */}
