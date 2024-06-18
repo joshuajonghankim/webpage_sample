@@ -167,11 +167,11 @@ export default function Home() {
         */}
 
         <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 flex text-center text-xl font-Hahmlet text-custom-blue font-extralight">G A L L E R Y</h1>
+          <h1 className="absolute top-20 text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
 
           <div className="absolute top-48 max-h-6/10 overflow-x-auto flex flex-wrap w-full justify-center">
             {images.map((image, index) => (
-              <div key={index} className="p-2">
+              <div key={index} className="p-1">
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -191,13 +191,13 @@ export default function Home() {
                 <Image
                   src={selectedImage}
                   alt="Selected"
-                  className="object-contain"
+                  className="object-contain p-5"
                   width={800}
                   height={800}
                   onClick={() => setSelectedImage(null)}
                 />
                 <button
-                  className="absolute top-2 right-2 text-white text-2xl"
+                  className="absolute top-5 right-7 text-white text-2xl"
                   onClick={() => setSelectedImage(null)}
                 >
                   &times;
