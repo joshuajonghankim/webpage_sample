@@ -296,7 +296,7 @@ export default function Home() {
             <h1 className="mb-6 text-xl font-MapoGoldenPier text-custom-blue">
               참석여부 알리기
             </h1>
-            
+
             <a className="text-sm font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
               href="https://forms.gle/S2SnGE7jT2SuxhF68"
               target="_blank"
@@ -424,19 +424,15 @@ export default function Home() {
         {/* isPlaying 상태에 따라 이미지 변경 */}
         <button onClick={toggleMusic}>
           {isPlaying ? (
-            <Image
-              src="/images/speaker-pause.png"
-              alt="Pause"
-              width={25}
-              height={25}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+            </svg>
+
           ) : (
-            <Image
-              src="/images/speaker-on.png"
-              alt="Play"
-              width={25}
-              height={25}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+
           )}
         </button>
       </div>
