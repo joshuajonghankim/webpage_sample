@@ -406,7 +406,7 @@ export default function Home() {
 
 
           </div>
-        </div>
+        </div>        
 
         {/* 
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
@@ -415,8 +415,9 @@ export default function Home() {
         */}
 
       </div>
-
       <LivereComments />
+
+      
 
       {/* Speaker Image */}
       <div className="absolute right-3 top-3">
