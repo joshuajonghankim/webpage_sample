@@ -273,7 +273,7 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute top-2/3 font-MapoGoldenPier text-xs text-wrap text-gray-700">
-            
+
             <h1 className="text-custom-blue text-left">
               지하철
             </h1>
@@ -331,20 +331,23 @@ export default function Home() {
                 </button>
                 {showGroomAccounts && (
                   <div className="mt-4 text-gray-700">
-                    <p className="text-sm flex justify-between items-center">
-                      <span>이성연: 카카오뱅크 3333-10-5382056</span>
+                    <p className="text-xs flex justify-between items-center">
+                      <span>카카오뱅크 3333-10-5382056<br></br>
+                        이성연</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
-                      <span>이영우: SC제일은행 600-20-373733</span>
+                    <p className="text-xs mt-2 flex justify-between items-center">
+                      <span>SC제일은행 600-20-373733<br></br>
+                        이영우</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
-                      <span>신신숙: 국민은행 679802-93-115438</span>
+                    <p className="text-xs mt-2 flex justify-between items-center">
+                      <span>국민은행 679802-93-115438
+                        신신숙<br></br></span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
                         복사하기
                       </button>
@@ -369,20 +372,23 @@ export default function Home() {
                 </button>
                 {showBrideAccounts && (
                   <div className="mt-4 text-gray-700">
-                    <p className="text-sm flex justify-between items-center">
-                      <span>김한은: 카카오뱅크 3333-28-6191015</span>
+                    <p className="text-xs flex justify-between items-center">
+                      <span>카카오뱅크 3333-28-6191015<br></br>
+                        김한은</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
-                      <span>김규백: 농협 702076-52-131271</span>
+                    <p className="text-xs mt-2 flex justify-between items-center">
+                      <span>농협 702076-52-131271<br></br>
+                        김규백</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
-                      <span>김영정: 대구은행 009-08-312442</span>
+                    <p className="text-xs mt-2 flex justify-between items-center">
+                      <span>대구은행 009-08-312442<br></br>
+                        김영정</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
                         복사하기
                       </button>
