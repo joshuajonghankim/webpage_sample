@@ -414,15 +414,15 @@ export default function Home() {
             <Image
               src="/images/speaker-pause.png"
               alt="Pause"
-              width={30}
-              height={30}
+              width={25}
+              height={25}
             />
           ) : (
             <Image
               src="/images/speaker-on.png"
               alt="Play"
-              width={30}
-              height={30}
+              width={25}
+              height={25}
             />
           )}
         </button>
