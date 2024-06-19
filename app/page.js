@@ -118,7 +118,16 @@ export default function Home() {
               언제나 예수님 안에서 아름답고<br></br>
               주위에 사랑을 나누는<br></br>
               행복한 가정을 이루도록<br></br>
-              오셔서 축복해주세요.<br></br><br></br>
+              오셔서 축복해주세요.<br></br>
+              <div className="flex justify-center items-center my-4">
+                <Image
+                  src="/images/cross.png"
+                  alt="Cross Image"
+                  width={15}
+                  height={15}
+                  className="block"
+                />
+              </div>
               <span class="text-base">이영우</span>, <span class="text-base">신신숙</span>의 장남 <strong class="text-base">이성연</strong><br></br>
               <span class="text-base">김규백</span>, <span class="text-base">김영정</span>의 차녀 <strong class="text-base">김한은</strong>
             </h1>
@@ -288,17 +297,29 @@ export default function Home() {
           </a>
 
           <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
+            <div className="flex justify-center items-center mb-3">
+              <Image
+                src="/images/heart.png"
+                alt="heart image"
+                width={20}
+                height={20}
+                className="block"
+              />
+            </div>
+
             <h1 className="text-xl text-custom-blue">
               마음 전하실 곳
             </h1>
 
-            <div className="w-screen mt-10 px-5 text-sm">
+            <div className="w-screen mt-6 px-10 text-sm">
               <div className="p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full text-center flex justify-between items-center"
+                  className="w-full flex items-center"
                 >
-                  <span className="text-gray-700">신랑측 계좌</span>
+                  <div className="flex-grow text-center text-gray-700">
+                    신랑측 계좌
+                  </div>
                   <img
                     src="/images/down.png"
                     alt="Down arrow"
@@ -310,19 +331,19 @@ export default function Home() {
                     <p className="text-sm flex justify-between items-center">
                       <span>이성연: 카카오뱅크 3333-10-5382056</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                     <p className="text-sm mt-2 flex justify-between items-center">
                       <span>이영우: SC제일은행 600-20-373733</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                     <p className="text-sm mt-2 flex justify-between items-center">
                       <span>신신숙: 국민은행 679802-93-115438</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                   </div>
@@ -332,9 +353,11 @@ export default function Home() {
               <div className="p-3 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
-                  className="w-full text-center flex justify-between items-center"
+                  className="w-full flex items-center"
                 >
-                  <span className="text-gray-700">신부측 계좌</span>
+                  <div className="flex-grow text-center text-gray-700">
+                    신부측 계좌
+                  </div>
                   <img
                     src="/images/down.png"
                     alt="Down arrow"
@@ -346,19 +369,19 @@ export default function Home() {
                     <p className="text-sm flex justify-between items-center">
                       <span>김한은: 카카오뱅크 3333-28-6191015</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                     <p className="text-sm mt-2 flex justify-between items-center">
                       <span>김규백: 농협 702076-52-131271</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                     <p className="text-sm mt-2 flex justify-between items-center">
                       <span>김영정: 대구은행 009-08-312442</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
-                        복사
+                        복사하기
                       </button>
                     </p>
                   </div>
