@@ -23,6 +23,10 @@ export default function Home() {
     { src: '/images/g4.jpg', alt: 'g4' },
     { src: '/images/g5.jpg', alt: 'g5' },
     { src: '/images/g6.jpg', alt: 'g6' },
+    { src: '/images/g7.jpg', alt: 'g7' },
+    { src: '/images/g8.jpg', alt: 'g8' },
+    { src: '/images/g9.jpg', alt: 'g9' },
+    { src: '/images/g10.jpg', alt: 'g10' },
   ];
 
   useEffect(() => {
@@ -170,15 +174,15 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <h1 className="absolute top-20 text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
 
-          <div className="absolute top-48 max-h-6/10 overflow-x-auto flex flex-wrap w-full justify-center">
+          <div className="max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-0.5 mx-5">
             {images.map((image, index) => (
-              <div key={index} className="p-1">
+              <div key={index} className="">
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className="cursor-pointer object-cover"
-                  width={100}
-                  height={100}
+                  className="cursor-pointer object-cover aspect-square"
+                  width={150}
+                  height={150}
                   onClick={() => setSelectedImage(image.src)}
                 />
               </div>
@@ -192,7 +196,7 @@ export default function Home() {
                 <Image
                   src={selectedImage}
                   alt="Selected"
-                  className="object-contain p-5"
+                  className="object-contain p-5 max-h-screen w-auto"
                   width={800}
                   height={800}
                   onClick={() => setSelectedImage(null)}
@@ -370,10 +374,10 @@ export default function Home() {
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
           <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
         </footer>
-        */}       
+        */}
 
       </div>
-      
+
       <LivereComments />
 
       {/* Speaker Image */}
