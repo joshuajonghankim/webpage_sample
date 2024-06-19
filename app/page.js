@@ -226,12 +226,12 @@ export default function Home() {
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
-          <div className="absolute top-32 max-h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center">
-            <p className="text-center text-base font-bold">광명역사컨벤션웨딩홀</p>
-            <p className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
+          <div className="absolute top-32 max-h-6/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center leading-normal">
+            <h1 className="text-center text-base font-bold">광명역사컨벤션웨딩홀</h1>
+            <h2 className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
-            </p>
+            </h2>
 
             {/* Map */}
             <div className="border mt-4 max-h-40 overscroll-none"
@@ -272,8 +272,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="absolute top-2/3 font-MapoGoldenPier text-xs text-wrap text-gray-700">
-
+          <div className="absolute top-2/3 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal">
             <h1 className="text-custom-blue text-left">
               지하철
             </h1>
@@ -282,7 +281,7 @@ export default function Home() {
             <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
             광명 센트럴자이 상가 주차장 B3층<br></br>
             광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-            <h1 className="text-custom-blue text-left text-sm">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
+            <h1 className="text-custom-blue text-left text-sm leading-normal">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
             </h1>
           </div>
         </div>
@@ -293,7 +292,7 @@ export default function Home() {
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
             </svg>
 
-            <h1 className="mb-6 text-xl font-MapoGoldenPier text-custom-blue">
+            <h1 className="mb-3 text-xl font-MapoGoldenPier text-custom-blue">
               참석여부 알리기
             </h1>
 
@@ -321,8 +320,8 @@ export default function Home() {
               마음 전하실 곳
             </h1>
 
-            <div className="w-screen mt-6 px-10 text-sm">
-              <div className="p-3 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
+            <div className="w-screen mt-3 px-10 text-sm">
+              <div className="p-2 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full flex items-center"
@@ -363,7 +362,7 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="p-3 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
+              <div className="p-2 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full flex items-center"
