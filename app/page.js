@@ -107,9 +107,8 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full h-full overflow-x-hidden bg-bgcolor-sky">
+    <main className="w-screen h-screen overflow-x-hidden bg-bgcolor-sky">
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
-
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-screen min-w-full flex flex-col justify-center items-center bg-white">
           <div className="h-1.5/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700">
