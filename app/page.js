@@ -111,15 +111,26 @@ export default function Home() {
       <div className="relative h-screen w-screen snap-mandatory snap-y overflow-y-auto flex flex-col">
 
         {/* Main page */}
-        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white bg-cover bg-center">
+        <div className="relative snap-center snap-always min-h-screen min-w-full flex justify-center items-center bg-white">
 
-          <div className='absolute w-full h-2/3 bg-main-1 bg-cover top-0 sm:bg-main-2 bg-center bg-fixed'>
+          <div className="absolute top-0 h-2/10 flex flex-col text-center items-center font-MapoGoldenPier text-gray-700">
+            <h1 className="mt-6 text-4xl">July|20|2024</h1>
+            <h1 className="mt-2 text-sm tracking-widest">SATURDAY</h1>
           </div>
+          
+          <div className="absolute top-1.5/10 max-w-8/10 h-6/10 object-cover">
+            <Image
+            src="/images/main.jpg"
+            alt="cover_image"
+            width={1000}
+            height={1500}
+            className="max-h-full"
+          /></div>
 
-          <div className="text-center absolute top-2/3 font-MapoGoldenPier text-gray-700">
-            <h1 className="text-3xl mb-8 mt-10">이성연 & 김한은</h1>
-            <h1 className="text-sm mb-2">2024.7.20. 토요일 낮 12시</h1>
-            <h1 className="text-sm">광명역사컨벤션웨딩홀</h1>
+          <div className="absolute top-8/10 flex flex-col text-center items-center font-MapoGoldenPier text-gray-700">
+            <h1 className="text-3xl">이성연 & 김한은</h1>
+            <h1 className="mt-4 text-sm">2024.7.20. 토요일 낮 12시</h1>
+            <h1 className="mt-1 text-sm">광명역사컨벤션웨딩홀</h1>
           </div>
 
         </div>
@@ -300,7 +311,7 @@ export default function Home() {
             <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
             광명 센트럴자이 상가 주차장 B3층<br></br>
             광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-            <h1 className="text-custom-blue text-left text-sm leading-normal">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
+            <h1 className="text-custom-blue text-left text-sm leading-normal font-serif">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
             </h1>
           </div>
         </div>
