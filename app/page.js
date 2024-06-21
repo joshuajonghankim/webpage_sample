@@ -191,7 +191,7 @@ export default function Home() {
                   alt={image.alt}
                   className="cursor-pointer object-cover aspect-square"
                   width={(window.innerHeight * 7 / 10 - 3) / 3}
-                  height={300}    
+                  height={300}
                   onClick={() => setSelectedImage(image.src)}
                 />
               </div>
@@ -408,19 +408,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 
-        <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
-          <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
-        </footer>
-        */}
-
       </div>
+      
       <LivereComments />
 
-
+      <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
+        <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+      </footer>
 
       {/* Speaker Image */}
-      <div className="absolute right-3 top-3">
+      <div className="fixed right-3 top-3 z-auto">
         {/* isPlaying 상태에 따라 이미지 변경 */}
         <button onClick={toggleMusic}>
           {isPlaying ? (
@@ -438,7 +435,6 @@ export default function Home() {
 
       {/* audio 요소 추가 */}
       <audio ref={audioRef} src="/music/In-your-heart[1.2].m4a" type="audio/mpeg" />
-
 
     </main>
   );
