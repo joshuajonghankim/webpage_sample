@@ -14,6 +14,7 @@ export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [imageWidth, setImageWidth] = useState(0);
 
   const images = [
     { src: '/images/g0.jpg', alt: 'g0' },
@@ -62,6 +63,24 @@ export default function Home() {
   const toggleMusic = () => {
     setIsPlaying(prevState => !prevState);
   };
+
+  useEffect(() => {
+    // 클라이언트에서만 실행되도록 설정
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        // window.innerHeight를 이용하여 이미지 width 계산
+        const newImageWidth = (window.innerHeight * 7 / 10 - 3) / 3;
+        setImageWidth(newImageWidth);
+      };
+
+      // 초기 설정 및 리사이즈 이벤트 리스너 추가
+      handleResize();
+      window.addEventListener('resize', handleResize);
+
+      // 컴포넌트 언마운트 시 이벤트 리스너 제거
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
 
   useEffect(() => {
     // 네이버 지도 API 스크립트 호출
@@ -190,8 +209,8 @@ export default function Home() {
                   src={image.src}
                   alt={image.alt}
                   className="cursor-pointer object-cover aspect-square"
-                  width={(window.innerHeight * 7 / 10 - 3) / 3}
-                  height={300}
+                  width={imageWidth}
+                  height={imageWidth}
                   onClick={() => setSelectedImage(image.src)}
                 />
               </div>
@@ -409,7 +428,7 @@ export default function Home() {
         </div>
 
       </div>
-      
+
       <LivereComments />
 
       <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
