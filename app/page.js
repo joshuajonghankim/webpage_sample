@@ -123,8 +123,8 @@ export default function Home() {
                 <Image
                   src="/images/cross.png"
                   alt="Cross Image"
-                  width={15}
-                  height={15}
+                  width={20}
+                  height={20}
                   className="block"
                 />
               </div>
@@ -180,10 +180,10 @@ export default function Home() {
             />
         */}
 
-        <div className="relative snap-center snap-always min-h-screen w-full flex justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="absolute top-20 text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
+        <div className="relative snap-center snap-always min-h-screen w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
+          <h1 className="text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
 
-          <div className="max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-0.5 mx-5">
+          <div className="mt-8 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-0.5 mx-5">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
