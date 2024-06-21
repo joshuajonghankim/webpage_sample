@@ -117,7 +117,7 @@ export default function Home() {
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
           
-          <div className="max-w-8/10 h-6/10 ">
+          <div className="max-w-8/10 h-6/10">
             <Image
             src="/images/main.jpg"
             alt="cover_image"
