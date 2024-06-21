@@ -431,8 +431,8 @@ export default function Home() {
 
       <LivereComments />
 
-      <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
-        <p>&copy; 2024 joshuajonghankim. All rights reserved.</p>
+      <footer className='flex flex-col items-center text-xs text-gray-700'>
+        <p className="bottom-5">&copy; 2024 Joshua Jonghan Kim. All rights reserved.</p>
       </footer>
 
       {/* Speaker Image */}
