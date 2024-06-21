@@ -381,7 +381,7 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="p-2 rounded-lg shadow-md bg-bgcolor-sky text-gray-700">
+              <div className="p-2 rounded-lg bg-bgcolor-sky text-gray-700">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full flex items-center"
