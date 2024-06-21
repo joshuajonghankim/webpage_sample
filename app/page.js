@@ -69,7 +69,7 @@ export default function Home() {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
         // window.innerHeight를 이용하여 이미지 width 계산
-        const newImageWidth = (window.innerHeight * 7 / 10 - 3) / 3;
+        const newImageWidth = (window.innerHeight * 6 / 10 - 3) / 3;
         setImageWidth(newImageWidth);
       };
 
@@ -202,7 +202,7 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <h1 className="text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
 
-          <div className="mt-8 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
+          <div className="mt-8 max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
