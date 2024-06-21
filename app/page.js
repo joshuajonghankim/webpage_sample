@@ -183,15 +183,15 @@ export default function Home() {
         <div className="relative snap-center snap-always min-h-screen w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
           <h1 className="text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
 
-          <div className="mt-8 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-0.5 mx-5">
+          <div className="mt-8 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   className="cursor-pointer object-cover aspect-square"
-                  width={150}
-                  height={150}
+                  width={(window.innerHeight * 7 / 10 - 3) / 3}
+                  height={300}    
                   onClick={() => setSelectedImage(image.src)}
                 />
               </div>
@@ -406,7 +406,7 @@ export default function Home() {
 
 
           </div>
-        </div>        
+        </div>
 
         {/* 
         <footer className='relative snap-center snap-always mt-auto bottom-0 text-xm text-black'>
@@ -417,7 +417,7 @@ export default function Home() {
       </div>
       <LivereComments />
 
-      
+
 
       {/* Speaker Image */}
       <div className="absolute right-3 top-3">
