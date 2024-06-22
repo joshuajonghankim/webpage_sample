@@ -94,6 +94,11 @@ export default function Home() {
   useEffect(() => {
     // only client side
     if (typeof window !== 'undefined') {
+
+      const newImageWidth = (window.innerHeight * 6 / 10 - 3) / 3;
+      setImageWidth(newImageWidth);
+
+      /*
       const handleResize = () => {
         // window.innerHeight를 이용하여 이미지 width 계산
         const newImageWidth = (window.innerHeight * 6 / 10 - 3) / 3;
@@ -105,8 +110,9 @@ export default function Home() {
       window.addEventListener('resize', handleResize);
 
       // delete if unmount
-      return () => window.removeEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);*/
     }
+
   }, []);
 
   useEffect(() => {
