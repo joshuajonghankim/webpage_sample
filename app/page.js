@@ -364,7 +364,7 @@ export default function Home() {
               className="mt-2 w-8/10 flex items-center justify-center rounded-lg bg-bgcolor-sky relative"
             >
               <div className="p-1 font-MapoGoldenPier text-center text-gray-700">
-                RSVN
+                RSVP
               </div>
               <svg className="stroke-gray-700 size-4 absolute right-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
