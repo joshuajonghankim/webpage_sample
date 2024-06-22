@@ -47,14 +47,14 @@ export default function Home() {
     // 페이지가 로드될 때 스크롤 이벤트 리스너 추가
     window.addEventListener('scroll', handleScroll);
 
-    // 컴포넌트가 unmount될 때 스크롤 이벤트 리스너 제거
+    // delete if unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // 빈 배열을 넘겨 한 번만 실행되도록 설정
+  }, []); // only once
 
   useEffect(() => {
-    // 음악 재생 상태에 따라 재생 및 정지
+    // play & pause
     if (isPlaying) {
       audioRef.current.play().catch((error) => {
         console.log("자동 재생이 차단되었습니다.", error);
@@ -69,7 +69,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // 클라이언트에서만 실행되도록 설정
+    // only client side
     if (typeof window !== 'undefined') {
       const handleResize = () => {
         // window.innerHeight를 이용하여 이미지 width 계산
@@ -77,17 +77,17 @@ export default function Home() {
         setImageWidth(newImageWidth);
       };
 
-      // 초기 설정 및 리사이즈 이벤트 리스너 추가
+      // initialize and resize
       handleResize();
       window.addEventListener('resize', handleResize);
 
-      // 컴포넌트 언마운트 시 이벤트 리스너 제거
+      // delete if unmount
       return () => window.removeEventListener('resize', handleResize);
     }
   }, []);
 
   useEffect(() => {
-    // 네이버 지도 API 스크립트 호출
+    // naver map API script
     const script = document.createElement("script");
     script.src = "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tbpkc88r6x";
     script.async = true;
@@ -95,7 +95,7 @@ export default function Home() {
     document.body.appendChild(script);
 
     return () => {
-      // 컴포넌트가 언마운트될 때 스크립트 제거
+      // delete if unmount
       document.body.removeChild(script);
     };
   }, []);
@@ -186,7 +186,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Modal for displaying the selected image */}
+          {/* displaying the selected image */}
           {selectedImage && (
             <div className="max-h-dvh fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50">
               <div className="relative">
@@ -444,7 +444,7 @@ export default function Home() {
 
       {/* Speaker Image */}
       <div className="fixed right-3 top-3 z-auto">
-        {/* isPlaying 상태에 따라 이미지 변경 */}
+        {/* image exchange */}
         <button onClick={toggleMusic}>
           {isPlaying ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-custom-blue">
@@ -459,7 +459,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* audio 요소 추가 */}
+      {/* audio component */}
       <audio ref={audioRef} src="/music/In-your-heart[1.2].m4a" type="audio/mpeg" />
 
     </main>
