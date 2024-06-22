@@ -349,7 +349,7 @@ export default function Home() {
             </h1>
 
             <div className="w-screen mt-3 px-10 text-sm">
-              <div className="p-2 rounded-lg shadow-md mb-4 bg-bgcolor-sky">
+              <div className="p-2 rounded-lg mb-4 bg-bgcolor-sky">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full flex items-center"
