@@ -35,6 +35,7 @@ module.exports = {
 
       height:{
         '0.5/10': '5%', // 0.5/10
+        '6/10': '60%', // h-6/10
       },
 
       maxHeight: {
