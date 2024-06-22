@@ -17,7 +17,6 @@ export default function Home() {
   const [imageWidth, setImageWidth] = useState(0);
 
   const images = [
-    { src: '/images/g0.jpg', alt: 'g0' },
     { src: '/images/g1.jpg', alt: 'g1' },
     { src: '/images/g2.jpg', alt: 'g2' },
     { src: '/images/g3.jpg', alt: 'g3' },
