@@ -261,7 +261,7 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
-          <div className="h-1/10 flex flex-col justify-center text-center">
+          <div className="h-0.5/10/10 flex flex-col justify-center text-center">
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
