@@ -459,9 +459,29 @@ export default function Home() {
 
       <LivereComments />
 
-      <footer className='relative bottom-2 flex flex-col items-center text-xs text-gray-700'>
-        <p className="bottom-5">&copy; 2024 Joshua & Hannah. All rights reserved.</p>
+      <div className="relative w-full">
+        {/* 이미지 */}
+        <Image
+          src="/images/outro-01.png"
+          alt="outro-01"
+          width={1000}
+          height={500}
+          className="w-full"
+        />
+
+        {/* 텍스트 */}
+        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+          <p className="text-sm md:text-base lg:text-lg xl:text-xl font-MapoGoldenPier font-extralight">
+            저희의 첫 걸음을 축복해 주셔서 감사드리며<br />
+            아름다운 가정을 꾸려나가겠습니다.
+          </p>
+        </div>
+      </div>
+
+      <footer className='relative py-1 flex flex-col items-center text-xs text-gray-700 bg-white'>
+        <p className="">&copy; 2024 Joshua & Hannah. All rights reserved.</p>
       </footer>
+
 
       {/* Speaker Image */}
       <div className="fixed right-3 top-3 z-auto">
