@@ -16,6 +16,7 @@ export default function Home() {
   const audioRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageWidth, setImageWidth] = useState(0);
+  const [hasPlayed, setHasPlayed] = useState(false);
 
   const images = [
     { src: '/images/g1.jpg', alt: 'g1' },
@@ -49,6 +50,24 @@ export default function Home() {
     setIsPlaying(prevState => !prevState);
     setAnimateBounce(false);
   };
+
+  // first touch, first music on
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleFirstTouch = () => {
+        if (!hasPlayed) {
+          setIsPlaying(true);
+          setHasPlayed(true);
+          window.removeEventListener('touchstart', handleFirstTouch);
+        }
+      };
+
+      window.addEventListener('touchstart', handleFirstTouch);
+
+      // Clean up event listener on unmount
+      return () => window.removeEventListener('touchstart', handleFirstTouch);
+    }
+  }, [hasPlayed]);
 
   useEffect(() => {
     // only client side
