@@ -256,6 +256,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+
           <div className="h-3/10 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal p-2">
             {/* subway */}
             <div className="flex items-start mb-4">
@@ -357,7 +358,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span className="">카카오뱅크 3333-10-5382056<br></br>
                         이성연</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("3333-10-5382056")}>
                         복사하기
                       </button>
                     </p>
@@ -365,7 +366,7 @@ export default function Home() {
                     <p className=" flex justify-between items-center">
                       <span>SC제일은행 600-20-373733<br></br>
                         이영우</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("600-20-373733")}>
                         복사하기
                       </button>
                     </p>
@@ -373,7 +374,7 @@ export default function Home() {
                     <p className=" flex justify-between items-center">
                       <span>국민은행 679802-93-115438<br></br>
                         신신숙<br></br></span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("679802-93-115438")}>
                         복사하기
                       </button>
                     </p>
@@ -400,7 +401,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>카카오뱅크 3333-28-6191015<br></br>
                         김한은</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("3333-28-6191015")}>
                         복사하기
                       </button>
                     </p>
@@ -408,7 +409,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>농협 702076-52-131271<br></br>
                         김규백</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("702076-52-131271")}>
                         복사하기
                       </button>
                     </p>
@@ -416,7 +417,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>대구은행 009-08-312442<br></br>
                         김영정</span>
-                      <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
+                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("009-08-312442")}>
                         복사하기
                       </button>
                     </p>
