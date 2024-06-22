@@ -28,6 +28,11 @@ export default function Home() {
     { src: '/images/g8.jpg', alt: 'g8' },
     { src: '/images/g9.jpg', alt: 'g9' },
     { src: '/images/g10.jpg', alt: 'g10' },
+    { src: '/images/g11.jpg', alt: 'g11' },
+    { src: '/images/g12.jpg', alt: 'g12' },
+    { src: '/images/g13.jpg', alt: 'g13' },
+    { src: '/images/g14.jpg', alt: 'g14' },
+    { src: '/images/g15.jpg', alt: 'g15' },
   ];
 
   useEffect(() => {
