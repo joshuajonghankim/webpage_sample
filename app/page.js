@@ -137,9 +137,9 @@ export default function Home() {
             <Image
               src="/images/thumbnail.png"
               alt="thumbnail"
-              width={0}
-              height={0}
-              className=""
+              width={1000}
+              height={1500}
+              className="hidden"
             />
             <Image
               src="/images/main.jpg"
