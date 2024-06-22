@@ -114,7 +114,7 @@ export default function Home() {
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
-          <div className="h-1.5/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
+          <div className="h-1/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
             <h1 className="text-4xl">July|20|2024</h1>
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
