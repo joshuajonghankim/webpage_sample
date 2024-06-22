@@ -39,9 +39,7 @@ export default function Home() {
     // play & pause
     if (isPlaying) {
       audioRef.current.volume = volume;
-      audioRef.current.play().catch((error) => {
-        console.log("자동 재생이 차단되었습니다.", error);
-      });
+      audioRef.current.play();
     } else {
       audioRef.current.pause();
     }
@@ -108,13 +106,12 @@ export default function Home() {
 
   const [animateBounce, setAnimateBounce] = useState(true);
 
-
   return (
     <main className="overflow-x-hidden bg-bgcolor-sky">
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
-          <div className="h-1/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
+          <div className="h-1.5/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
             <h1 className="text-4xl">July|20|2024</h1>
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
@@ -136,7 +133,7 @@ export default function Home() {
             />
           </button>
 
-          <div className="h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
+          <div className="mt-4 h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
             <h1 className="text-3xl">이성연 & 김한은</h1>
             <h1 className="mt-4 text-sm">2024.7.20. 토요일 낮 12시</h1>
             <h1 className="mt-1 text-sm">광명역사컨벤션웨딩홀</h1>
