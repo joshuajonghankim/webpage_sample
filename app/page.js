@@ -125,7 +125,7 @@ export default function Home() {
             className="max-h-full"
           /></div>
 
-          <div className="h-1.5/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700">
+          <div className="h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700">
             <h1 className="text-3xl">이성연 & 김한은</h1>
             <h1 className="mt-4 text-sm">2024.7.20. 토요일 낮 12시</h1>
             <h1 className="mt-1 text-sm">광명역사컨벤션웨딩홀</h1>
