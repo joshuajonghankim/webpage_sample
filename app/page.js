@@ -36,25 +36,6 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    // 스크롤 이벤트 리스너 추가
-    const handleScroll = () => {
-      if (!isPlaying) {
-        setIsPlaying(true);
-      }
-      // 스크롤 이벤트 리스너는 한 번만 실행되면 됩니다.
-      window.removeEventListener('scroll', handleScroll);
-    };
-
-    // 페이지가 로드될 때 스크롤 이벤트 리스너 추가
-    window.addEventListener('scroll', handleScroll);
-
-    // delete if unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // only once
-
-  useEffect(() => {
     // play & pause
     if (isPlaying) {
       audioRef.current.volume = volume;
@@ -68,6 +49,7 @@ export default function Home() {
 
   const toggleMusic = () => {
     setIsPlaying(prevState => !prevState);
+    setAnimateBounce(false);
   };
 
   useEffect(() => {
@@ -123,6 +105,9 @@ export default function Home() {
       setIsSpinning(true);
     }
   };
+
+  const [animateBounce, setAnimateBounce] = useState(true);
+
 
   return (
     <main className="overflow-x-hidden bg-bgcolor-sky">
@@ -482,9 +467,9 @@ export default function Home() {
 
 
       {/* Speaker Image */}
-      <div className="fixed right-3 top-3 z-auto">
+      <div className={`fixed right-3 top-3 z-auto ${animateBounce ? '' : ''}`}>
         {/* image exchange */}
-        <button onClick={toggleMusic}>
+        <button onClick={toggleMusic} className={`${animateBounce ? 'animate-bounce' : ''}`}>
           {isPlaying ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-custom-blue">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
