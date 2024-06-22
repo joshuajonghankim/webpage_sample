@@ -9,8 +9,8 @@ function copyText(entryText) {
 }
 
 export default function Home() {
-  const [showGroomAccounts, setShowGroomAccounts] = useState(false);  // 신랑측 계좌 상태
-  const [showBrideAccounts, setShowBrideAccounts] = useState(false);  // 신부측 계좌 상태
+  const [showGroomAccounts, setShowGroomAccounts] = useState(false);
+  const [showBrideAccounts, setShowBrideAccounts] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -110,6 +110,18 @@ export default function Home() {
     }
   };
 
+  const [clickCount, setClickCount] = useState(0);
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const handleButtonClick = () => {
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+
+    if (newCount >= 20) {
+      setIsSpinning(true);
+    }
+  };
+
   return (
     <main className="overflow-x-hidden bg-bgcolor-sky">
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
@@ -120,14 +132,15 @@ export default function Home() {
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
 
-          <div className="max-w-8/10 h-6/10">
+          <button className="max-w-8/10 h-6/10" onClick={handleButtonClick}>
             <Image
               src="/images/main.jpg"
               alt="cover_image"
               width={1000}
               height={1500}
-              className="max-h-full"
-            /></div>
+              className={`max-h-full ${isSpinning ? 'animate-spin' : ''}`}
+            />
+          </button>
 
           <div className="h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700">
             <h1 className="text-3xl">이성연 & 김한은</h1>
