@@ -12,6 +12,7 @@ export default function Home() {
   const [showGroomAccounts, setShowGroomAccounts] = useState(false);
   const [showBrideAccounts, setShowBrideAccounts] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volume, setVolume] = useState(0.5);
   const audioRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageWidth, setImageWidth] = useState(0);
@@ -56,6 +57,7 @@ export default function Home() {
   useEffect(() => {
     // play & pause
     if (isPlaying) {
+      audioRef.current.volume = volume;
       audioRef.current.play().catch((error) => {
         console.log("자동 재생이 차단되었습니다.", error);
       });
