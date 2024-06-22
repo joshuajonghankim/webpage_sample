@@ -357,9 +357,9 @@ export default function Home() {
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
           <div className="absolute top-1/10 w-full flex flex-col items-center">
-            <svg className="stroke-custom-blue size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            {/* <svg className="stroke-custom-blue size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-            </svg>
+            </svg> */}
 
             <h1 className="mt-2 text-xl font-MapoGoldenPier text-custom-blue">
               참석여부 알리기
@@ -367,7 +367,7 @@ export default function Home() {
 
             <button
               onClick={() => window.open('https://forms.gle/S2SnGE7jT2SuxhF68', '_blank')}
-              className="mt-2 w-8/10 flex items-center justify-center rounded-lg bg-bgcolor-sky relative"
+              className="mt-2 w-8/10 p-1 flex items-center justify-center bg-custom-blue rounded-lg relative"
             >
               <div className="p-1 font-MapoGoldenPier text-center text-gray-700">
                 RSVP
@@ -397,16 +397,14 @@ export default function Home() {
               <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full flex items-center bg-bgcolor-sky p-2 "
+                  className="w-full p-2 flex items-center bg-custom-blue rounded-lg"
                 >
                   <div className="flex-grow text-center text-gray-700">
-                    신랑측 계좌
+                    신랑측 계좌번호
                   </div>
-                  <img
-                    src="/images/down.png"
-                    alt="Down arrow"
-                    className="w-4 h-4 ml-auto"
-                  />
+                  <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </button>
                 {showGroomAccounts && (
                   <div className="text-gray-700 p-2 w-full">
@@ -440,16 +438,14 @@ export default function Home() {
               <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
-                  className="w-full flex items-center bg-bgcolor-sky p-2"
+                  className="w-full flex items-center bg-custom-blue rounded-lg p-2"
                 >
                   <div className="flex-grow text-center text-gray-700">
-                    신부측 계좌
+                    신부측 계좌번호
                   </div>
-                  <img
-                    src="/images/down.png"
-                    alt="Down arrow"
-                    className="w-4 h-4 ml-auto"
-                  />
+                  <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </button>
                 {showBrideAccounts && (
                   <div className="text-gray-700 p-2 w-full">
