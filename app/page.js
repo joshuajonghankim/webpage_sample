@@ -115,15 +115,15 @@ export default function Home() {
             <h1 className="text-4xl">July|20|2024</h1>
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
-          
+
           <div className="max-w-8/10 h-6/10">
             <Image
-            src="/images/main.jpg"
-            alt="cover_image"
-            width={1000}
-            height={1500}
-            className="max-h-full"
-          /></div>
+              src="/images/main.jpg"
+              alt="cover_image"
+              width={1000}
+              height={1500}
+              className="max-h-full"
+            /></div>
 
           <div className="h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700">
             <h1 className="text-3xl">이성연 & 김한은</h1>
@@ -315,25 +315,29 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <div className="absolute top-20 flex flex-col items-center">
-            <svg className="mb-3 stroke-custom-blue size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <div className="absolute top-1/10 w-full flex flex-col items-center">
+            <svg className="stroke-custom-blue size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
             </svg>
 
-            <h1 className="mb-3 text-xl font-MapoGoldenPier text-custom-blue">
+            <h1 className="mt-3 text-xl font-MapoGoldenPier text-custom-blue">
               참석여부 알리기
             </h1>
 
-            <a className="text-sm font-MapoGoldenPier rounded-xl p-2 text-gray-700 border border-gray-400 shadow-md"
-              href="https://forms.gle/S2SnGE7jT2SuxhF68"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => window.open('https://forms.gle/S2SnGE7jT2SuxhF68', '_blank')}
+              className="mt-3 w-8/10 flex items-center justify-center rounded-lg bg-bgcolor-sky relative"
             >
-              알리기
-            </a>
+              <div className="p-1 font-MapoGoldenPier text-center text-gray-700">
+                RSVN
+              </div>
+              <svg className="stroke-gray-700 size-4 absolute right-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </button>
           </div>
 
-          <div className="absolute top-1/3 font-MapoGoldenPier flex flex-col items-center">
+          <div className="absolute top-1/3 w-full font-MapoGoldenPier flex flex-col items-center">
             <div className="flex justify-center items-center mb-3">
               <Image
                 src="/images/heart.png"
@@ -348,11 +352,11 @@ export default function Home() {
               마음 전하실 곳
             </h1>
 
-            <div className="w-screen mt-3 px-10 text-sm">
-              <div className="p-2 rounded-lg mb-4 bg-bgcolor-sky">
+            <div className="w-full mt-3 flex flex-col items-center text-xs">
+              <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full flex items-center"
+                  className="w-full flex items-center bg-bgcolor-sky p-2 "
                 >
                   <div className="flex-grow text-center text-gray-700">
                     신랑측 계좌
@@ -364,22 +368,24 @@ export default function Home() {
                   />
                 </button>
                 {showGroomAccounts && (
-                  <div className="mt-4 text-gray-700">
-                    <p className="text-sm flex justify-between items-center">
-                      <span>카카오뱅크 3333-10-5382056<br></br>
+                  <div className="text-gray-700 p-2 w-full">
+                    <p className="flex justify-between items-center">
+                      <span className="">카카오뱅크 3333-10-5382056<br></br>
                         이성연</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-10-5382056")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
+                    <hr className="my-1 w-full border-bgcolor-sky" />
+                    <p className=" flex justify-between items-center">
                       <span>SC제일은행 600-20-373733<br></br>
                         이영우</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("600-20-373733")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
+                    <hr className="my-1 w-full border-bgcolor-sky" />
+                    <p className=" flex justify-between items-center">
                       <span>국민은행 679802-93-115438<br></br>
                         신신숙<br></br></span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("679802-93-115438")}>
@@ -390,10 +396,10 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="p-2 rounded-lg bg-bgcolor-sky text-gray-700">
+              <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
-                  className="w-full flex items-center"
+                  className="w-full flex items-center bg-bgcolor-sky p-2"
                 >
                   <div className="flex-grow text-center text-gray-700">
                     신부측 계좌
@@ -405,22 +411,24 @@ export default function Home() {
                   />
                 </button>
                 {showBrideAccounts && (
-                  <div className="mt-4 text-gray-700">
-                    <p className="text-sm flex justify-between items-center">
+                  <div className="text-gray-700 p-2 w-full">
+                    <p className="flex justify-between items-center">
                       <span>카카오뱅크 3333-28-6191015<br></br>
                         김한은</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("3333-28-6191015")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
+                    <hr className="my-1 w-full border-bgcolor-sky" />
+                    <p className="flex justify-between items-center">
                       <span>농협 702076-52-131271<br></br>
                         김규백</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("702076-52-131271")}>
                         복사하기
                       </button>
                     </p>
-                    <p className="text-sm mt-2 flex justify-between items-center">
+                    <hr className="my-1 w-full border-bgcolor-sky" />
+                    <p className="flex justify-between items-center">
                       <span>대구은행 009-08-312442<br></br>
                         김영정</span>
                       <button className="ml-2 text-blue-500" onClick={() => copyText("009-08-312442")}>
