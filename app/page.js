@@ -249,25 +249,25 @@ export default function Home() {
           )}
         </div>
 
-        <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <div className="absolute top-14 text-center">
+        <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
+          <div className="h-1/10 border flex flex-col justify-center text-center">
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
-          <div className="absolute top-32 max-h-6/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center leading-normal">
+          <div className="border w-9/10 h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center leading-normal">
             <h1 className="text-center text-base font-bold">광명역사컨벤션웨딩홀</h1>
-            <h2 className="text-sm mx-10 text-wrap items-center flex flex-col text-center">
+            <h2 className="mt-2 text-sm mx-10 text-wrap items-center flex flex-col text-center">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
             </h2>
 
             {/* Map */}
-            <div className="border mt-4 max-h-40 overscroll-none"
+            <div className="border mt-3 max-h-40 overscroll-none"
               id="map" style={{ width: '100%', maxWidth: 350, height: 200 }}>
             </div>
 
             {/* Map Buttons */}
-            <div className="flex mt-4 space-x-4">
+            <div className="flex mt-3 space-x-4">
               <a
                 href="https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%97%AD%EC%82%AC%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80?c=15.00,0,0,0,dh"
                 target="_blank"
@@ -281,7 +281,7 @@ export default function Home() {
                   height={30}
                   className="rounded-lg"
                 />
-                <h2 className="text-xs ml-1">네이버 지도</h2>
+                <h2 className="text-xs ml-1 font-sans">네이버 지도</h2>
               </a>
               <a
                 href="https://map.kakao.com/link/map/23753350"
@@ -296,11 +296,11 @@ export default function Home() {
                   height={30}
                   className="rounded-lg"
                 />
-                <h2 className="text-xs ml-1">카카오 지도</h2>
+                <h2 className="text-xs ml-1 font-sans">카카오 지도</h2>
               </a>
             </div>
           </div>
-          <div className="absolute top-2/3 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal">
+          <div className="border h-3/10 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal">
             <h1 className="text-custom-blue text-left">
               지하철
             </h1>
@@ -309,8 +309,10 @@ export default function Home() {
             <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
             광명 센트럴자이 상가 주차장 B3층<br></br>
             광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-            <h1 className="text-custom-blue text-left text-sm leading-normal font-serif">※ 연회장 입구 직원분께 말씀해주시면<br /> 무료주차 2시간 입력해드립니다.
-            </h1>
+            <div className="text-custom-blue text-left text-sm leading-normal font-sans">
+              ※ 연회장 입구 직원분께 말씀해주시면<br />
+              무료주차 2시간 입력해드립니다.
+            </div>
           </div>
         </div>
 
