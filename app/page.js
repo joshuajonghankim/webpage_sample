@@ -448,7 +448,7 @@ export default function Home() {
 
       <LivereComments />
 
-      <footer className='flex flex-col items-center text-xs text-gray-700'>
+      <footer className='relative bottom-2 flex flex-col items-center text-xs text-gray-700'>
         <p className="bottom-5">&copy; 2024 Joshua Jonghan Kim. All rights reserved.</p>
       </footer>
 
