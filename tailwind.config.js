@@ -1,5 +1,3 @@
-const { Hahmlet, Hi_Melody } = require('next/font/google');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,9 +16,7 @@ module.exports = {
         "main-2": "url('/images/main2.jpg')"
       },
 
-      fontFamily: {
-        Hahmlet: ["Hahmlet", "sans-serif"],
-        Hi_Melody: ["Hi Melody", "sans-serif"],
+      fontFamily: {        
         MapoGoldenPier: ['MapoGoldenPier', 'sans-serif'],
       },
 

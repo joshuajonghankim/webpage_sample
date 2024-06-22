@@ -162,56 +162,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/*
-        <div dir="ltr" className="absolute top-48 snap-x snap-mandatory overflow-x-auto flex flex-row">
-            <Image
-              src="/images/g0.jpg"
-              alt="g0"
-              className="snap-center snap-always ml-10 mr-5 w-2/3 md:h-96"
-              width={600}
-              height={1200}
-            />
-            <Image
-              src="/images/g1.jpg"
-              alt="g1"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
-              width={600}
-              height={1200}
-            />
-            <Image
-              src="/images/g2.jpg"
-              alt="g2"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
-              width={600}
-              height={1200}
-            />
-            <Image
-              src="/images/g3.jpg"
-              alt="g3"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
-              width={600}
-              height={1200}
-            />
-            <Image
-              src="/images/g4.jpg"
-              alt="g4"
-              className="snap-center snap-always mx-5 w-2/3 h-1/2 md:h-96"
-              width={600}
-              height={1200}
-            />
-            <Image
-              src="/images/g5.jpg"
-              alt="g5"
-              className="snap-center snap-always ml-5 mr-10 w-2/3 h-1/2 md:h-96"
-              width={600}
-              height={1200}
-            />
-        */}
-
         <div className="relative snap-center snap-always min-h-dvh w-full flex flex-col justify-center items-center bg-bgcolor-sky bg-cover bg-center">
-          <h1 className="text-xl font-MapoGoldenPier text-custom-blue font-extralight">G A L L E R Y</h1>
+          <h1 className="text-xl font-MapoGoldenPier text-custom-blue font-extralight">
+            G A L L E R Y
+          </h1>
 
-          <div className="mt-8 max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
+          <div className="mt-12 max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
