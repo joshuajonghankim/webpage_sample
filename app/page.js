@@ -460,7 +460,7 @@ export default function Home() {
       <LivereComments />
 
       <footer className='relative bottom-2 flex flex-col items-center text-xs text-gray-700'>
-        <p className="bottom-5">&copy; 2024 Joshua & Hannah. All rights reserved.</p>
+        <p className="bottom-5">&copy; 2024 Joshua & Hannah & Haneun. All rights reserved.</p>
       </footer>
 
       {/* Speaker Image */}
