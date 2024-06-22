@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import LivereComments from "./LivereComments";
-import Head from "next/head";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -450,11 +449,8 @@ export default function Home() {
                 )}
               </div>
             </div>
-
-
           </div>
         </div>
-
       </div>
 
       <LivereComments />
