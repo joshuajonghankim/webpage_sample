@@ -55,7 +55,7 @@ const LivereComments = () => {
 
   return (
     <div className=''>
-      <div className="mt-20 text-center">
+      <div className="mt-12 text-center">
         <h1 className="text-sm font-MapoGoldenPier text-custom-blue">G U E S T B O O K</h1>
         <h1 className="text-xl font-MapoGoldenPier text-custom-blue">방명록</h1>
       </div>
