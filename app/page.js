@@ -250,13 +250,13 @@ export default function Home() {
         </div>
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
-          <div className="h-1/10 border flex flex-col justify-center text-center">
+          <div className="h-1/10 flex flex-col justify-center text-center">
             <h1 className="text-sm font-MapoGoldenPier text-custom-blue">L O C A T I O N</h1>
             <h1 className="text-xl font-MapoGoldenPier text-custom-blue">오시는 길</h1>
           </div>
-          <div className="border w-9/10 h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center leading-normal">
+          <div className="w-9/10 h-5/10 font-MapoGoldenPier text-gray-700 flex flex-col items-center justify-center leading-normal">
             <h1 className="text-center text-base font-bold">광명역사컨벤션웨딩홀</h1>
-            <h2 className="mt-2 text-sm mx-10 text-wrap items-center flex flex-col text-center">
+            <h2 className="mt-2 text-sm mx-10 text-wrap items-center flex flex-col text-center leading-6">
               경기도 광명시 광명역로 21<br></br>
               KTX광명역 동편 B1<br></br>
             </h2>
@@ -300,20 +300,47 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border h-3/10 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal">
-            <h1 className="text-custom-blue text-left">
-              지하철
-            </h1>
-            1호선 광명역 지하철 운행 (영등포 - 광명역)<br></br>
-            1호선 관악역 1번 출구 (마을버스1-1 운행)<br></br><br></br>
-            <h1 className="text-custom-blue text-left">주차 (2시간 무료)</h1>
-            광명 센트럴자이 상가 주차장 B3층<br></br>
-            광명 파크자이 오피스텔 주차장 B2층<br></br><br></br>
-            <div className="text-custom-blue text-left text-sm leading-normal font-sans">
-              ※ 연회장 입구 직원분께 말씀해주시면<br />
-              무료주차 2시간 입력해드립니다.
+          <div className="h-3/10 font-MapoGoldenPier text-xs text-wrap text-gray-700 leading-normal p-2">
+            {/* subway */}
+            <div className="flex items-start mb-4">
+              <Image
+                src="/images/subway.png"
+                alt="subway"
+                width={30}
+                height={30}
+                className="mr-2"
+              />
+              <div className="leading-5">
+                <h1 className="text-custom-blue text-sm text-left leading-5">
+                  지하철
+                </h1>
+                <p>1호선 광명역 지하철 운행 (영등포 - 광명역)</p>
+                <p>1호선 관악역 1번 출구 (마을버스1-1 운행)</p>
+              </div>
+            </div>
+            {/* bus */}
+            <div className="flex items-start mb-4">
+              <Image
+                src="/images/bus.png"
+                alt="bus"
+                width={30}
+                height={30}
+                className="mr-2"
+              />
+              <div className="leading-5">
+                <h1 className="text-custom-blue text-sm text-left leading-5">
+                  주차 (2시간 무료)
+                </h1>
+                <p>광명 센트럴자이 상가 주차장 B3층</p>
+                <p>광명 파크자이 오피스텔 주차장 B2층</p>
+                <p className="text-custom-blue text-left text-sm leading-normal font-sans mt-2">
+                  ※ 연회장 입구 직원분께 말씀해주시면<br />
+                  무료주차 2시간 입력해드립니다.
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
