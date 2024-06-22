@@ -88,7 +88,7 @@ export default function Home() {
     if (window.naver && window.naver.maps) {
       const mapOptions = {
         center: new window.naver.maps.LatLng(37.4163636, 126.8848772),
-        zoom: 15
+        zoom: 15.5
       };
       const map = new window.naver.maps.Map('map', mapOptions);
     }
