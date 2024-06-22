@@ -135,6 +135,13 @@ export default function Home() {
 
           <button className="max-w-8/10 h-6/10" onClick={handleButtonClick}>
             <Image
+              src="/images/thumbnail.png"
+              alt="thumbnail"
+              width={0}
+              height={0}
+              className=""
+            />
+            <Image
               src="/images/main.jpg"
               alt="cover_image"
               width={1000}
