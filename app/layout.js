@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="https://imgur.com/a/1egUbXu" />
+        <meta property="og:image" content="https://i.imgur.com/eYvAs5h.jpg" />
       </head>
       <body className={inter.className}>
         {children}
