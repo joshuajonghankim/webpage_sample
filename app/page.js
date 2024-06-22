@@ -17,7 +17,7 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageWidth, setImageWidth] = useState(0);
   const [touchCount, setTouchCount] = useState(0);
-  const [hasPlayedOnce, setHasPlayedOnce] = useState(false); // New state to track if audio has played once
+  const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
   const images = [
     { src: '/images/g1.jpg', alt: 'g1' },
@@ -55,25 +55,23 @@ export default function Home() {
   // Play music on touch and retry until playing
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const handleTouch = () => {
-        // Only attempt to play if it hasn't played once
+      const handleTouchOrDrag = () => {
         if (!hasPlayedOnce) {
           setTouchCount(prevCount => {
             const newCount = prevCount + 1;
             if (newCount >= 2) {
-              // Try to play the music on every touch after the second
               if (audioRef.current.paused) {
                 audioRef.current.play()
                   .then(() => {
                     setIsPlaying(true);
-                    setHasPlayedOnce(true); // Mark that the audio has played successfully
+                    setHasPlayedOnce(true);
                   })
                   .catch(error => {
                     console.log("Failed to play audio: ", error);
                   });
               } else {
                 setIsPlaying(true);
-                setHasPlayedOnce(true); // Mark that the audio has played successfully
+                setHasPlayedOnce(true);
               }
             }
             return newCount;
@@ -81,10 +79,15 @@ export default function Home() {
         }
       };
 
-      window.addEventListener('touchstart', handleTouch);
+      window.addEventListener('touchstart', handleTouchOrDrag);
+      window.addEventListener('dragstart', handleTouchOrDrag);
+      window.addEventListener('dragend', handleTouchOrDrag);
 
-      // Clean up event listener on unmount
-      return () => window.removeEventListener('touchstart', handleTouch);
+      return () => {
+        window.removeEventListener('touchstart', handleTouchOrDrag);
+        window.removeEventListener('dragstart', handleTouchOrDrag);
+        window.removeEventListener('dragend', handleTouchOrDrag);
+      };
     }
   }, [hasPlayedOnce]);
 
