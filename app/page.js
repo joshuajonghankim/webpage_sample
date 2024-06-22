@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import LivereComments from "./LivereComments";
+import Head from "next/head";
 
 function copyText(entryText) {
   navigator.clipboard.writeText(entryText);
@@ -124,6 +125,11 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden bg-bgcolor-sky">
+      <Head>
+        <meta property="og:image" content="/images/thumbnail.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+      </Head>
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
