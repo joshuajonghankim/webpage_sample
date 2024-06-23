@@ -167,14 +167,8 @@ export default function Home() {
 
   const shareToKakao = () => {
     if (window.Kakao) {
-      window.Kakao.Share.sendDefault({
-        objectType: 'text',
-        text:
-          '이성연과 김한은의 결혼식에 초대합니다\n\nhttps://lsy-khe.vercel.app',
-        link: {
-          mobileWebUrl: 'https://lsy-khe.vercel.app',
-          webUrl: 'https://lsy-khe.vercel.app',
-        },
+      window.Kakao.Share.sendCustom({
+        templateId: 109330,
       });
     }
   };
