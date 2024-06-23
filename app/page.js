@@ -170,7 +170,7 @@ export default function Home() {
       window.Kakao.Share.sendDefault({
         objectType: 'text',
         text:
-          'https://lsy-khe.vercel.app',
+          '이성연과 김한은의 결혼식에 초대합니다\n\nhttps://lsy-khe.vercel.app',
         link: {
           mobileWebUrl: 'https://lsy-khe.vercel.app',
           webUrl: 'https://lsy-khe.vercel.app',
