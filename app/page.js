@@ -169,10 +169,10 @@ export default function Home() {
       window.Kakao.Share.sendDefault({
         objectType: 'text',
         text:
-          'https://lsy-khe.vercel.app/',
+          'https://lsy-khe.vercel.app',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://lsy-khe.vercel.app',
+          webUrl: 'https://lsy-khe.vercel.app',
         },
       });
     }
