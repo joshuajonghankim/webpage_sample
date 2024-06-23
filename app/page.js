@@ -20,21 +20,20 @@ export default function Home() {
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
   const images = [
-    { src: '/images/g1.jpg', alt: 'g1' },
-    { src: '/images/g2.jpg', alt: 'g2' },
-    { src: '/images/g3.jpg', alt: 'g3' },
-    { src: '/images/g4.jpg', alt: 'g4' },
-    { src: '/images/g5.jpg', alt: 'g5' },
-    { src: '/images/g6.jpg', alt: 'g6' },
-    { src: '/images/g7.jpg', alt: 'g7' },
-    { src: '/images/g8.jpg', alt: 'g8' },
-    { src: '/images/g9.jpg', alt: 'g9' },
-    { src: '/images/g10.jpg', alt: 'g10' },
-    { src: '/images/g11.jpg', alt: 'g11' },
-    { src: '/images/g12.jpg', alt: 'g12' },
-    { src: '/images/g13.jpg', alt: 'g13' },
-    { src: '/images/g14.jpg', alt: 'g14' },
-    { src: '/images/g15.jpg', alt: 'g15' },
+    { src: '/images/g1.jpeg', alt: 'g1' },
+    { src: '/images/g2.jpeg', alt: 'g2' },
+    { src: '/images/g3.jpeg', alt: 'g3' },
+    { src: '/images/g4.jpeg', alt: 'g4' },
+    { src: '/images/g5.jpeg', alt: 'g5' },
+    { src: '/images/g6.jpeg', alt: 'g6' },
+    { src: '/images/g7.jpeg', alt: 'g7' },
+    { src: '/images/g8.jpeg', alt: 'g8' },
+    { src: '/images/g9.jpeg', alt: 'g9' },
+    { src: '/images/g10.jpeg', alt: 'g10' },
+    { src: '/images/g11.jpeg', alt: 'g11' },
+    { src: '/images/g12.jpeg', alt: 'g12' },
+    { src: '/images/g13.jpeg', alt: 'g13' },
+    { src: '/images/g14.jpeg', alt: 'g14' },
   ];
 
   useEffect(() => {
