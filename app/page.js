@@ -428,7 +428,7 @@ export default function Home() {
                   <div className="flex-grow text-base text-center text-gray-700">
                     신랑측 계좌번호
                   </div>
-                  <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <svg className="stroke-1 stroke-gray-700 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                   </svg>
                 </button>
@@ -469,7 +469,7 @@ export default function Home() {
                   <div className="flex-grow text-base text-center text-gray-700">
                     신부측 계좌번호
                   </div>
-                  <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                  <svg className="stroke-1 stroke-gray-700 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                   </svg>
                 </button>
@@ -536,7 +536,7 @@ export default function Home() {
             height={20}
             className=""
           />
-          <h1 className="font-MapoGoldenPier"
+          <h1 className="font-MapoGoldenPier text-gray-700"
             onClick={shareToKakao}>
             카카오톡 공유하기
           </h1>
@@ -550,7 +550,7 @@ export default function Home() {
             height={20}
             className=""
           />
-          <h1 className="font-MapoGoldenPier" onClick={() => copyText("https://lsy-khe.vercel.app/")}>
+          <h1 className="font-MapoGoldenPier text-gray-700" onClick={() => copyText("https://lsy-khe.vercel.app/")}>
             링크주소 복사하기
           </h1>
         </button>
