@@ -8,16 +8,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "background-pattern": "url('/images/paper1.jpg')",
-        "main-1": "url('/images/main.jpg')",
-        "main-2": "url('/images/main2.jpg')"
       },
 
       fontFamily: {        
         MapoGoldenPier: ['MapoGoldenPier', 'sans-serif'],
+        Charter: ['Charter', 'sans-serif'],
+        NotoSansKR: ['NotoSansKR', 'sans-serif'],
       },
 
       spacing: {

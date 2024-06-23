@@ -155,8 +155,8 @@ export default function Home() {
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
         {/* Main page */}
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
-          <div className="h-1.5/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
-            <h1 className="text-4xl">July|20|2024</h1>
+          <div className="h-1.5/10 flex flex-col justify-center text-center font-Charter text-gray-700 p-0">
+            <h1 className="text-3xl">July|20|2024</h1>
             <h2 className="mt-2 text-sm tracking-widest">SATURDAY</h2>
           </div>
 
@@ -178,8 +178,8 @@ export default function Home() {
           </button>
 
           <div className="mt-6 h-2/10 flex flex-col justify-center text-center font-MapoGoldenPier text-gray-700 p-0">
-            <h1 className="text-3xl">이성연 & 김한은</h1>
-            <h1 className="mt-4 text-sm">2024.7.20. 토요일 낮 12시</h1>
+            <h1 className="text-2xl">이성연 & 김한은</h1>
+            <h1 className="mt-4 text-sm">2024년 7월 20일 (토) 오후 12시</h1>
             <h1 className="mt-1 text-sm">광명역사컨벤션웨딩홀</h1>
           </div>
 
@@ -352,8 +352,8 @@ export default function Home() {
 
         </div>
 
-        <div className="relative snap-center snap-always min-h-dvh min-w-full flex justify-center items-center bg-white bg-cover bg-center">
-          <div className="absolute top-1/10 w-full flex flex-col items-center">
+        <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white bg-cover bg-center">
+          <div className="h-1.5/10 w-full flex flex-col items-center justify-center">
             {/* <svg className="stroke-custom-blue size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
             </svg> */}
@@ -375,7 +375,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="absolute top-3/10 w-full font-MapoGoldenPier flex flex-col items-center">
+          <div className=" mt-1/10 h-7/10 w-full font-MapoGoldenPier flex flex-col items-center">
             <div className="flex justify-center items-center">
               <Image
                 src="/images/heart.png"
@@ -396,7 +396,7 @@ export default function Home() {
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
                   className="w-full p-2 flex items-center bg-button-blue rounded-lg"
                 >
-                  <div className="flex-grow text-center text-gray-700">
+                  <div className="flex-grow text-base text-center text-gray-700">
                     신랑측 계좌번호
                   </div>
                   <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -404,7 +404,7 @@ export default function Home() {
                   </svg>
                 </button>
                 {showGroomAccounts && (
-                  <div className="text-gray-700 p-2 w-full">
+                  <div className="text-gray-700 p-2 w-full font-NotoSansKR">
                     <p className="flex justify-between items-center">
                       <span className="">카카오뱅크 3333-10-5382056<br></br>
                         이성연</span>
@@ -437,7 +437,7 @@ export default function Home() {
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
                   className="w-full flex items-center bg-button-blue rounded-lg p-2"
                 >
-                  <div className="flex-grow text-center text-gray-700">
+                  <div className="flex-grow text-base text-center text-gray-700">
                     신부측 계좌번호
                   </div>
                   <svg className="stroke-1 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -445,7 +445,7 @@ export default function Home() {
                   </svg>
                 </button>
                 {showBrideAccounts && (
-                  <div className="text-gray-700 p-2 w-full">
+                  <div className="text-gray-700 p-2 w-full font-NotoSansKR">
                     <p className="flex justify-between items-center">
                       <span>카카오뱅크 3333-28-6191015<br></br>
                         김한은</span>
