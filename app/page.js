@@ -150,6 +150,34 @@ export default function Home() {
 
   const [animateBounce, setAnimateBounce] = useState(true);
 
+  useEffect(() => {
+    // 카카오톡 SDK 로드 및 초기화
+    const script = document.createElement('script');
+    script.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js";
+    script.integrity = "sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4";
+    script.crossOrigin = "anonymous";
+    script.onload = () => {
+      if (window.Kakao) {
+        window.Kakao.init('ae3cebdc03815c50b89b7721ec09778c');
+      }
+    };
+    document.body.appendChild(script);
+  }, []);
+
+  const shareToKakao = () => {
+    if (window.Kakao) {
+      window.Kakao.Share.sendDefault({
+        objectType: 'text',
+        text:
+          'https://lsy-khe.vercel.app/',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      });
+    }
+  };
+
   return (
     <main className="overflow-x-hidden bg-bgcolor-sky">
       <div className="relative h-dvh w-dvh snap-mandatory snap-y overflow-y-auto flex flex-col">
@@ -496,6 +524,35 @@ export default function Home() {
             아름다운 가정을 꾸려나가겠습니다.
           </p>
         </div>
+      </div>
+
+      <div className="py-6 gap-2 flex flex-col justify-center bg-white">
+        <button className="gap-2 flex flex-row justify-center items-center">
+          <Image
+            src="/images/kakao-icon.png"
+            alt="kakao-icon"
+            width={20}
+            height={20}
+            className=""
+          />
+          <h1 className="font-MapoGoldenPier"
+            onClick={shareToKakao}>
+            카카오톡 공유하기
+          </h1>
+        </button>
+
+        <button className="gap-2 flex flex-row justify-center items-center">
+          <Image
+            src="/images/link-icon.png"
+            alt="link-icon"
+            width={20}
+            height={20}
+            className=""
+          />
+          <h1 className="font-MapoGoldenPier" onClick={() => copyText("https://lsy-khe.vercel.app/")}>
+            링크주소 복사하기
+          </h1>
+        </button>
       </div>
 
       <footer className='relative py-1 flex flex-col items-center text-xs text-gray-700 bg-white'>
