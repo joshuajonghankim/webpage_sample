@@ -18,6 +18,8 @@ export default function Home() {
   const [imageWidth, setImageWidth] = useState(0);
   const [touchCount, setTouchCount] = useState(0);
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
+  const [autoPlayAttempted, setAutoPlayAttempted] = useState(false);
+  
 
   const images = [
     { src: '/images/g1.jpeg', alt: 'g1' },
@@ -48,6 +50,23 @@ export default function Home() {
     setIsPlaying(prevState => !prevState);
     setAnimateBounce(false);
   };
+
+  // Attempt auto-play on component mount
+  useEffect(() => {
+    if (!autoPlayAttempted) {
+      audioRef.current.play()
+        .then(() => {
+          setIsPlaying(true);
+          setHasPlayedOnce(true);
+        })
+        .catch(error => {
+          console.log("Auto-play failed, retry on user interaction: ", error);
+        })
+        .finally(() => {
+          setAutoPlayAttempted(true);
+        });
+    }
+  }, [autoPlayAttempted]);
 
   // Play music on touch and retry until playing
   useEffect(() => {
