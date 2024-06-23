@@ -92,7 +92,7 @@ export default function Home() {
     // only client side
     if (typeof window !== 'undefined') {
 
-      const newImageWidth = (window.innerHeight * 6 / 10 - 3) / 3;
+      const newImageWidth = (window.innerHeight * 7 / 10 - 3) / 3;
       setImageWidth(newImageWidth);
 
       /*
@@ -219,7 +219,7 @@ export default function Home() {
             G A L L E R Y
           </h1>
 
-          <div className="mt-12 max-h-6/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
+          <div className="mt-12 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
@@ -364,7 +364,7 @@ export default function Home() {
 
             <button
               onClick={() => window.open('https://forms.gle/S2SnGE7jT2SuxhF68', '_blank')}
-              className="mt-2 w-8/10 p-1 flex items-center justify-center bg-custom-blue rounded-lg relative"
+              className="mt-2 w-8/10 p-1 flex items-center justify-center bg-button-blue rounded-lg relative"
             >
               <div className="p-1 font-MapoGoldenPier text-center text-gray-700">
                 RSVP
@@ -394,7 +394,7 @@ export default function Home() {
               <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowGroomAccounts(!showGroomAccounts)}
-                  className="w-full p-2 flex items-center bg-custom-blue rounded-lg"
+                  className="w-full p-2 flex items-center bg-button-blue rounded-lg"
                 >
                   <div className="flex-grow text-center text-gray-700">
                     신랑측 계좌번호
@@ -408,7 +408,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span className="">카카오뱅크 3333-10-5382056<br></br>
                         이성연</span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("3333-10-5382056")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("3333-10-5382056")}>
                         복사하기
                       </button>
                     </p>
@@ -416,7 +416,7 @@ export default function Home() {
                     <p className=" flex justify-between items-center">
                       <span>SC제일은행 600-20-373733<br></br>
                         이영우</span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("600-20-373733")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("600-20-373733")}>
                         복사하기
                       </button>
                     </p>
@@ -424,7 +424,7 @@ export default function Home() {
                     <p className=" flex justify-between items-center">
                       <span>국민은행 679802-93-115438<br></br>
                         신신숙<br></br></span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("679802-93-115438")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("679802-93-115438")}>
                         복사하기
                       </button>
                     </p>
@@ -435,7 +435,7 @@ export default function Home() {
               <div className="w-8/10 mb-4 border border-bgcolor-sky rounded-lg flex flex-col items-center">
                 <button
                   onClick={() => setShowBrideAccounts(!showBrideAccounts)}
-                  className="w-full flex items-center bg-custom-blue rounded-lg p-2"
+                  className="w-full flex items-center bg-button-blue rounded-lg p-2"
                 >
                   <div className="flex-grow text-center text-gray-700">
                     신부측 계좌번호
@@ -449,7 +449,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>카카오뱅크 3333-28-6191015<br></br>
                         김한은</span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("3333-28-6191015")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("3333-28-6191015")}>
                         복사하기
                       </button>
                     </p>
@@ -457,7 +457,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>농협 702076-52-131271<br></br>
                         김규백</span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("702076-52-131271")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("702076-52-131271")}>
                         복사하기
                       </button>
                     </p>
@@ -465,7 +465,7 @@ export default function Home() {
                     <p className="flex justify-between items-center">
                       <span>대구은행 009-08-312442<br></br>
                         김영정</span>
-                      <button className="p-1 border rounded-md border-custom-blue text-custom-blue" onClick={() => copyText("009-08-312442")}>
+                      <button className="p-1 border rounded-md border-button-blue text-custom-blue" onClick={() => copyText("009-08-312442")}>
                         복사하기
                       </button>
                     </p>

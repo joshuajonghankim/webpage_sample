@@ -57,6 +57,7 @@ module.exports = {
       colors: {
         'bgcolor-sky': '#f2f7fb',
         'custom-blue': '#81acdb',
+        'button-blue': '#d8e6f4',
       },
     },
   },
