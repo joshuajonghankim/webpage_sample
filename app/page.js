@@ -151,17 +151,18 @@ export default function Home() {
   const [animateBounce, setAnimateBounce] = useState(true);
 
   useEffect(() => {
-    // 카카오톡 SDK 로드 및 초기화
+    // Load Kakao SDK script
     const script = document.createElement('script');
-    script.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js";
-    script.integrity = "sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4";
-    script.crossOrigin = "anonymous";
+    script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js';
+    script.integrity = 'sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4';
+    script.crossOrigin = 'anonymous';
     script.onload = () => {
+      // Initialize Kakao SDK
       if (window.Kakao) {
         window.Kakao.init('ae3cebdc03815c50b89b7721ec09778c');
       }
     };
-    document.body.appendChild(script);
+    document.head.appendChild(script);
   }, []);
 
   const shareToKakao = () => {
@@ -169,10 +170,10 @@ export default function Home() {
       window.Kakao.Share.sendDefault({
         objectType: 'text',
         text:
-          'https://lsy-khe.vercel.app',
+          '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오톡 공유는 다른 템플릿을 이용해 보낼 수 있습니다.',
         link: {
-          mobileWebUrl: 'https://lsy-khe.vercel.app',
-          webUrl: 'https://lsy-khe.vercel.app',
+          mobileWebUrl: 'https://lsy-khe.vercel.app/',
+          webUrl: 'https://lsy-khe.vercel.app/',
         },
       });
     }
