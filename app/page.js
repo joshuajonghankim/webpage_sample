@@ -32,8 +32,6 @@ export default function Home() {
     { src: '/images/g10.jpeg', alt: 'g10' },
     { src: '/images/g11.jpeg', alt: 'g11' },
     { src: '/images/g12.jpeg', alt: 'g12' },
-    { src: '/images/g13.jpeg', alt: 'g13' },
-    { src: '/images/g14.jpeg', alt: 'g14' },
   ];
 
   useEffect(() => {
