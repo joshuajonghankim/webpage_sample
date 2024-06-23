@@ -48,7 +48,7 @@ body {
 
 @font-face {
   font-family: 'NotoSansKR';
-  src: url('/fonts\Noto_Sans_KR\NotoSansKR-VariableFont_wght.ttf') format('opentype');
+  src: url('/fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
