@@ -261,7 +261,7 @@ export default function Home() {
             G A L L E R Y
           </h1>
 
-          <div className="mt-12 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5">
+          <div className="mt-12 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5 overscroll-auto">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image
