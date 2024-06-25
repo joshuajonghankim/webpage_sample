@@ -19,7 +19,6 @@ export default function Home() {
   const [touchCount, setTouchCount] = useState(0);
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
   const [autoPlayAttempted, setAutoPlayAttempted] = useState(false);
-  
 
   const images = [
     { src: '/images/g1.jpeg', alt: 'g1' },
