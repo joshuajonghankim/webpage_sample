@@ -21,18 +21,18 @@ export default function Home() {
   const [autoPlayAttempted, setAutoPlayAttempted] = useState(false);
 
   const images = [
-    { src: '/images/g1.jpeg', alt: 'g1' },
-    { src: '/images/g2.jpeg', alt: 'g2' },
-    { src: '/images/g3.jpeg', alt: 'g3' },
-    { src: '/images/g4.jpeg', alt: 'g4' },
-    { src: '/images/g5.jpeg', alt: 'g5' },
-    { src: '/images/g6.jpeg', alt: 'g6' },
-    { src: '/images/g7.jpeg', alt: 'g7' },
-    { src: '/images/g8.jpeg', alt: 'g8' },
-    { src: '/images/g9.jpeg', alt: 'g9' },
-    { src: '/images/g10.jpeg', alt: 'g10' },
-    { src: '/images/g11.jpeg', alt: 'g11' },
-    { src: '/images/g12.jpeg', alt: 'g12' },
+    { previewSrc: '/images/preview/g1.jpeg', fullSrc: '/images/g1.jpeg', alt: 'g1' },
+    { previewSrc: '/images/preview/g2.jpeg', fullSrc: '/images/g2.jpeg', alt: 'g2' },
+    { previewSrc: '/images/preview/g3.jpeg', fullSrc: '/images/g3.jpeg', alt: 'g3' },
+    { previewSrc: '/images/preview/g4.jpeg', fullSrc: '/images/g4.jpeg', alt: 'g4' },
+    { previewSrc: '/images/preview/g5.jpeg', fullSrc: '/images/g5.jpeg', alt: 'g5' },
+    { previewSrc: '/images/preview/g6.jpeg', fullSrc: '/images/g6.jpeg', alt: 'g6' },
+    { previewSrc: '/images/preview/g7.jpeg', fullSrc: '/images/g7.jpeg', alt: 'g7' },
+    { previewSrc: '/images/preview/g8.jpeg', fullSrc: '/images/g8.jpeg', alt: 'g8' },
+    { previewSrc: '/images/preview/g9.jpeg', fullSrc: '/images/g9.jpeg', alt: 'g9' },
+    { previewSrc: '/images/preview/g10.jpeg', fullSrc: '/images/g10.jpeg', alt: 'g10' },
+    { previewSrc: '/images/preview/g11.jpeg', fullSrc: '/images/g11.jpeg', alt: 'g11' },
+    { previewSrc: '/images/preview/g12.jpeg', fullSrc: '/images/g12.jpeg', alt: 'g12' },
   ];
 
   useEffect(() => {
@@ -262,21 +262,43 @@ export default function Home() {
 
           <div className="mt-12 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5 overscroll-auto">
             {images.map((image) => (
-              <div key={image.src} className="">
+              <div key={image.fullSrc} className="">
                 <Image
-                  src={image.src}
+                  src={image.previewSrc}
                   alt={image.alt}
                   className="cursor-pointer object-cover aspect-square"
                   width={imageWidth}
                   height={imageWidth}
-                  onClick={() => setSelectedImage(image.src)}
+                  onClick={() => setSelectedImage(image.fullSrc)}
                 />
               </div>
             ))}
+
+            {/* Displaying the selected image */}
+            {selectedImage && (
+              <div className="max-h-dvh fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50">
+                <div className="relative">
+                  <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    className="object-contain p-5 max-h-dvh w-auto"
+                    width={800}
+                    height={800}
+                    onClick={() => setSelectedImage(null)}
+                  />
+                  <button
+                    className="absolute top-5 right-7 text-white text-2xl"
+                    onClick={() => setSelectedImage(null)}
+                  >
+                    &times;
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* displaying the selected image */}
-          {selectedImage && (
+          {/* {selectedImage && (
             <div className="max-h-dvh fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50">
               <div className="relative">
                 <Image
@@ -295,7 +317,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
         </div>
 
         <div className="relative snap-center snap-always min-h-dvh min-w-full flex flex-col justify-center items-center bg-white">
