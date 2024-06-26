@@ -261,8 +261,8 @@ export default function Home() {
           </h1>
 
           <div className="mt-12 max-h-7/10 overflow-y-auto grid grid-cols-2 grid-flow-row gap-1.5 mx-5 overscroll-auto">
-            {images.map((image, index) => (
-              <div key={index} className="">
+            {images.map((image) => (
+              <div key={image.src} className="">
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -521,7 +521,7 @@ export default function Home() {
       <LivereComments />
 
       <div className="relative w-full">
-        {/* 이미지 */}
+        {/* image */}
         <Image
           src="/images/outro-01.png"
           alt="outro-01"
@@ -530,7 +530,7 @@ export default function Home() {
           className="w-full"
         />
 
-        {/* 텍스트 */}
+        {/* text */}
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <p className="text-sm md:text-base lg:text-lg xl:text-xl font-MapoGoldenPier font-extralight">
             저희의 첫 걸음을 축복해 주셔서 감사드리며<br />
